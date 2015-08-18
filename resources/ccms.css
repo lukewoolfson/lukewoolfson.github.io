@@ -1,0 +1,2192 @@
+/*******************************************************************************
+ Begin basic elements
+ *******************************************************************************/
+html {
+	font-size:100%;
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size:75%;
+	color:#000;
+	background-color:#fff;
+	margin:0;
+	padding:0;
+}
+
+img {
+	border:0 none;
+}
+
+h1 {
+	clear: both;
+	font-size:130%;
+	font-weight:bold;
+	color:#e7a101;
+	margin:0px 0px 25px 0px;
+	padding:0px 0px 10px 0px;
+	background:url("../images/h1_background.gif") no-repeat bottom left;
+
+}
+
+h2 {
+	font-size:120%;
+	font-weight:bold;
+	color:#2b7272;
+	margin:0px 0px 20px 0px;
+	padding:10px 0px 4px 0px;
+	border-bottom:1px solid #cad2d2;
+}
+
+h3{
+	font-size:110%;
+	margin: 0px;
+	padding:5px 0px 6px 0px;
+	clear: both;
+}
+
+hr {
+	height:1px;
+	color:#cad2d2;
+	background-color:#cad2d2;
+	border:0 none;
+}
+
+form {
+	margin:0px;
+	padding:0px;
+}
+
+textarea {
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size:100%;
+}
+
+a {
+	border:0;
+	outline:none;
+}
+
+.strong {
+	font-weight:bold;
+}
+
+.separator hr {
+	margin: 11px 23px 15px 23px;
+}
+
+.floatleft {
+	float:left;
+}
+
+.floatright {
+	float:right;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.center {
+	text-align:center;
+}
+
+.right {
+	text-align:right;
+}
+
+.monetary {
+
+   margin-left: -1em;
+}
+
+.cshIcon{
+	border: 0px;
+	display: inline-block;
+
+	margin-bottom: -1px;
+}
+
+/*******************************************************************************
+ End basic elements
+ *******************************************************************************/
+
+/*******************************************************************************
+ Begin header and footer
+ *******************************************************************************/
+.ccmsPageHeader {
+	font-size:80%;
+	width:100%;
+	color:#000;
+	padding:0;
+	float: left;
+}
+
+.ccmsPageHeaderLogo {
+	float:left;
+	color:#000;
+	background-color:#fff;
+	padding:5px 5px 8px 5px;
+}
+
+.awardsFieldHeader {
+
+	clear:both;
+	margin:10px 0px 15px 10px;
+	padding-left: 13px;
+	float: left;
+	width: 30%;
+	font-weight:bold;
+}
+
+.readonlyFieldBold {
+
+	clear:both;
+	font-weight:bold;
+}
+
+.ccmsPageHeaderLinks {
+	float:right;
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size:100%;
+	color:#666;
+	text-align:right;
+	padding:20px 20px 0 0;
+}
+
+.ccmsPageHeaderLinks a {
+	color:#666;
+	background-color:#fff;
+	text-decoration:underline;
+}
+
+.ccmsPageHeaderLinks a:hover {
+	text-decoration:none;
+}
+
+.ccmsUserInfo {
+	float:right;
+	font-size:80%;
+	width:100%;
+	height:27px;
+	color:#000000;
+	margin:7px 0px 15px 0px;
+	text-align:right;
+
+}
+.ccmsUserInfo span {
+	margin-right:15px;
+}
+
+.clientCaseInfo {
+	clear: both;
+	padding: 0px 22px 30px 22px;
+	overflow: hidden;
+}
+
+.clientCaseInfo div {
+	float: left;
+	background: #f4f8f8 url("../images/case_info_background.gif") repeat-y top left;
+	padding: 10px 0px;
+	border-top:1px solid #cadcdc;
+	border-bottom:1px solid #cadcdc;
+
+}
+.clientCaseInfo div span {
+	padding: 0px 10px;
+}
+.clientCaseInfo #clientName {
+	width:33%;
+}
+
+.clientCaseInfo #lscReference {
+	width:33%;
+}
+
+.clientCaseInfo #providerReference {
+	width:34%;
+}
+
+.ccmsPageFooter {
+	float:right;
+    width:100%;
+    position: relative;
+    z-index: 10;
+    height: 3em;
+    text-align:right;
+	font-size:8pt;
+	height:27px;
+    margin:20px 20px 15px 10px;
+}
+
+.ccmsPageFooter div {
+	text-align:right;
+	color:#000000;
+  	border-top:1px solid #cad2d2;
+	margin-top: 15px;
+	margin:20px 20px 15px 10px;
+}
+
+/*******************************************************************************
+ End header and footer
+ *******************************************************************************/
+
+/*******************************************************************************
+ Begin navigation
+ *******************************************************************************/
+.ccmsPageNavigation {
+	position:relative;
+	float:left;
+	width:100%;
+	background-color:#000000;
+	margin:0;
+	padding:0;
+	text-align:center;
+	border-bottom:7px solid #808080;
+}
+
+.group {
+	height: 32px;
+	width:100%;
+	margin:0px 0px 20px 23px;
+	padding-bottom: 20px;
+}
+
+.group .req{
+	margin:0px 0px 0px 0px;
+	width:0px;
+	display: inline;
+}
+
+.groupPanel .input{
+	float: left;
+	padding-left: 16px;
+	padding-right: 12px;
+	padding-bottom: 14px;
+	display: inline;
+}
+
+.groupPanelBold .displayLabelOutput{
+	float: left;
+	padding-left: 0px;
+	padding-right: 10px;
+	display: inline;
+	font-weight:bold;
+	width:140px;
+}
+
+.groupPanelBold .groupInput{
+	float: left;
+	display: inline;
+	padding-right: 20px;
+}
+
+.groupPanelBold .label {
+	display:block;
+	float:left;
+	width:30%;
+	margin-right:10px;
+	margin-bottom:0px;
+	line-height:20px;
+	font-weight:bold;
+
+}
+
+.groupPanel .groupInput{
+	float: left;
+	display: inline;
+	padding-right: 20px;
+}
+
+.groupInput .inputField {
+  float: none;
+  display: inline;
+}
+
+.hint {
+	font-weight:normal;
+}
+
+
+.ccmsPageNavigation .menuItems {
+
+	display:block;
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size:80%;
+	font-weight:normal;
+	height:35px;
+	list-style-position:outside;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	text-align:center;
+}
+
+.menuItems li {
+	list-style-position:outside;
+	list-style-type:none;
+	margin-top:0;
+	padding-bottom:0;
+	padding-top:0;
+	text-align:center;
+}
+
+.menuItems li a {
+	display:block;
+	color:#fff;
+	background-color:transparent;
+	margin-bottom:0;
+	padding-bottom:11px;
+	padding-top:12px;
+	text-align:center;
+	text-decoration:none;
+	border-right:1px solid #fff;
+}
+
+.menuItems a:hover,
+.menuItems li.active a  {
+	text-decoration:none;
+	border-bottom:7px solid #e7a101;
+
+}
+
+.menuItems li {
+	float: left;
+	height:35px;
+	font-weight:bold;
+	list-style-position:outside;
+	list-style-type:none;
+	margin:0px;
+	padding:0px;
+	text-align:center;
+	width:25%;
+}
+
+.menuItems li#menuItem4  {
+	width:24%;
+}
+
+.menuItems li#menuItem4 a {
+	border-right:0px none;
+
+}
+/*******************************************************************************
+ End navigation
+ *******************************************************************************/
+
+/*******************************************************************************
+ Begin pagination section
+ *******************************************************************************/
+.paginationPanel {
+    clear:both;
+    text-align: right;
+    /*width:100%;*/
+    padding:0;
+    margin:10px 0;
+}
+
+.paginationPanel .previous {
+    color:#2b7272;
+    background:url("../images/arrow_left.gif") no-repeat bottom left;
+    margin:0;
+    padding:0 10px 1px 20px;
+    text-align:left;
+    vertical-align: text-top;
+    text-decoration:underline;
+}
+
+.paginationPanel .next {
+    color:#2b7272;
+    background:url("../images/arrow_right.gif") no-repeat bottom right;
+    margin:0;
+    padding:0 20px 1px 10px;
+    text-align:right;
+    vertical-align: text-top;
+    text-decoration:underline;
+}
+
+.paginationPanel .page {
+    font-weight:bold;
+    padding:0;
+    margin:0px 0px 5px 0px;
+    text-align:center;
+    border:1px solid #2b7272;
+    text-decoration:none;
+    display: inline-block;
+	min-width: 20px;
+}
+
+.paginationPanel .active {
+    color:#fff;
+    background-color:#2b7272;
+}
+
+.paginationPanel .link {
+    color:#2b7272;
+    background-color:#f0f4f5;
+}
+
+.paginationPanel .previous.link,
+.paginationPanel .next.link {
+    background-color: #fff;
+}
+
+.paginationPanel input {
+	font-size: 100%;
+}
+
+/*Remove button padding in FF*/
+.paginationPanel input::-moz-focus-inner 
+{
+    border: 0;
+    padding: 0;
+}
+
+/*******************************************************************************
+ End pagination section
+ *******************************************************************************/
+
+/*******************************************************************************
+ Begin error/warning message section
+ *******************************************************************************/
+#messageInfo {
+	clear:both;
+	width:96%;
+	font-weight:bold;
+	color:#c00;
+	border-top:1px solid #c00;
+	padding:7px 0px 7px 2px;
+	margin:10px 22px;
+}
+
+#messages {
+	clear:both;
+	width:96%;
+	margin:0px 22px 15px 22px;
+	padding:0px 0px 5px 0px;
+	border-bottom:1px solid #c00;
+}
+
+#messages li {
+	padding:3px 0px 8px 23px;
+}
+
+#messages li span {
+	font-weight:bold;
+}
+
+#messages .error {
+	list-style-type:none;
+	color:#c00;
+	background:transparent url("../images/icon_error.gif") no-repeat top left;
+}
+
+.errorText{
+	color:#c00;
+}
+
+#messages .warning {
+	list-style-type: none;
+	color: #06c;
+	background:transparent url("../images/icon_warning.gif") no-repeat 2px 0px;
+}
+/*******************************************************************************
+ End error/warning message section
+ *******************************************************************************/
+
+/*******************************************************************************
+ Begin container classes
+ *******************************************************************************/
+.pageTitleRef,
+.pageTitleRefNot06,
+.pageTitlePd01 {
+	margin:0px;
+	padding:0px 22px;
+}
+
+.formInputArea {
+	margin:10px 0 10px 0;
+	padding:0px 22px;
+}
+
+.formInputArea .inputPanel {
+	float:left;
+	width:100%;
+	background-color:#eff4f4;
+	margin-top:5px;
+	margin-bottom:10px;
+	overflow:hidden;
+}
+
+.formInputArea .inputButtonPanel {
+	float:left;
+	width:100%;
+	background-color:none;
+	margin-top:5px;
+	margin-bottom:10px;
+	overflow:hidden;
+}
+
+/* for h2 header rigt below an inputPanel, give them a bit extra padding to the top */
+.inputPanel + h2 {
+	padding-top: 20px;
+	clear: left;
+}
+
+.formInputArea .groupPanel {
+	float:left;
+	width:100%;
+	background-color:#eff4f4;
+	margin-top:5px;
+	margin-bottom:0px;
+	overflow:hidden;
+}
+
+.formInputArea .groupPanelBold {
+	float:left;
+	width:100%;
+	background-color:#eff4f4;
+	margin-top:5px;
+	margin-bottom:0px;
+	overflow:hidden;
+}
+
+.inputField,
+.inputFieldDate{
+	float:left;
+	width:100%;
+	padding-bottom: 10px;
+}
+
+.inputFieldCheck{
+	clear:both;
+	float:left;
+	width:100%;
+	padding-bottom: 10px
+}
+
+
+.inputFieldCheck,
+.inputPanel .buttonArea {
+	clear:both;
+	float:left;
+	width:100%;
+}
+
+.linkPanel {
+	padding-top: 10px;
+}
+
+.panelHeaderWithLink {
+	margin-bottom:20px;
+  	border-bottom:1px solid #cad2d2;
+}
+
+.panelHeaderWithLink h2 {
+  	float:left;
+  	width:50%;
+  	margin:0px 0px 0px 0px;
+  	border:0px;
+}
+.panelHeaderWithLink a,
+.panelHeaderWithLink .link,
+.linkShowingDirection {
+	color:#2b7272;
+	background:url("../images/arrow_right.gif") no-repeat bottom right;
+	padding:0 20px;
+	text-align:right;
+  	text-decoration:underline;
+}
+
+.panelHeaderWithLink a,
+.panelHeaderWithLink .link{
+  	position:relative;
+  	top:10px;
+	float:right;
+}
+
+.panelHeaderWithLink .helplink{
+  	top:0px;
+	float:none;
+	background-image:none;
+	padding:0px;
+}
+
+.panelHeaderWithLinkNoBorder {
+	height: 32px;
+	margin-bottom:20px;
+
+}
+
+.panelHeaderWithLinkNoBorder h2 {
+  	float:left;
+  	width:50%;
+  	margin:0px 0px 0px 0px;
+  	border:0px;
+}
+.panelHeaderWithLinkNoBorder a,
+.linkShowingDirection {
+	color:#2b7272;
+	background:url("../images/arrow_right.gif") no-repeat bottom right;
+	padding:0 20px;
+	text-align:right;
+  	text-decoration:underline;
+}
+
+.panelHeaderWithLinkNoBorder a{
+  	position:relative;
+  	top:10px;
+	float:right;
+}
+
+.linkShowingDirection{
+	margin-bottom: 8px;
+}
+
+.leftAlignedLink{
+	margin: 13px 0px 15px 0px;
+	padding-left: 0px;
+	display: inline-block;
+}
+
+.readonlyTextPanel {
+	background-color:#fff;
+	max-height:300px;
+	margin:0px 21px 20px 23px;
+	padding: 10px;
+	border:1px solid #cccccc;
+	overflow:auto;
+
+}
+
+.readonlyTextPrintPanel {
+	background-color:#fff;
+	margin:0px 21px 20px 23px;
+	padding: 10px;
+	border:1px solid #cccccc;
+
+
+}
+
+.include_page_cr02_disclaimertext{
+	height:300px;
+}
+.readonlyTextPanel h3{
+	padding:0px 0px 0px 0px;
+}
+
+.readonlyTextPanel p{
+	padding:16px 0px 0px 0px;
+	margin: 0px;
+}
+
+.shadowTop {
+	clear:both;
+	height:30px;
+	background:url("../images/shadow_top.gif") repeat-x top left;
+}
+
+.shadowBottom {
+	clear:both;
+	height:24px;
+	background:url("../images/shadow_bottom.gif") repeat-x top left;
+}
+/*******************************************************************************
+ End container classes
+ *******************************************************************************/
+
+/*******************************************************************************
+ Begin table elements
+ *******************************************************************************/
+table {
+	width:100%;
+	margin-bottom:8px;
+	border-collapse:collapse;
+	margin-bottom: 10px;
+}
+th,
+td {
+	padding:6px;
+	border:1px solid #2b7272;
+}
+th {
+	color:#fff;
+	background-color:#2b7272;
+	text-align:left;
+}
+td {
+	color:#000;
+	background-color:#f0f4f5;
+	text-align:left;
+}
+td a {
+	text-decoration:none;
+	color:#2b7272;
+}
+
+th a{
+	color:#ffffff;
+}
+
+td.text {
+	font-weight:bold;
+	color:#fff;
+	background-color:#2b7272;
+}
+td.data {
+	font-weight:normal;
+	color:#000;
+	background-color:#f0f4f5;
+}
+td.indent {
+	padding-left:20px;
+}
+
+th.sortable a {
+	text-decoration:none;
+	color:#fff;
+	padding-right:12px;
+	background:url("../images/sort_off.gif") no-repeat right;
+}
+th.order1 a {
+	padding-right:12px;
+	background:url("../images/sort_asc.gif") no-repeat right;
+}
+th.order2 a {
+	padding-right:12px;
+	background:url("../images/sort_desc.gif") no-repeat right;
+}
+.proceedingsSummary th {
+	width:15%;
+}
+.proceedingsSummary .costLimitation {
+	width:10%;
+}
+.proceedingsSummary .devolvedPowers {
+	width:20%;
+}
+.proceedingsSummary .action {
+	width:10%;
+}
+
+/*******************************************************************************
+ End table elements
+ *******************************************************************************/
+
+/*******************************************************************************
+ Begin specific elements
+ *******************************************************************************/
+.comment {
+	clear:both;
+	margin:0 0 15px 0;
+}
+
+.notApplicableLeft {
+	clear:both;
+	margin:0px 0px 15px 10px;
+	padding-left: 13px;
+	float: left;
+	width: 30%;
+}
+
+.notApplicableRight {
+	float: left;
+	margin:0px 0px 15px 10px;
+	padding-left: 36px;
+	width: 50%;
+}
+
+.inputPanel .comment {
+	clear:both;
+	float:left;
+	width:97%;
+	padding-left: 23px;
+}
+
+.inputPanel .readonlyTextPanel .comment{
+	width: auto;
+	padding: 0px;
+}
+
+.stackTrace{
+	font-size: 120%;
+}
+/*******************************************************************************
+ End specific elements
+ *******************************************************************************/
+
+/*******************************************************************************
+ Begin form elements
+ *******************************************************************************/
+.req, .textOnlyInputReq {
+	float:left;
+	width:13px;
+	color:#900;
+	padding-top:2px;
+	margin:0px 0px 0px 10px;
+	display:inline;
+	text-align:center;
+	text-align: left;
+}
+
+.reqfield {
+	display: inline-block;
+	padding-left:15px;
+	margin-bottom:3px;
+	font-size:80%;
+	width:20em;
+	background:url("../images/icon_required.gif") no-repeat top left;
+}
+
+label,
+.label,
+.fieldInfo {
+	display:block;
+	float:left;
+	width:30%;
+	margin-right:10px;
+	margin-bottom:0px;
+	line-height:20px;
+}
+
+
+.fieldInfo .label,
+.fieldInfo label{
+	float: none;
+	margin: 0px;
+	padding-bottom: 0px;
+	width: auto;
+}
+
+/* readonly elements  */
+.totalPreCertCosts .labelForReadonlyControl {
+	margin-left:10px;
+	padding-left:13px;
+	font-weight:bold;
+}
+
+/* readonly elements  */
+.totalCertCosts .labelForReadonlyControl {
+	margin-left:10px;
+	padding-left:13px;
+	font-weight:bold;
+}
+
+/* readonly elements  */
+.totalCosts .labelForReadonlyControl {
+	margin-left:10px;
+	padding-left:13px;
+	font-weight:bold;
+}
+
+/* readonly elements do not have span.req */
+.labelForReadonlyControl {
+	margin-left:10px;
+	padding-left:13px;
+}
+
+.errorInd {
+	display:block;
+	float:left;
+	width:30px;
+	margin-top:3px;
+}
+
+
+.input{
+	float: left;
+	padding-left: 4px;
+	display: inline;
+}
+
+.inputPanel .input{
+	max-width: 50%;
+}
+
+.readOnlyTextBold{
+	font-weight:bold;
+	}
+
+.textOnlyInput {
+	padding:4px 0px 3px 36px;
+	float: left;
+	font-weight:bold;
+	width: 60%;
+}
+
+.opaText .strongTextOnlyInput {
+	float: left;
+	font-weight:bold;
+	width: 60%;
+	position:relative;
+	top:0px;
+	left:0px;
+	padding: 0px 0px 15px 18px;
+}
+
+.textOnlyCurrency{
+	padding:4px 0px 3px 22px;
+	float: left;
+	font-weight:bold;
+}
+
+.textOnlyCurrency .symbol{
+	font-weight: normal;
+	padding-right: 2px;
+}
+
+/* read-only fied being printed in a data table (for example summary and print)
+   should not be bold and have any padding */
+td .textOnlyInput,
+td .textOnlyInput{
+	padding: 0px;
+	margin: 0px;
+	font-weight: normal;
+}
+
+
+/* for the readonly text of checkboxgroup, show selected items below each other. */
+.textOnlyInput span {
+  display: block;
+}
+
+
+/* begin dropdown styling */
+select {
+	min-width: 213px;
+	max-width: 100%;
+}
+
+
+input.readonly,
+select.readonly {
+	background-color:#eff4f4;
+	border:0 none;
+	color:#000;
+	font-weight:bold;
+}
+
+.opaBoolean .check .errorInd {
+	width:30%;
+	margin-right:10px;
+	text-align: right;
+	margin-left: 52px;
+}
+
+.opaSelectionListbox .check .errorInd {
+	text-align: right;
+}
+
+.opaBoolean .check .req{
+	display:none;
+}
+
+.opaSelectionDropdown select {
+	min-width: 213px;
+}
+/* end dropdown styling */
+
+/* begin radio buttons styling */
+.input.radio {
+	display: block;
+	float: left;
+	padding: 0px 0px 7px 0px;
+}
+.radio {
+	vertical-align: bottom;
+}
+
+.radio label{
+	width: auto;
+	float: none;
+	display: inline-block;
+	padding-bottom: 3px;
+	padding-right: 10px;
+	top: -1px;
+	position: relative;
+}
+
+.groupInput .radio .label {
+    display: none;
+  }
+/* end radio buttons styling */
+
+/* begin checkbox styling */
+.check .input {
+	float:left;
+	margin:2px 0px 0px 2px;
+	padding-left: 0px;
+	padding-bottom: 7px;
+}
+
+.check label {
+	width:50%;
+	float:left;
+	margin-left:4px;
+	padding-top: 2px;
+}
+
+.vulnerableClient .check label {
+    width:20%;
+    float:left;
+    margin-left:4px;
+    padding-top: 2px;
+}
+
+.highProfileClient .check label {
+    width:20%;
+    float:left;
+    margin-left:4px;
+    padding-top: 2px;
+}
+
+.vexatious .check label {
+    width:20%;
+    float:left;
+    margin-left:4px;
+    padding-top: 2px;
+}
+
+.mentalIncapacity .check label {
+    width:20%;
+    float:left;
+    margin-left:4px;
+    padding-top: 2px;
+}
+
+
+.check .errorInd{
+	margin-top: 2px;
+}
+
+.check .errorInd img{
+	margin-left: 3px;
+}
+
+.inputFieldCheck .check .req{
+	margin-left: 23px;
+	width: 13px;
+	width: 30%;
+	text-align: right;
+}
+
+.confirmCheckBox{
+	clear: left;
+}
+
+.confirmCheckBox .check .errorInd{
+	width: auto;
+}
+
+.confirmCheckBox .check .req{
+	width: 9px;
+}
+
+.confirmCheckBox .check label{
+	width: 90%;
+}
+
+/* end checkbox styling */
+
+/* begin checkboxGroup styling */
+
+.input.checkSelect{
+	padding: 0px 0px 7px 0px;
+}
+
+.input.checkSelect input{
+	display: block;
+	float: left;
+	vertical-align: bottom;
+	padding-bottom: 0px;
+}
+
+.checkSelect label{
+	width: auto;
+	float: none;
+	display: inline-block;
+	padding-bottom: 3px;
+	padding-right: 10px;
+	top: -2px;
+	position: relative;
+}
+
+.checkSelect br{
+	clear: left;
+}
+
+/* end checkboxGroup styling */
+
+/* begin date field styling */
+.inputFieldDate input{
+	margin-left: 4px;
+}
+
+.inputFieldDate .input{
+	padding-left: 0px;
+}
+
+
+/* end date field styling */
+
+/* begin button styling */
+.buttontext {
+	clear:both;
+	text-align:right;
+	font-size:90%;
+	padding-top:8px;
+}
+
+.moneyreadonly {
+	text-align:left;
+}
+
+.moneybold {
+	font-weight:bold;
+}
+
+.button {
+	font-size:0.9em;
+	font-weight:bold;
+	height:27px;
+	line-height:27px;
+	color:#fff;
+	background:url("../images/button_background.gif") repeat-x top left;
+	padding:1px 10px 5px 10px;
+	margin:5px 10px 0px 0px;
+	border:0;
+	overflow:visible;
+}
+
+
+a.button:link,
+a.button:active,
+a.button:visited{
+	text-decoration: none;
+	margin:5px 0px 0px 0px;
+	line-height:25px;
+	cursor: default;
+}
+
+.firstbutton {
+	margin-right:0;
+}
+
+.btnSkip {
+    clear: both;
+    padding-top: 5px;
+}
+
+.inputPanel .button{
+	margin-right: 20px;
+}
+.buttonRightColumnPanel{
+	clear: both;
+	margin-left: 30%;
+	padding-bottom: 16px;
+
+}
+
+.buttonRightColumnPanel .button{
+	margin: 0px 0px 0px 56px;
+}
+
+.navigationBar{
+	clear: both;
+	padding-top: 8px;
+}
+
+input.link{
+	background-color: transparent;
+	border: none;
+	color:#2b7272;
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	cursor: pointer;
+	padding: 0px;
+	overflow: visible;
+}
+
+input.linkShowingDirectionRight{
+	background-color: transparent;
+	border: none;
+	color:#2b7272;
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	cursor: pointer;
+	overflow: visible;
+	background:url("../images/arrow_right.gif") no-repeat right;
+	padding-left:20px;
+	padding-right:20px;
+	text-align:right;
+  	text-decoration:underline;
+  	float:right;
+}
+/* end button styling */
+
+/*******************************************************************************
+ End form elements
+ *******************************************************************************/
+
+/*******************************************************************************
+ Begin all styles for fieldset and legend
+ *******************************************************************************/
+
+  fieldset {
+    margin: 0px;
+    clear: both;
+    border-width: 0px;
+    overflow: hidden;
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+  fieldset.field legend,
+  fieldset.group legend {
+  	color: #000000;
+  	width: 100%;
+  	white-space: normal; /* enable word-wrap */
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+  fieldset.field legend .legendInfo,
+  fieldset.group legend .legendInfo {
+     display: block;
+     width: 100%;
+  }
+  fieldset .questionMargin {
+    float: left;
+    display: block;
+    width: 30%;
+    margin: 0px 23px 0px 10px;
+    padding-top: 1px;
+  }
+  fieldset.group .groupInput {
+    float: left;
+  }
+  fieldset.group .groupInput .radio .label {
+    display: none;
+  }
+
+/*******************************************************************************
+ End all styles for fieldset and legend
+ *******************************************************************************/
+
+ /*******************************************************************************
+ Begin page-specific elements
+ *******************************************************************************/
+
+/*** CCMS.AC01 ***/
+table.applicationSummary td{
+	vertical-align: top;
+}
+
+table.applicationSummaryFourColumns td,
+table.applicationSummaryFourColumns th{
+	vertical-align: top;
+	width: 25%;
+}
+
+/*** CCMS.AH01 ***/
+.include_page_ah01_panel {
+	width:96%;
+}
+
+.include_page_ah01_mainpanel {
+	width:880px;
+}
+
+.include_page_ah01_startpanel,
+.include_page_ah01_searchpanel,
+.include_page_ah01_notificationspanel,
+.include_page_ah01_requestpanel {
+	padding:2px 20px 10px 20px;
+	width:400px;
+	height:200px;
+}
+.include_page_ah01_notificationspanel,
+.include_page_ah01_startpanel {
+	clear:both;
+	float:left;
+}
+.include_page_ah01_searchpanel,
+.include_page_ah01_requestpanel {
+	float:right;
+}
+
+.include_page_ah01_mainpanel h2,
+.include_page_ah01_mainpanel .comment {
+	width:390px;
+}
+
+.include_page_ah01_notificationspanel ul {
+	margin:0;
+	padding:0;
+}
+.include_page_ah01_notificationspanel li {
+	list-style-image:url("../images/li_icon.gif");
+	margin:14px;
+	padding:0;
+}
+
+.include_page_ah01_notificationspanel a {
+	color:#2b7272;
+	text-decoration:underline;
+}
+
+#id_CCMS_AH99_pageTitleRef {
+	margin:50px 0 0 50px;
+}
+.include_page_ah99 {
+	margin:50px;
+}
+
+.include_page_ca02a #application_numberOfLinkedCases {
+	width:36px;
+}
+
+.vulnerableClient,
+.highProfileClient,
+.highProfileCase,
+.vexatious,
+.mentalIncapacity,
+.includeClosedNotifications {
+	position:relative;
+	left:9px;
+}
+.btnFindAddress {
+	position:relative;
+	left:11px;
+}
+
+#attachments {
+	clear:both;
+}
+
+/*** Begin css for Awards - recovery page (CCMS.AW04)***/
+.include_aw04_inputpanel .groupInput{
+   margin-left: -1em;
+}
+
+.include_aw04_inputpanel .groupInput {
+  width: 50%;
+}
+
+.inputPanelSolicitorFields input,
+.inputPanelCourtFields input,
+.inputPanelClientFields input {
+  width: 115px;
+}
+
+/*** end css for CCMS.AW04***/
+
+/*** Begin css for Awards - Other Asset (CCMS.AW06)***/
+.awardAndRecoveryText .groupInput {
+  width: 50%;
+}
+
+.awardAndRecoveryText .comment {
+  padding-left: 5px;
+  width: 100%;
+}
+
+.awardAndRecoveryColumnHeaders span {
+  font-weight: bold;
+  padding-left: 5px;
+}
+
+.awardAndRecoveryColumnHeaders span:first-child {
+  padding-right: 130px;
+}
+
+.orText {
+  float: left;
+  padding-right: 27px;
+}
+
+.awardAndRecoveryFields .groupInput {
+  width: 50%;
+}
+
+.awardAndRecoveryFields .input {
+  padding-left: 5px;
+  max-width: 100%;
+}
+
+.awardAndRecoveryFields input {
+  width: 110px;
+}
+/*** end css for CCMS.AW06***/
+
+/*** Begin css for Case Costs pages (CCMS.CA03j, CCMS.CA03ja, CCMS.CA03jb)***/
+
+.include_page_ca03j .reqfield {
+	margin-bottom:1px;
+	top:-7px;
+	position: relative;
+}
+
+.include_page_ca03j .costSummary td:first-child,
+.include_page_ca03j .costSummary th:first-child{
+	padding-left: 20px;
+}
+
+.include_page_ca03j .costSummary .lnkCostLimitAllocation{
+	width: 40%;
+}
+
+.include_page_ca03jb .costSummary .defaultCostLimitationsRow td{
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+.include_page_ca03jc .totalRemainingColumn .textOnlyCurrency {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+.costSummaryTableHeaderRow th:first-child{
+	width: 30%;
+}
+
+.include_page_ca03jb .costSummaryTableHeaderRow th:first-child{
+	width: 25%;
+}
+
+.include_page_ca03jb .costSummary .defaultCostLimitationsRow td,
+.include_page_ca03jb .costSummary .defaultCostLimitationsRow .prefix,
+.include_page_ca03jc .costSummary .defaultCostLimitationsRow td,
+.include_page_ca03jc .costSummary .defaultCostLimitationsRow .prefix{
+	font-weight: bold;
+}
+
+
+.costSummary .req{
+	position: absolute;
+	left: 20px;
+}
+
+.costSummary .errorInd{
+	width: auto;
+}
+
+.costSummary .errorInd img{
+	margin-right: 5px;
+}
+
+.costSummary .monetary{
+   margin-left: 0px;
+}
+
+.costSummary .input{
+	padding-left: 0px;
+}
+
+.costSummary input{
+	text-align: right;
+	width: 90px;
+}
+
+.include_page_ca03jb_bottomAddCounselLink .link{
+	color:#2b7272;
+	background:url("../images/arrow_right.gif") no-repeat bottom right;
+	padding:0 20px;
+	text-align:right;
+  	text-decoration:underline;
+	float: right;
+	margin-bottom: 5px;
+}
+
+.include_page_ca03jb_bottomAddCounselLink {
+	height: 30px;
+}
+
+.costSummary .link{
+	width: auto;
+}
+
+
+.costSummary td a,
+.costSummary td .input,
+.costSummary .prefix{
+	font-weight: normal;
+}
+
+.costSummary .readonlyData{
+	display: inline-block;
+	width: 90px;
+	text-align: right;
+}
+
+
+.include_page_ca03j .requestedCostLimitation .textOnlyCurrency{
+	width: 80px;
+	text-align: right;
+	font-weight:normal;
+	position: relative;
+}
+.include_page_ca03j .requestedCostLimitation .textOnlyCurrency .symbol{
+	position: absolute;
+	left: 0px;
+}
+
+.costSummary .totalRemainingColumn .inputField {
+	margin: 0px;
+	padding: 0px;
+	width: auto;
+}
+
+.costSummary .totalRemaining .textOnlyCurrency{
+	display: inline-block;
+	width: 80px;
+	text-align: right;
+	position: relative;
+}
+
+.costSummary .totalRemaining .textOnlyCurrency .symbol{
+	position: absolute;
+	left: 0px;
+	font-weight: bold;
+}
+/*** end css for CCMS.CA03j***/
+
+
+/*** Begin css for financials summary page (CCMS.CB01)***/
+.include_page_cb01_bill_poa_overview{
+	clear: both;
+	padding-top: 10px;
+}
+
+/*** end css for CCMS.CB01***/
+
+/*** Begin css for Bill Details landing page (CCMS.CB03)***/
+.page_cb03_billing_status{
+	width: 75%;
+}
+/*** end css for CCMS.CB03***/
+
+/*** Begin css for client address page (CCMS.CD04)***/
+.page_cd04_nofixedabode + .comment{
+	margin: 10px 0px 10px 3px;
+}
+/*** end css for CCMS.CD04***/
+
+/*** Begin css for client address page (CCMS.CR05)***/
+.page_cr05_nofixedabode + .comment{
+	margin: 10px 0px 10px 3px;
+}
+/*** end css for CCMS.CR05***/
+
+/*** Begin css for select address page (CCMS.CR05A)***/
+.addresslookupresults label
+{
+	float: none;
+	display: inline;
+	margin: 0px;
+	padding: 0px;
+}
+/*** end css for CCMS.CR05A***/
+
+/*** Begin css for select address page (CCMS.CR05A)***/
+table.clientSummary td,
+table.clientSummary th{
+	width: 25%;
+}
+/*** end css for CCMS.CR05A***/
+
+
+/*** Begin css for submitting page (CCMS.GS07)***/
+.submitting
+{
+	font-weigth: bold;
+	margin-left: 35%;
+	text-align: center;
+	font-weight: bold;
+	width: 173px;
+}
+
+.submitting img
+{
+	display: block;
+	margin: 25px 0px 10px 0px;
+
+}
+/*** end css for CCMS.GS07***/
+
+/*** Begin css for liable parties summary (CCMS.LP01)***/
+.liablePartiesSummary,
+#id_CCMS_LP01_include_page_lp01_navigationNextBackRef{
+	clear: both;
+}
+/*** end css for CCMS.LP01***/
+/*** Begin css for liable parties summary (CCMS.LP01)***/
+.include_page_lp02 .btnSelect .floatleft{
+	float: none;
+}
+
+
+
+/*** Begin css for notification search page (CCMS.NOT01)***/
+.include_page_not01_form .fromDate label,
+.include_page_not01_form .toDate label{
+	text-indent: 20px;
+}
+
+.include_page_not01_form .comment{
+	margin:10px 0px 10px 0px;
+}
+
+.includeClosedNotifications .check{
+	float: right;
+}
+.includeClosedNotifications .check .req{
+	width: auto;
+}
+
+
+.includeClosedNotifications .check label
+{
+	width: auto;
+	margin: 0px 10px 0px 5px;
+}
+/*** end css for CCMS.NOT01***/
+
+/*** Begin css for notification page (CCMS.NOT03)***/
+
+#id_CCMS_NOT03_include_page_not03_lnkBack .button{
+	margin-right: 0px;
+}
+#id_CCMS_NOT03_include_page_not03_btnResponse .firstbutton{
+	margin-left: 10px;
+}
+
+
+/*** end css for CCMS.NOT03***/
+
+/*** Begin css for Summary and Print sections (CCMS.SU0X and CCMS.PT0X)***/
+
+.summaryBottomNav{
+	clear: both;
+	margin-top: 20px;
+}
+
+.btnSummaryPrintTop,
+.btnBackPrintTop{
+	padding-bottom: 20px;
+	margin-top: -5px;
+	clear: both;
+}
+
+.btnBackPrintBottom{
+	padding-bottom: 20px;
+	padding-top: 10px;
+	clear: right;
+}
+
+.summaryBottomNav .button{
+	margin-right:0px;
+	margin-left: 10px;
+
+}
+
+
+
+.btnSummaryPrintBottom{
+	clear: both;
+}
+
+.btnBackPrintTop .button,
+.btnBackPrintBottom .button,
+.btnSummaryPrintTop .button,
+.btnSummaryPrintBottom .button{
+	margin: 0px;
+}
+
+.page_pt_topNav a,
+.page_pt_bottomNav a{
+	float: right;
+	clear: both;
+	padding-top: 10px;
+}
+
+.page_pt_topNav{
+	width: 20%;
+	float: left;
+}
+
+.printIntro{
+	width: 80%;
+	float: left;
+}
+
+.summaryPrintView{
+	clear: both;
+	padding-top: 10px;
+}
+
+.summaryTable,
+.printTable {
+	margin-bottom: 20px;
+}
+
+.summaryTable th,
+.printTable th{
+	width: 40%;
+	vertical-align: top;
+}
+
+.summaryTable td,
+.printTable td{
+	width: 60%;
+	border: 1px solid #2b7272;
+	vertical-align: top;
+}
+
+.include_page_su02 td,
+.include_page_pt02 td{
+	width: auto;
+}
+
+.notificationNoteTable td{
+	height: auto;
+}
+
+.scopeLimitationLinkTable td{
+	display: block;
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+	background: none;
+}
+
+.summaryTable td span,
+.printTable td span{
+	display: block;
+
+}
+.summaryTable td span:first-child,
+.printTable td span:first-child{
+	padding-top: 0px;
+}
+
+.summaryTable td .readonlyData,
+.printTable td .readonlyData,
+.summaryTable td .postfix,
+.printTable td .postfix{
+	display: inline;
+}
+
+.summaryTable td .prefix,
+.printTable td .prefix{
+	display: inline;
+	margin-right: -0.2em;
+}
+
+.amendCaseTable  td{
+	width: 30%;
+}
+
+.otherAssetTable td{
+	width: 30%;
+}
+
+.printTable th,
+.printTable td{
+	background: none;
+	color: #000000;
+}
+
+.summaryTable th .labelForReadonlyControl,
+.summaryTable th .label
+.printTable th .labelForReadonlyControl,
+.printTable th .label{
+	padding: 0px;
+	margin: 0px;
+	width: auto;
+	line-height:inherit;
+}
+
+.summaryTable th .textOnlyInput,
+.printTable th .textOnlyInput{
+	padding: 2px 0px 0px 0px;
+	margin: 0px;
+}
+
+.summaryTable .columnDescription,
+.printTable .columnDescription
+{
+	background: none;
+	border: none;
+	color: #000000;
+	padding-top: 0px;
+	padding-bottom: 10px;
+	font-size:110%;
+	width: auto;
+}
+
+.summaryTable .columnDescription .labelForReadonlyControl,
+.printTable .columnDescription .labelForReadonlyControl,
+.summaryTable .columnDescription .textOnlyInput,
+.printTable .columnDescription .textOnlyInput,
+.summaryTable .columnDescriptionSubHeader .labelForReadonlyControl,
+.printTable .columnDescriptionSubHeader .labelForReadonlyControl,
+.summaryTable .columnDescriptionSubHeader .textOnlyInput,
+.printTable .columnDescriptionSubHeader .textOnlyInput{
+	display: inline;
+	float: none;
+}
+
+.summaryTable .columnDescriptionSubHeader,
+.printTable .columnDescriptionSubHeader,
+.inputPanelLabels th,
+.awardAndRecoveryLabels1 th,
+.awardAndRecoveryText th{
+	background: none;
+
+	color: #2b7272;
+	padding-top: 10px;
+	padding-bottom: 5px;
+
+	width: auto;
+}
+
+.inputPanelLabels .columnDescriptionSubHeader{
+	width: 20%;
+}
+
+.inputPanelLabels .groupInput{
+	padding-left: 15px;
+}
+
+.summaryTable .summarySubHeader{
+	border: none;
+	background: none;
+	font-weight: bold;
+	padding-top: 10px;
+}
+
+.buttonTable {
+	border: none;
+	background-color: #FFFFF;
+	font-weight: bold;
+	padding-top: 10px;
+}
+
+.buttonTable tr{
+	border: none;
+	background-color: #FFFFF;
+	color:none;
+	text-align:left;
+}
+
+.buttonTable td{
+	border: none;
+	background-color: #FFFFF;
+	color:none;
+	text-align:left;
+}
+
+.printFairProcessingAgreement,
+.printDisclaimer{
+	clear: both;
+	height:auto;
+	margin:0px;
+	padding: 20px 0px 10px 0px;
+	border-width: 1px 0px 0px 0px;
+	border-style:solid;
+	border-color: #cccccc;
+	max-height:none;
+}
+
+#id_CCMS_SU02_summaryBottomNav_btnNext
+{
+	clear: both;
+}
+
+#id_CCMS_SU02_include_page_su02{
+	margin:10px 0px 0px 0px;
+}
+
+#id_CCMS_SU02_dischargeCase,
+#id_CCMS_SU02_summaryBottomNav
+{
+	margin:0px 0px 0px 0px;
+}
+
+@media print {
+	#CCMS_PT01_form .ccmsPageHeader,
+	#CCMS_PT01_form .ccmsPageNavigation,
+	#CCMS_PT01_form .ccmsUserInfo,
+	#CCMS_PT02_form .ccmsPageHeader,
+	#CCMS_PT02_form .ccmsPageNavigation,
+	#CCMS_PT02_form .ccmsUserInfo,
+	#CCMS_PT05_form .ccmsPageHeader,
+	#CCMS_PT05_form .ccmsPageNavigation,
+	#CCMS_PT05_form .ccmsUserInfo,
+	#CCMS_PT07_form .ccmsPageHeader,
+	#CCMS_PT07_form .ccmsPageNavigation,
+	#CCMS_PT07_form .ccmsUserInfo,
+	.page_pt_topNav,
+	.page_pt_bottomNav{
+		display: none;
+	}
+	.printIntro{
+		width: 100%;
+	}
+	
+	.clientCaseInfo {
+		border-top:1px solid #cadcdc;
+	}
+	.clientCaseInfo div {
+		border:none;
+		padding: 5px 10px 10px 0px;
+	}
+	.clientCaseInfo div span {
+		padding: 0px 0px;
+	}
+	.clientCaseInfo #providerReference {
+		width:29%;
+	}
+}
+/*** End css for CCMS.SU0X and CCMS.PT0X***/
+
+/*** begin css CCMS.DE01 ***/
+.include_page_de01 .confirmCheckBox {
+	clear:  both;
+}
+.include_page_de01 label {
+	padding-bottom: 15px;
+}
+
+/*** end css CCMS.DE01 ***/
+
+/*** begin css CCMS.PO03 and CB02, court search link***/
+.selectCourt{
+	width: 100%;
+	clear: both;
+	padding-bottom: 14px;
+}
+
+.selectCourt .textOnlyInput{
+	padding-left: 0px;
+}
+
+.selectCourt .textOnlyInput{
+	text-indent: 36px;
+}
+
+.selectCourt .link{
+	margin-top: 1px;
+	margin-left: 34px;
+}
+
+/*** begin css CCMS.PO04 ***/
+#cortCodeHeader{
+	width: 20%;
+}
+
+#cortNameHeader{
+	width: 80%;
+}
+
+/*** begin css CCMS.POA03 ***/
+.include_page_pa03 .textOnlyCurrency {
+	padding:4px 0px 3px 36px;
+}
+
+.include_page_pa03 .textOnlyCurrency .symbol{
+	font-weight: bold;
+	padding-right: 0px;
+	margin-right: -2px;
+}
+/*** end css CCMS.POA03 ***/
+
+/*** begin css CCMS.VC01 ***/
+.caseinfosummary td,
+.caseinfosummary th{
+	width: 25%;
+	vertical-align: top;
+}
+
+.certificateinfosummary td,
+.certificateinfosummary th{
+	vertical-align: top;
+}
+/*** end css CCMS.VC05 ***/
+
+/*** begin css CCMS.VC05 ***/
+.counselCaseSummary td,
+.counselCaseSummary th{
+	width: 25%;
+}
+/*** end css CCMS.VC05 ***/
+
+/*** begin css CCMS.VC06 ***/
+.opponentSummaryReadOnly td,
+.opponentSummaryReadOnly th{
+	width: 25%;
+}
+/*** end css CCMS.VC06 ***/
+
+/*** begin css CCMS.VC07 ***/
+div.assessmentOpaEntityType table
+{
+  margin-bottom: 10px;
+}
+
+/*** end css CCMS.VC07 ***/
+
+/*** begin css for case search page - CCMS.YCA01 ***/
+.includeClosedCases .check{
+	float: right;
+}
+.includeClosedCases .check .req{
+	width: auto;
+}
+
+.includeClosedCases .check label
+{
+	width: auto;
+	margin: 0px 0px 0px 5px;
+}
+/*** end css CCMS.YCA01 ***/
+
+/*******************************************************************************
+ Opa
+ *******************************************************************************/
+h2.textOnlyInput
+{
+	padding:0px;
+	margin-top: 10px;
+}
+
+h3.textOnlyInput{
+	font-size: 1em;
+	margin: 0px;
+	padding: 15px 0px 15px 0px;
+	left: 0px;
+	top: 0px;
+	clear: both;
+}
+
+.opaText{
+	clear: both;
+}
+
+.opaText .textOnlyInput
+{
+	position:relative;
+	top:0px;
+	left:0px;
+	font-weight:normal;
+	padding: 0px 0px 15px 18px;
+}
+
+.opaInputText .textOnlyInput{
+	width: 60%;
+}
+
+.assessmentSummary .opaText .textOnlyInput
+{
+	padding: 0px 0px 15px 0px;
+}
+
+
+.assessmentSummary label,
+.assessmentSummary .label
+{
+	width: 40%;
+}
+
+.opaEntityControlRef .separator hr {
+	margin: 0px 23px 0px 23px;
+}
+
+
+.opaEntityControlChildGroupRef .separator hr {
+	margin: 0px 23px 5px 23px;
+}
+
+.opaEntityControlChildGroupRef .removeInstance{
+	padding-bottom: 15px;
+
+}
+
+.opaEntityControlRef .buttonRightColumnPanel .button{
+	margin: 0px 0px 0px 66px;
+
+}
+
+.opaEntityControlRef .newInstance{
+	padding-bottom: 0px;
+
+}
+
+
+.removeInstance input,
+.newInstance input
+{
+    margin: 0px 7px 0px 0px;
+    width: 75px;
+}
+
+.assessmentResultSummary th{
+	width: 40%;
+}
+
+
+/*******************************************************************************
+ End Opa
+ *******************************************************************************/
+
+/*******************************************************************************
+ Context sensitive help (CSH)
+ *******************************************************************************/
+
+a.helplink img {
+	position:relative;
+	left:4px;
+	top:3px;
+	height:16px;
+}
+
+.csh
+{
+	width: 100%;
+}
+.csh h1
+{
+	margin: 20px 20px 0px 20px;
+	font-weight: bold;
+	color: #fff;
+	background-image:none;
+	background-color:#b06289;
+	padding: 5px 10px;
+	font-size: 110%;
+	border: 1px solid #000000;
+}
+.cshtext
+{
+	margin: 0px 20px 20px 20px;
+	font-weight:normal;
+	background-color:#eff4f4;
+	padding: 15px 10px 20px 10px;
+	border: 1px solid #000000;
+	border-top: 0px;
+}
+
+.addscopelink {
+    margin: 0;
+    border: 0;
+    background: none;
+    overflow: visible;
+    color: blue;
+    cursor: pointer;
+}
+
+/*******************************************************************************
+ End context sensitive help (CSH)
+ *******************************************************************************/
