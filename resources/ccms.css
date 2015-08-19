@@ -2223,8 +2223,8 @@ h1 {
     background: none;
     color: black;
     margin-bottom: 0;
-    padding-top: 15px;
     padding-bottom: 0;
+    padding-top: 10px;
 }
 
 h2 {
@@ -2240,28 +2240,76 @@ a:hover {
     color: #2E8ACA;
 }
 
-
+.button {
+    min-width: 100px;
+}
 
 /*** page layout ****/
-.pageHeaderRef, .pageTitleRef, .errorMessagesRef, .formInputArea, .pageFooterRef, .include_page_ah01_mainpanel {
+.pageHeaderRef, .pageTitleRef, .errorMessagesRef, .formInputArea, .pageFooterRef, .pageSubHeaderRef,  .include_page_ah01_mainpanel {
     width: 1020px;
     margin-left: auto;
     margin-right: auto;
 }
 
-/***header****/
-.ccmsUserInfo {
-display: inline;
-margin: 7px 0px 0px 0px;
-padding-right: 60px;
+
+
+
+/**** case header ****/
+
+.clientCaseInfo {
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    background: #dee0e2;
 }
 
+.clientCaseInfo div {
+    background: none;
+    border: none;
+    padding: 2px 0px;
+}
+#clientName {
+    background:url("../resources/case-open.png") no-repeat center left;
+    width: auto!important;
+    padding-left: 25px;
+}
+
+#lscReference, #providerReference {
+    width: auto!important;
+}
+
+
+#clientName span.strong, #lscReference span.strong, #providerReference span.strong, #clientName br, #lscReference br, #providerReference br {
+    display: none;
+}
+    
+/***header****/
+.ccmsUserInfo {
+    display: inline;
+    margin: 0;
+    padding-right: 60px;
+    height: 0;
+    position: relative;
+    top: 10px;
+}
+
+
+
 .ccmsUserInfo br {display: none;}
+
+.ccmsPageHeader {
+    margin-top: 0;
+}
 
 .ccmsPageHeaderLogo {
     padding: 0;
     margin-top: 0;
     background-color: white;
+}
+
+.ccmsPageHeaderLogo a {
+    display: block;
+    height: 42px;
 }
 
 .ccmsPageHeader img {
@@ -2328,7 +2376,7 @@ padding-right: 60px;
     color: #005EA5;
     text-decoration: underline;
     position: relative;
-    top: 44px;
+    top: 45px;
     float: right;
     width: 60px;
     /*background-color: pink;*/
@@ -2441,6 +2489,15 @@ padding-right: 60px;
 
 /**** table pages ****/
 
+.linkShowingDirection {
+    background: none;
+    color: #005EA5;
+}
+
+.linkShowingDirection:hover {
+    color: #2E8ACA;
+}
+
 .comment { 
     max-width: 100%;
 }
@@ -2486,16 +2543,23 @@ td a {
 .panelHeaderWithLink {
     border-bottom: 0;
     margin-bottom: 0;
-    height: 0;
+    margin-top: 30px;
 }
 
 /*move return to home link to top left of page */
-.panelHeaderWithLink a:nth-child(2) {
+
+.formInputArea .panelHeaderWithLink:nth-child(1) a:nth-child(2) {
     background:url("../resources/arrow-left.png") no-repeat center left;
     background-size: 13px;
     position: absolute;
-    top: -75px;
+    top: -28px;
     left: 20px;
+}
+
+
+
+.panelHeaderWithLink a:nth-child(2) {
+    background:none;
 }
 
 .panelHeaderWithLink a:nth-child(3) {
@@ -2532,10 +2596,40 @@ td a {
 }
 
 .panelHeaderWithLink h2 {
-    display: none;
+padding: 0;
 }
 
+
+
 /******** serch page ******/
+
+.errorInd {
+    float: none;
+    display: initial;
+}
+
+
+label {
+    width: 285px;
+}
+
+.input { 
+    display: block;
+    float: none;
+    padding-left: 0;  
+}
+
+.inputPanel .input{
+	width: 300px;
+}
+
+
+.textInput, .date {
+    padding: 4px;
+    background-color: #fff;
+    border: 1px solid #bfc1c3;
+    font-size: 1em;
+}
 
 .formInputArea .inputPanel {
     background-color: white;
@@ -2546,30 +2640,13 @@ td a {
     display: none;
 }
 
-label, .label, .fieldInfo {
-    width: 350px;
-}
 
-.textInput {
-    padding: 4px;
-    background-color: #fff;
-    border: 1px solid #bfc1c3;
-    font-size: 1em;
-}
-
-.input {
-    padding-left: 0;
-}
-
-.errorInd {
-    width: 100%;
-}
-.textInput:focus, .input select:focus, .button:focus {
+.textInput:focus, .input select:focus, .button:focus, .date:focus {
     outline: 3px solid #ffbf47;
 }
 
 .input select {
-   width: 185px;
+   min-width: 250px;
    padding: 5px;
    font-size: 1em;
    line-height: 1;
@@ -2608,7 +2685,18 @@ label, .label, .fieldInfo {
 .req {
     width:auto;
     margin-left: 0;
+    padding-right: 2px;
 }
+
+.req img {
+    width: 12px;
+    height: auto;
+}
+
+.reqfield {
+    background-size: 12px;
+}
+
 
 .inputField, .inputFieldDate {
     padding-bottom: 15px;
@@ -2617,3 +2705,81 @@ label, .label, .fieldInfo {
 #id_CCMS_YCA01_include_page_yca01 > div.comment {
     max-width: 680px;
 }
+
+.inputPanel .comment {
+    padding-left: 0px;
+}
+
+.separator hr {
+    margin: 0;
+}
+
+hr {
+    background: none;
+}
+
+/****** errors *****/
+/*.errorMessagesRef {
+    border: 5px solid #b10e1e;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 20px 15px 15px 15px;
+    width: 980px
+}
+*/
+
+.errorMessagesRef #messageInfo, .errorMessagesRef #messages {
+    border: none;
+    margin: 0;
+    width: auto;
+    border: 5px solid #b10e1e;
+    padding: 20px 15px 15px 15px;
+    
+}
+
+.errorMessagesRef #messageInfo {
+    color: black;
+    font-size: 24px;
+}
+
+#messages .error {
+    list-style-type: none;
+    color: #c00;
+    background: transparent url("../resources/icon_error.gif") no-repeat;
+    background-position: 0 15%;
+}
+
+.errorMessagesRef #messageInfo {
+    border-bottom: 0;
+    padding-bottom: 5px;
+}
+
+.errorMessagesRef #messages {
+    border-top: 0;
+    padding-top: 0;
+    margin-bottom: 15px;
+}
+
+.btnBack .button, .btnAbandonApplication .button{
+    background-color: white;
+    color: #005EA5;
+    text-decoration: underline;
+    width: auto;
+    box-shadow: none;
+    width: auto;
+    height: auto;
+    padding: 0px 2px;
+    min-width: inherit;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+/******* check box ******/
+.check .input {
+    width: auto;
+}
+
+.checkbox { 
+    font-size: 18px;
+}
+
