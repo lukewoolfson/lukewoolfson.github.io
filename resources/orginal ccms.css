@@ -1,10 +1,6 @@
 /*******************************************************************************
-/*******************************************************************************
  Begin basic elements
  *******************************************************************************/
-
-
-
 html {
 	font-size:100%;
 	margin:0;
@@ -12,8 +8,8 @@ html {
 }
 
 body {
-	font-family:nta;
-	font-size:100%;
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size:75%;
 	color:#000;
 	background-color:#fff;
 	margin:0;
@@ -31,7 +27,7 @@ h1 {
 	color:#e7a101;
 	margin:0px 0px 25px 0px;
 	padding:0px 0px 10px 0px;
-	background:url("../resources/h1_background.gif") no-repeat bottom left;
+	background:url("../images/h1_background.gif") no-repeat bottom left;
 
 }
 
@@ -197,7 +193,7 @@ a {
 
 .clientCaseInfo div {
 	float: left;
-	background: #f4f8f8 url("../resources/case_info_background.gif") repeat-y top left;
+	background: #f4f8f8 url("../images/case_info_background.gif") repeat-y top left;
 	padding: 10px 0px;
 	border-top:1px solid #cadcdc;
 	border-bottom:1px solid #cadcdc;
@@ -398,7 +394,7 @@ a {
 
 .paginationPanel .previous {
     color:#2b7272;
-    background:url("../resources/arrow_left.gif") no-repeat bottom left;
+    background:url("../images/arrow_left.gif") no-repeat bottom left;
     margin:0;
     padding:0 10px 1px 20px;
     text-align:left;
@@ -408,7 +404,7 @@ a {
 
 .paginationPanel .next {
     color:#2b7272;
-    background:url("../resources/arrow_right.gif") no-repeat bottom right;
+    background:url("../images/arrow_right.gif") no-repeat bottom right;
     margin:0;
     padding:0 20px 1px 10px;
     text-align:right;
@@ -489,7 +485,7 @@ a {
 #messages .error {
 	list-style-type:none;
 	color:#c00;
-	background:transparent url("../resources/icon_error.gif") no-repeat top left;
+	background:transparent url("../images/icon_error.gif") no-repeat top left;
 }
 
 .errorText{
@@ -499,7 +495,7 @@ a {
 #messages .warning {
 	list-style-type: none;
 	color: #06c;
-	background:transparent url("../resources/icon_warning.gif") no-repeat 2px 0px;
+	background:transparent url("../images/icon_warning.gif") no-repeat 2px 0px;
 }
 /*******************************************************************************
  End error/warning message section
@@ -603,7 +599,7 @@ a {
 .panelHeaderWithLink .link,
 .linkShowingDirection {
 	color:#2b7272;
-	background:url("../resources/arrow_right.gif") no-repeat bottom right;
+	background:url("../images/arrow_right.gif") no-repeat bottom right;
 	padding:0 20px;
 	text-align:right;
   	text-decoration:underline;
@@ -638,7 +634,7 @@ a {
 .panelHeaderWithLinkNoBorder a,
 .linkShowingDirection {
 	color:#2b7272;
-	background:url("../resources/arrow_right.gif") no-repeat bottom right;
+	background:url("../images/arrow_right.gif") no-repeat bottom right;
 	padding:0 20px;
 	text-align:right;
   	text-decoration:underline;
@@ -694,13 +690,13 @@ a {
 .shadowTop {
 	clear:both;
 	height:30px;
-	background:url("../resources/shadow_top.gif") repeat-x top left;
+	background:url("../images/shadow_top.gif") repeat-x top left;
 }
 
 .shadowBottom {
 	clear:both;
 	height:24px;
-	background:url("../resources/shadow_bottom.gif") repeat-x top left;
+	background:url("../images/shadow_bottom.gif") repeat-x top left;
 }
 /*******************************************************************************
  End container classes
@@ -757,15 +753,15 @@ th.sortable a {
 	text-decoration:none;
 	color:#fff;
 	padding-right:12px;
-	background:url("../resources/sort_off.gif") no-repeat right;
+	background:url("../images/sort_off.gif") no-repeat right;
 }
 th.order1 a {
 	padding-right:12px;
-	background:url("../resources/sort_asc.gif") no-repeat right;
+	background:url("../images/sort_asc.gif") no-repeat right;
 }
 th.order2 a {
 	padding-right:12px;
-	background:url("../resources/sort_desc.gif") no-repeat right;
+	background:url("../images/sort_desc.gif") no-repeat right;
 }
 .proceedingsSummary th {
 	width:15%;
@@ -846,7 +842,7 @@ th.order2 a {
 	margin-bottom:3px;
 	font-size:80%;
 	width:20em;
-	background:url("../resources/icon_required.gif") no-repeat top left;
+	background:url("../images/icon_required.gif") no-repeat top left;
 }
 
 label,
@@ -1157,20 +1153,16 @@ select.readonly {
 }
 
 .button {
-    float: left;
-	font-size:1em;
-    -webkit-font-smoothing: antialiased;
-	font-weight: normal;
-	height:38px;
+	font-size:0.9em;
+	font-weight:bold;
+	height:27px;
 	line-height:27px;
 	color:#fff;
-	background: #00823B;
-	padding:5px 10px 5px 10px;
+	background:url("../images/button_background.gif") repeat-x top left;
+	padding:1px 10px 5px 10px;
 	margin:5px 10px 0px 0px;
 	border:0;
 	overflow:visible;
-    box-shadow: 0 2px 0 #003518;
-    cursor: pointer;
 }
 
 
@@ -1228,7 +1220,7 @@ input.linkShowingDirectionRight{
 	font-family:Verdana,Arial,Helvetica,sans-serif;
 	cursor: pointer;
 	overflow: visible;
-	background:url("../resources/arrow_right.gif") no-repeat right;
+	background:url("../images/arrow_right.gif") no-repeat right;
 	padding-left:20px;
 	padding-right:20px;
 	text-align:right;
@@ -1336,7 +1328,7 @@ table.applicationSummaryFourColumns th{
 	padding:0;
 }
 .include_page_ah01_notificationspanel li {
-	list-style-image:url("../resources/li_icon.gif");
+	list-style-image:url("../images/li_icon.gif");
 	margin:14px;
 	padding:0;
 }
@@ -1500,7 +1492,7 @@ table.applicationSummaryFourColumns th{
 
 .include_page_ca03jb_bottomAddCounselLink .link{
 	color:#2b7272;
-	background:url("../resources/arrow_right.gif") no-repeat bottom right;
+	background:url("../images/arrow_right.gif") no-repeat bottom right;
 	padding:0 20px;
 	text-align:right;
   	text-decoration:underline;
@@ -2198,422 +2190,3 @@ a.helplink img {
 /*******************************************************************************
  End context sensitive help (CSH)
  *******************************************************************************/
-
-
-/**** lukes hacks ****/
-
-
-
-@font-face {
-    font-family: 'nta';
-    src: url(GDSTransportWebsite.ttf);
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'nta';
-    src: url(GDSTransportWebsite-Bold.ttf);
-    font-weight: bold;
-    font-style: normal;
-}
-
-h1 {
-    font-size: 32px;
-    background: none;
-    color: black;
-    margin-bottom: 0;
-    padding-top: 15px;
-    padding-bottom: 0;
-}
-
-h2 {
-    border-bottom: 0;
-    color: black;
-}
-
-a {
-    color: #005EA5;
-}
-
-a:hover {
-    color: #2E8ACA;
-}
-
-
-
-/*** page layout ****/
-.pageHeaderRef, .pageTitleRef, .errorMessagesRef, .formInputArea, .pageFooterRef, .include_page_ah01_mainpanel {
-    width: 1020px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/***header****/
-.ccmsUserInfo {
-display: inline;
-margin: 7px 0px 0px 0px;
-padding-right: 60px;
-}
-
-.ccmsUserInfo br {display: none;}
-
-.ccmsPageHeaderLogo {
-    padding: 0;
-    margin-top: 0;
-    background-color: white;
-}
-
-.ccmsPageHeader img {
-    width:auto;
-    height:42px;
-}
-
-.ccmsPageHeader {
-    background: black;
-    z-index: 999;
-    position: relative;
-    height: 0px;
- 
-}
-
-.ccmsPageHeaderLinks {
-    padding-top: 2px;
-    font-size: 90%;
-}
-
-.ccmsPageHeaderLinks a {
-    color: white;
-    background-color: black;
-    text-decoration: underline;
-}
-
-
-.ccmsPageNavigation {
-    border-bottom: none;
-}
-
-.menuItems a:hover, .menuItems li.active a {
-    border-bottom: 3px solid #e7a101;
-}
-
-.menuItems li {
-    height: 42px;
-    width: 140px;
-    display: inline-block;
-    font-weight: normal;
-}
-.menuItems li a {
-    border-right: none;
-    padding-top: 4px;
-    padding-bottom: 0;
-    height: 35px;
-}
-
-#menuItem1 > a {
-    padding-top: 10px;
-    height: 29px;
-}
-
-#menuItem1 {
-    display: none;
-}
-
-#menuItem2 a {
-    padding-top: 10px;
-    height: 29px;
-}
-
-#menuItem4 > a {
-    color: #005EA5;
-    text-decoration: underline;
-    position: relative;
-    top: 44px;
-    float: right;
-    width: 60px;
-    /*background-color: pink;*/
-    height: 10px;
-    
-}
-
-#menuItem4 > a:hover {
-    border-bottom: none;
-    color: #2E8ACA;
-    
-}
-
-.menuItems li#menuItem4 {
-    width: 140px;
-}
-
-.ccmsPageNavigation .menuItems {
-    float: right;
-    height: 42px;
-}
-
-.ccmsPageHeaderLinks { 
-    color:black;
-    padding-right: 0;
-    padding-top: 0;
-}
-.ccmsPageHeaderLinks a {display: none; height: 0;}
-
-.ccmsPageHeaderLinks > a:nth-child(3) {
-    font-size: 14px;
-    font-weight: normal;
-    text-decoration: none;
-    position: relative;
-    /*background-color: aqua;*/
-    width: 140px;
-    height: 29px;
-    display: block;
-    text-align: center;
-    padding-top: 10px;
-    top: -14px;
-}
-
- .ccmsPageHeaderLinks > a:nth-child(3):hover {   
-     border-bottom: 3px solid #e7a101;
- }
-
-
-/*** footer ***/
-
-.ccmsPageFooter div {
-    border: 0;
-}
-
-
-
-/*** landing page formating ***/
-
-
-.include_page_ah01_startpanel, .include_page_ah01_searchpanel, .include_page_ah01_notificationspanel, .include_page_ah01_requestpanel {
-    width: 100%;
-    float: left;
-    height: auto;
-    margin-left: 0;
- padding: 0;
-}
-.include_page_ah01_searchpanel {
-    display: none;
-}
-
-.include_page_ah01_startpanel {
-    position: relative;
-    top: -250px;
-    height: 0;
-}
-
-.include_page_ah01_notificationspanel {
-    margin-top: 100px
-}
-.include_page_ah01_notificationspanel a {
-   color: #005EA5;
-}
-
-.include_page_ah01_notificationspanel a:hover {
-    color: #2E8ACA;
-}
-
-.include_page_ah01_notificationspanel ul {
-    list-style: none;
-}
-
-.include_page_ah01_notificationspanel ul li {
-    margin-left: 0;
-}
-
-.include_page_ah01_mainpanel .comment {
-    width: 100%;
-}
-
-.include_page_ah01_mainpanel {
-     padding: 0px 22px;
-}
-
-/****** Your actions / notifications *******/
-
-
-#id_CCMS_NOT02A_include_page_not02a > div:nth-child(2) {
-    display: none;
-}
-
-/**** table pages ****/
-
-.comment { 
-    max-width: 100%;
-}
-
-th {
-    color: black;
-    background-color: white;
-    text-align: left;
-}
-
-th.sortable a {
-    color: #005EA5;
-    text-decoration: underline;
-}
-
-th.sortable a:hover {
-    color: #2E8ACA;
-}
-
-th {
-    border: none;
-    border-bottom: 1px solid black;
-    white-space: nowrap;
-}
-
-td {
-   border: none;
-   border-bottom: 1px solid black;
-   background-color: white;
-}
-
-td a {
-    color: #005EA5;
-    text-decoration: underline;
-}
-
-.formInputArea {
-    margin-top: 0;
-    /* top: -30px; to overcome gap */
-    position: relative;
-}
-
-.panelHeaderWithLink {
-    border-bottom: 0;
-    margin-bottom: 0;
-    height: 0;
-}
-
-/*move return to home link to top left of page */
-.panelHeaderWithLink a:nth-child(2) {
-    background:url("../resources/arrow-left.png") no-repeat center left;
-    background-size: 13px;
-    position: absolute;
-    top: -75px;
-    left: 20px;
-}
-
-.panelHeaderWithLink a:nth-child(3) {
-    border: 1px solid #dee0e2;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    background-color: #f8f8f8;
-    color: black;
-    padding: 5px 10px;
-    text-decoration: none;
-    top: -10px;
-}
-
-.panelHeaderWithLink a:nth-child(3):hover {
-    background-color: #ebebeb;
-    color: black;
-    border-color: black;
-}
-
-.panelHeaderWithLink a:nth-child(3):focus {
-    outline: 3px solid #ffbf47;
-}
-
-.panelHeaderWithLink a, .panelHeaderWithLink .link {
-    color: #005EA5;
-    background: white;
-    position: relative;
-    top: 0;
-}
-
-.panelHeaderWithLink a:hover {
-    color: #2E8ACA;
-}
-
-.panelHeaderWithLink h2 {
-    display: none;
-}
-
-/******** serch page ******/
-
-.formInputArea .inputPanel {
-    background-color: white;
-}
-
-.shadowTop, .shadowBottom {
-    background: none;
-    display: none;
-}
-
-label, .label, .fieldInfo {
-    width: 350px;
-}
-
-.textInput {
-    padding: 4px;
-    background-color: #fff;
-    border: 1px solid #bfc1c3;
-    font-size: 1em;
-}
-
-.input {
-    padding-left: 0;
-}
-
-.errorInd {
-    width: 100%;
-}
-.textInput:focus, .input select:focus, .button:focus {
-    outline: 3px solid #ffbf47;
-}
-
-.input select {
-   width: 185px;
-   padding: 5px;
-   font-size: 1em;
-   line-height: 1;
-   border: 0;
-   border-radius: 0;
-   height: 30px;
-   -webkit-appearance: none;
-   background: url(down-arrow.png) no-repeat #fff;
-    background-size: 12px;
-    background-position: 95% 50%;
-    border: 1px solid #ccc;
-   }
-
-.helplink img {
-    display: none;
-}
-
-.helplink {
-   background: url(Help.png) no-repeat #fff;
-    background-position: left middle;
-    background-size: 34px;
-    width: 34px;
-    height: 21px;
-    display: inline-block;
-    float: right;
-}
-
-.helplink:hover {
-    background: url(Help-hover.png) no-repeat #fff;
-    background-position: left middle;
-    background-size: 34px;
-    width: 34px;
-    height: 21px;
-}
-
-.req {
-    width:auto;
-    margin-left: 0;
-}
-
-.inputField, .inputFieldDate {
-    padding-bottom: 15px;
-}
-
-#id_CCMS_YCA01_include_page_yca01 > div.comment {
-    max-width: 680px;
-}
