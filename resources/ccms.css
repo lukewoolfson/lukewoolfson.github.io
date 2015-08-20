@@ -2218,18 +2218,36 @@ a.helplink img {
     font-style: normal;
 }
 
-h1 {
+.pageTitleRef h1 {
+    display: none;
+}
+
+#id_CCMS_AH01_pageTitleRef h1 {
+    display: block;
+        border-bottom: 0;
+    font-size: 32px;
+    background: none;
+    color: black;
+    padding-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.formInputArea .panelHeaderWithLink:nth-child(1) h2 {
+    border-bottom: 0;
     font-size: 32px;
     background: none;
     color: black;
     margin-bottom: 0;
     padding-bottom: 0;
-    padding-top: 10px;
+   padding-top: 5px;
 }
 
 h2 {
-    border-bottom: 0;
+    background: none;
     color: black;
+    font-size: 24px;
+    border: 0;
 }
 
 a {
@@ -2251,8 +2269,13 @@ a:hover {
     margin-right: auto;
 }
 
+.pageHeaderRef {
+    height: 42px;
+}
 
-
+.pageSubHeaderRef {
+    height: 65px;
+}
 
 /**** case header ****/
 
@@ -2261,6 +2284,9 @@ a:hover {
     margin-bottom: 5px;
     font-size: 16px;
     background: #dee0e2;
+    top: -32px;
+    position: relative;
+    z-index: -1;
 }
 
 .clientCaseInfo div {
@@ -2287,10 +2313,9 @@ a:hover {
 .ccmsUserInfo {
     display: inline;
     margin: 0;
-    padding-right: 60px;
-    height: 0;
+    height: auto;
     position: relative;
-    top: 10px;
+    padding: 10px 50px 5px 0px;
 }
 
 
@@ -2372,15 +2397,18 @@ a:hover {
     height: 29px;
 }
 
+
+
 #menuItem4 > a {
     color: #005EA5;
     text-decoration: underline;
     position: relative;
-    top: 45px;
+    top: 46px;
     float: right;
     width: 60px;
     /*background-color: pink;*/
     height: 10px;
+    z-index: 999;
     
 }
 
@@ -2449,7 +2477,7 @@ a:hover {
 
 .include_page_ah01_startpanel {
     position: relative;
-    top: -250px;
+    top: -245px;
     height: 0;
 }
 
@@ -2499,7 +2527,7 @@ a:hover {
 }
 
 .comment { 
-    max-width: 100%;
+    max-width: 700px;
 }
 
 th {
@@ -2535,25 +2563,28 @@ td a {
 }
 
 .formInputArea {
-    margin-top: 0;
-    /* top: -30px; to overcome gap */
-    position: relative;
+    margin-top: 0px;
 }
 
 .panelHeaderWithLink {
     border-bottom: 0;
     margin-bottom: 0;
-    margin-top: 30px;
+    position: relative;
+}
+
+.formInputArea br {
+    display: none;
 }
 
 /*move return to home link to top left of page */
+
 
 .formInputArea .panelHeaderWithLink:nth-child(1) a:nth-child(2) {
     background:url("../resources/arrow-left.png") no-repeat center left;
     background-size: 13px;
     position: absolute;
-    top: -28px;
-    left: 20px;
+    top: -20px;
+    left: 0px;
 }
 
 
@@ -2571,7 +2602,6 @@ td a {
     color: black;
     padding: 5px 10px;
     text-decoration: none;
-    top: -10px;
 }
 
 .panelHeaderWithLink a:nth-child(3):hover {
@@ -2588,15 +2618,12 @@ td a {
     color: #005EA5;
     background: white;
     position: relative;
-    top: 0;
+    top: 15px;
+    padding-right: 0;
 }
 
 .panelHeaderWithLink a:hover {
     color: #2E8ACA;
-}
-
-.panelHeaderWithLink h2 {
-padding: 0;
 }
 
 
@@ -2647,18 +2674,20 @@ label {
 
 .input select {
    min-width: 250px;
-   padding: 5px;
+   max-width: initial;
+   padding: 5px 32px 5px 5px;
    font-size: 1em;
-   line-height: 1;
+   line-height: normal;
    border: 0;
    border-radius: 0;
-   height: 30px;
    -webkit-appearance: none;
    background: url(down-arrow.png) no-repeat #fff;
     background-size: 12px;
-    background-position: 95% 50%;
+    background-position: 97% 50%;
     border: 1px solid #ccc;
    }
+
+
 
 .helplink img {
     display: none;
@@ -2719,14 +2748,6 @@ hr {
 }
 
 /****** errors *****/
-/*.errorMessagesRef {
-    border: 5px solid #b10e1e;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    padding: 20px 15px 15px 15px;
-    width: 980px
-}
-*/
 
 .errorMessagesRef #messageInfo, .errorMessagesRef #messages {
     border: none;
@@ -2757,7 +2778,7 @@ hr {
 .errorMessagesRef #messages {
     border-top: 0;
     padding-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
 }
 
 .btnBack .button, .btnAbandonApplication .button{
@@ -2783,3 +2804,56 @@ hr {
     font-size: 18px;
 }
 
+/****** specific page tweaks ******/
+
+/* Submission confirmation gap */
+
+/*
+#CCMS_GS08_form .formInputArea {
+    margin-top: 0;
+} */
+
+/* Submission in progress */
+
+#id_CCMS_GS07_pageSubHeaderRef {
+    height: 15px;
+}
+
+#id_CCMS_GS07_include_page_gs07 h2 {
+    font-size: 32px;
+    border: none;
+}
+
+.include_page_gs07  {
+    margin-top: 0;
+}
+
+.include_page_gs07 h2 {
+    margin-bottom: 0;
+}
+
+.submitting img {
+    margin: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.submitting {
+    font-weight: normal;
+    width: auto;
+    margin: 0;
+}
+
+/* Client information*/
+
+.clientSummary th, .clientSummary td {
+    border-bottom: none;
+    padding: 2px;
+}
+
+.clientSummary {
+    border: 1px solid black;
+    padding: 10px;
+    border-collapse: inherit;
+}
