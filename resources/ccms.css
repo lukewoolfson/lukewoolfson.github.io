@@ -2583,7 +2583,7 @@ td a {
     background:url("../resources/arrow-left.png") no-repeat center left;
     background-size: 13px;
     position: absolute;
-    top: -20px;
+    top: 10px;
     left: 0px;
 }
 
