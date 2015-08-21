@@ -2248,6 +2248,7 @@ h2 {
     color: black;
     font-size: 24px;
     border: 0;
+    margin-bottom: 0;
 }
 
 a {
@@ -2262,6 +2263,13 @@ a:hover {
     min-width: 100px;
 }
 
+a.helplink img {
+	position:relative;
+	left:4px;
+	top:0px;
+	height:20px;
+}
+
 /*** page layout ****/
 .pageHeaderRef, .pageTitleRef, .errorMessagesRef, .formInputArea, .pageFooterRef, .pageSubHeaderRef,  .include_page_ah01_mainpanel {
     width: 1020px;
@@ -2273,14 +2281,16 @@ a:hover {
     height: 42px;
 }
 
+
 .pageSubHeaderRef {
-    height: 65px;
+    height: 55px;
 }
+
 
 /**** case header ****/
 
 .clientCaseInfo {
-    padding: 5px 10px;
+    padding: 2px 10px;
     margin-bottom: 5px;
     font-size: 16px;
     background: #dee0e2;
@@ -2469,7 +2479,7 @@ a:hover {
     float: left;
     height: auto;
     margin-left: 0;
- padding: 0;
+    padding: 0;
 }
 .include_page_ah01_searchpanel {
     display: none;
@@ -2583,7 +2593,7 @@ td a {
     background:url("../resources/arrow-left.png") no-repeat center left;
     background-size: 13px;
     position: absolute;
-    top: 10px;
+    top: -20px;
     left: 0px;
 }
 
@@ -2593,7 +2603,9 @@ td a {
     background:none;
 }
 
-.panelHeaderWithLink a:nth-child(3) {
+
+
+.panelHeaderWithLink a:nth-child(3),#id_CCMS_CA03_include_page_ca03 > a:nth-child(10), #id_CCMS_CA03_include_page_ca03 > a:nth-child(5) {
     border: 1px solid #dee0e2;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -2604,13 +2616,13 @@ td a {
     text-decoration: none;
 }
 
-.panelHeaderWithLink a:nth-child(3):hover {
+.panelHeaderWithLink a:nth-child(3):hover,#id_CCMS_CA03_include_page_ca03 > a:nth-child(10):hover, #id_CCMS_CA03_include_page_ca03 > a:nth-child(5):hover {
     background-color: #ebebeb;
     color: black;
     border-color: black;
 }
 
-.panelHeaderWithLink a:nth-child(3):focus {
+.panelHeaderWithLink a:nth-child(3):focus,#id_CCMS_CA03_include_page_ca03 > a:nth-child(10):focus, #id_CCMS_CA03_include_page_ca03 > a:nth-child(5):focus {
     outline: 3px solid #ffbf47;
 }
 
@@ -2687,8 +2699,7 @@ label {
     border: 1px solid #ccc;
    }
 
-
-
+/*
 .helplink img {
     display: none;
 }
@@ -2700,16 +2711,16 @@ label {
     width: 34px;
     height: 21px;
     display: inline-block;
-    float: right;
 }
 
 .helplink:hover {
-    background: url(Help-hover.png) no-repeat #fff;
-    background-position: left middle;
+    background: url(Help-hover.png) no-repeat #fff!important;
+    background-position: left center;
     background-size: 34px;
     width: 34px;
     height: 21px;
 }
+*/
 
 .req {
     width:auto;
@@ -2857,3 +2868,22 @@ hr {
     padding: 10px;
     border-collapse: inherit;
 }
+
+/* Proceedings and Costs */
+
+#id_CCMS_CA03_include_page_ca03 .linkShowingDirection {
+    display: none;
+}
+
+/*bottom button*/
+
+#id_CCMS_CA03_include_page_ca03 > a:nth-child(10) {
+    float: left;
+    display: block;
+}
+
+#id_CCMS_CA03_include_page_ca03 > a:nth-child(5) {
+    float: inherit;
+    display: inline-block;
+}
+
