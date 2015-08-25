@@ -5,7 +5,7 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <title>LAA CCMS - Start New Application</title>
   <style type="text/css">
-    @import url("css/ccms.css");
+    @import url("resources/ccms.css");
   </style>
   <script src="LAA%20CCMS%20-%20Start%20New%20Application%20error.%20xhtml_files/ccms.htm" type="text/javascript">
   </script>
@@ -73,7 +73,7 @@
 	 
 	 
 
-		    <a href="https://ccmspuisit1.lab.gov/ccms/CCMS_CS01.form?RoofAction_action%3Dgoto%23save%3Dfalse%23validate%3Dfalse%23ezgov_private_hiddenData_uniqueId%3DXN4B62L76WB8MG95AM2KS79FC96UH2MM%23destination%3Dyca" accesskey="2">Your Cases and Applications</a>
+		    <a href="https://ccmspuisit1.lab.gov/ccms/CCMS_CS01.form?RoofAction_action%3Dgoto%23save%3Dfalse%23validate%3Dfalse%23ezgov_private_hiddenData_uniqueId%3DXN4B62L76WB8MG95AM2KS79FC96UH2MM%23destination%3Dyca" accesskey="2">Search</a>
 			<div id="menuItemTop2" class="menuItemTop2"> </div>
 		</li>
 
@@ -82,7 +82,7 @@
 		<li id="menuItem3">
 	 
 
-			<a href="https://ccmspuisit1.lab.gov/ccms/CCMS_CS01.form?RoofAction_action%3Dgoto%23save%3Dfalse%23validate%3Dfalse%23ezgov_private_hiddenData_uniqueId%3DXN4B62L76WB8MG95AM2KS79FC96UH2MM%23destination%3Dnot%23typeOfSearch%3DyourSearch" accesskey="3">Your Actions and Notifications</a>
+			<a href="https://ccmspuisit1.lab.gov/ccms/CCMS_CS01.form?RoofAction_action%3Dgoto%23save%3Dfalse%23validate%3Dfalse%23ezgov_private_hiddenData_uniqueId%3DXN4B62L76WB8MG95AM2KS79FC96UH2MM%23destination%3Dnot%23typeOfSearch%3DyourSearch" accesskey="3">Actions and Notifications</a>
 			<div id="menuItemTop3" class="menuItemTop3"> </div>
 		</li>
 

@@ -31,7 +31,7 @@ h1 {
 	color:#e7a101;
 	margin:0px 0px 25px 0px;
 	padding:0px 0px 10px 0px;
-	background:url("../resources/h1_background.gif") no-repeat bottom left;
+	background:url("../images/h1_background.gif") no-repeat bottom left;
 
 }
 
@@ -197,7 +197,7 @@ a {
 
 .clientCaseInfo div {
 	float: left;
-	background: #f4f8f8 url("../resources/case_info_background.gif") repeat-y top left;
+	background: #f4f8f8 url("../images/case_info_background.gif") repeat-y top left;
 	padding: 10px 0px;
 	border-top:1px solid #cadcdc;
 	border-bottom:1px solid #cadcdc;
@@ -398,7 +398,7 @@ a {
 
 .paginationPanel .previous {
     color:#2b7272;
-    background:url("../resources/arrow_left.gif") no-repeat bottom left;
+    background:url("../images/arrow_left.gif") no-repeat bottom left;
     margin:0;
     padding:0 10px 1px 20px;
     text-align:left;
@@ -408,7 +408,7 @@ a {
 
 .paginationPanel .next {
     color:#2b7272;
-    background:url("../resources/arrow_right.gif") no-repeat bottom right;
+    background:url("../images/arrow_right.gif") no-repeat bottom right;
     margin:0;
     padding:0 20px 1px 10px;
     text-align:right;
@@ -489,7 +489,7 @@ a {
 #messages .error {
 	list-style-type:none;
 	color:#c00;
-	background:transparent url("../resources/icon_error.gif") no-repeat top left;
+	background:transparent url("../images/icon_error.gif") no-repeat top left;
 }
 
 .errorText{
@@ -499,7 +499,7 @@ a {
 #messages .warning {
 	list-style-type: none;
 	color: #06c;
-	background:transparent url("../resources/icon_warning.gif") no-repeat 2px 0px;
+	background:transparent url("../images/icon_warning.gif") no-repeat 2px 0px;
 }
 /*******************************************************************************
  End error/warning message section
@@ -603,7 +603,7 @@ a {
 .panelHeaderWithLink .link,
 .linkShowingDirection {
 	color:#2b7272;
-	background:url("../resources/arrow_right.gif") no-repeat bottom right;
+	background:url("../images/arrow_right.gif") no-repeat bottom right;
 	padding:0 20px;
 	text-align:right;
   	text-decoration:underline;
@@ -638,7 +638,7 @@ a {
 .panelHeaderWithLinkNoBorder a,
 .linkShowingDirection {
 	color:#2b7272;
-	background:url("../resources/arrow_right.gif") no-repeat bottom right;
+	background:url("../images/arrow_right.gif") no-repeat bottom right;
 	padding:0 20px;
 	text-align:right;
   	text-decoration:underline;
@@ -694,13 +694,13 @@ a {
 .shadowTop {
 	clear:both;
 	height:30px;
-	background:url("../resources/shadow_top.gif") repeat-x top left;
+	background:url("../images/shadow_top.gif") repeat-x top left;
 }
 
 .shadowBottom {
 	clear:both;
 	height:24px;
-	background:url("../resources/shadow_bottom.gif") repeat-x top left;
+	background:url("../images/shadow_bottom.gif") repeat-x top left;
 }
 /*******************************************************************************
  End container classes
@@ -757,15 +757,15 @@ th.sortable a {
 	text-decoration:none;
 	color:#fff;
 	padding-right:12px;
-	background:url("../resources/sort_off.gif") no-repeat right;
+	background:url("../images/sort_off.gif") no-repeat right;
 }
 th.order1 a {
 	padding-right:12px;
-	background:url("../resources/sort_asc.gif") no-repeat right;
+	background:url("../images/sort_asc.gif") no-repeat right;
 }
 th.order2 a {
 	padding-right:12px;
-	background:url("../resources/sort_desc.gif") no-repeat right;
+	background:url("../images/sort_desc.gif") no-repeat right;
 }
 .proceedingsSummary th {
 	width:15%;
@@ -846,7 +846,7 @@ th.order2 a {
 	margin-bottom:3px;
 	font-size:80%;
 	width:20em;
-	background:url("../resources/icon_required.gif") no-repeat top left;
+	background:url("../images/icon_required.gif") no-repeat top left;
 }
 
 label,
@@ -1228,7 +1228,7 @@ input.linkShowingDirectionRight{
 	font-family:Verdana,Arial,Helvetica,sans-serif;
 	cursor: pointer;
 	overflow: visible;
-	background:url("../resources/arrow_right.gif") no-repeat right;
+	background:url("../images/arrow_right.gif") no-repeat right;
 	padding-left:20px;
 	padding-right:20px;
 	text-align:right;
@@ -1336,7 +1336,7 @@ table.applicationSummaryFourColumns th{
 	padding:0;
 }
 .include_page_ah01_notificationspanel li {
-	list-style-image:url("../resources/li_icon.gif");
+	list-style-image:url("../images/li_icon.gif");
 	margin:14px;
 	padding:0;
 }
@@ -1500,7 +1500,7 @@ table.applicationSummaryFourColumns th{
 
 .include_page_ca03jb_bottomAddCounselLink .link{
 	color:#2b7272;
-	background:url("../resources/arrow_right.gif") no-repeat bottom right;
+	background:url("../images/arrow_right.gif") no-repeat bottom right;
 	padding:0 20px;
 	text-align:right;
   	text-decoration:underline;
@@ -1915,14 +1915,16 @@ table.clientSummary th{
 }
 
 #id_CCMS_SU02_include_page_su02{
-	margin:10px 0px 0px 0px;
+	/* margin:10px 0px 0px 0px; */
 }
+
 
 #id_CCMS_SU02_dischargeCase,
 #id_CCMS_SU02_summaryBottomNav
 {
-	margin:0px 0px 0px 0px;
+	/* margin:0px 0px 0px 0px; */
 }
+
 
 @media print {
 	#CCMS_PT01_form .ccmsPageHeader,
@@ -2206,25 +2208,31 @@ a.helplink img {
 
 @font-face {
     font-family: 'nta';
-    src: url(GDSTransportWebsite.ttf);
+    src: url(../images/GDSTransportWebsite.ttf);
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'nta';
-    src: url(GDSTransportWebsite-Bold.ttf);
+    src: url(../images/GDSTransportWebsite-Bold.ttf);
     font-weight: bold;
     font-style: normal;
+}
+
+textarea {
+    width: 600px;
+    padding: 5px;
+    height: 100px;
 }
 
 .pageTitleRef h1 {
     display: none;
 }
 
-#id_CCMS_AH01_pageTitleRef h1 {
-    display: block;
-        border-bottom: 0;
+
+h1 { display: block;
+    border-bottom: 0;
     font-size: 32px;
     background: none;
     color: black;
@@ -2233,14 +2241,26 @@ a.helplink img {
     padding-bottom: 0;
 }
 
-.formInputArea .panelHeaderWithLink:nth-child(1) h2 {
+#id_CCMS_AH01_pageTitleRef h1 {
+    display: block;
+    border-bottom: 0;
+    font-size: 32px;
+    background: none;
+    color: black;
+    padding-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.formInputArea .panelHeaderWithLink:nth-child(1) h2  {
     border-bottom: 0;
     font-size: 32px;
     background: none;
     color: black;
     margin-bottom: 0;
     padding-bottom: 0;
-   padding-top: 5px;
+   padding-top: 10px;
+    width: auto;
 }
 
 h2 {
@@ -2251,16 +2271,27 @@ h2 {
     margin-bottom: 0;
 }
 
-a {
+a, input.link, {
     color: #005EA5;
+    text-decoration:  underline;
 }
 
-a:hover {
+a:hover, input.link:hover {
     color: #2E8ACA;
 }
 
+
+
 .button {
     min-width: 100px;
+}
+
+.firstbutton {
+    margin-right: 10px;
+}
+
+.button:hover {
+    background: #006435;
 }
 
 a.helplink img {
@@ -2270,8 +2301,9 @@ a.helplink img {
 	height:20px;
 }
 
+
 /*** page layout ****/
-.pageHeaderRef, .pageTitleRef, .errorMessagesRef, .formInputArea, .pageFooterRef, .pageSubHeaderRef,  .include_page_ah01_mainpanel {
+.pageHeaderRef, .pageTitleRef, .errorMessagesRef, .formInputArea, .pageFooterRef, .pageSubHeaderRef,  .include_page_ah01_mainpanel, .summaryBottomNav {
     width: 1020px;
     margin-left: auto;
     margin-right: auto;
@@ -2281,9 +2313,9 @@ a.helplink img {
     height: 42px;
 }
 
-
+/* fixes '< go back to X' link white space has to remain on non case pages to avoid overlap */
 .pageSubHeaderRef {
-    height: 55px;
+    height: 0;
 }
 
 
@@ -2294,7 +2326,7 @@ a.helplink img {
     margin-bottom: 5px;
     font-size: 16px;
     background: #dee0e2;
-    top: -32px;
+    top: -27px;
     position: relative;
     z-index: -1;
 }
@@ -2305,7 +2337,7 @@ a.helplink img {
     padding: 2px 0px;
 }
 #clientName {
-    background:url("../resources/case-open.png") no-repeat center left;
+    background:url("../images/case-open.png") no-repeat center left;
     width: auto!important;
     padding-left: 25px;
 }
@@ -2325,7 +2357,7 @@ a.helplink img {
     margin: 0;
     height: auto;
     position: relative;
-    padding: 10px 50px 5px 0px;
+    padding: 8px 50px 2px 0px;
 }
 
 
@@ -2413,7 +2445,7 @@ a.helplink img {
     color: #005EA5;
     text-decoration: underline;
     position: relative;
-    top: 46px;
+    top: 44px;
     float: right;
     width: 60px;
     /*background-color: pink;*/
@@ -2474,6 +2506,19 @@ a.helplink img {
 /*** landing page formating ***/
 
 
+.include_page_ah01_notificationspanel li {
+    list-style-image: none;
+}
+
+#id_CCMS_AH01_include_page_ah01_include_page_ah01_mainpanel_include_page_ah01_startpanel > h2 {display: none;}
+
+#id_CCMS_AH01_include_page_ah01_include_page_ah01_mainpanel_include_page_ah01_startpanel > div.comment {display: none;}
+
+#id_CCMS_AH01_include_page_ah01_include_page_ah01_mainpanel_include_page_ah01_requestpanel > div:nth-child(3) {display: none;}
+
+#id_CCMS_AH01_include_page_ah01_include_page_ah01_mainpanel_include_page_ah01_notificationspanel > h2 {display: none;}
+
+
 .include_page_ah01_startpanel, .include_page_ah01_searchpanel, .include_page_ah01_notificationspanel, .include_page_ah01_requestpanel {
     width: 100%;
     float: left;
@@ -2487,12 +2532,12 @@ a.helplink img {
 
 .include_page_ah01_startpanel {
     position: relative;
-    top: -245px;
+    top: -170px;
     height: 0;
 }
 
 .include_page_ah01_notificationspanel {
-    margin-top: 100px
+    margin-top: 60px
 }
 .include_page_ah01_notificationspanel a {
    color: #005EA5;
@@ -2537,7 +2582,7 @@ a.helplink img {
 }
 
 .comment { 
-    max-width: 700px;
+    max-width: 600px;
 }
 
 th {
@@ -2546,14 +2591,7 @@ th {
     text-align: left;
 }
 
-th.sortable a {
-    color: #005EA5;
-    text-decoration: underline;
-}
 
-th.sortable a:hover {
-    color: #2E8ACA;
-}
 
 th {
     border: none;
@@ -2563,6 +2601,12 @@ th {
 
 td {
    border: none;
+   /*border-bottom: 1px solid black;*/
+   background-color: white;
+}
+
+tr {
+   border: none;
    border-bottom: 1px solid black;
    background-color: white;
 }
@@ -2570,6 +2614,17 @@ td {
 td a {
     color: #005EA5;
     text-decoration: underline;
+}
+
+input {
+    padding: 4px;
+    background-color: #fff;
+    border: 1px solid #bfc1c3;
+    font-size: 1em;
+}
+
+.input .symbol {
+    width: auto:
 }
 
 .formInputArea {
@@ -2582,21 +2637,108 @@ td a {
     position: relative;
 }
 
+.formInputArea .panelHeaderWithLink:nth-child(1) {
+    margin-top: 50px; /*should only be first one */
+}
+
 .formInputArea br {
     display: none;
+}
+
+th.sortable a {
+    color: #005EA5;
+    text-decoration: underline;
+    background:url("../images/arrow-right.png") no-repeat right;
+    background-size: 12px;
+    padding-right: 16px;
+}
+
+th.sortable a:hover {
+    color: #2E8ACA;
+    background: url("../images/arrow-right-hover.png") no-repeat right;
+    background-size: 12px;
+}
+
+
+th.order1 a {
+	background:url("../images/arrow-down.png") no-repeat right;
+    background-size: 12px;
+    padding-right: 16px;
+}
+
+th.order1 a:hover {
+    background:url("../images/arrow-down-hover.png") no-repeat right;
+    background-size: 12px;
+    padding-right: 16px;
+}
+
+th.order2 a {
+	background:url("../images/arrow-up.png") no-repeat right;
+    background-size: 12px;
+    padding-right: 16px;
+}
+
+th.order2 a:hover {
+	background:url("../images/arrow-up-hover.png") no-repeat right;
+    background-size: 12px;
+    padding-right: 16px;
+}
+
+
+
+
+.paginationPanel .page {
+    color: #005EA5;
+    border: none;
+    background: white;
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+.paginationPanel .page:hover {
+    color: #2E8ACA;
+}
+
+.paginationPanel .next {
+    background: none;
+    color: #005EA5;  
+}
+
+.paginationPanel .next:hover {
+    color: #2E8ACA;
+}
+
+.paginationPanel .active {
+    color: white;
+    background-color: #005EA5;
+    text-decoration: none;
+}
+
+.paginationPanel .active:hover {
+    color: white;
 }
 
 /*move return to home link to top left of page */
 
 
-.formInputArea .panelHeaderWithLink:nth-child(1) a:nth-child(2) {
-    background:url("../resources/arrow-left.png") no-repeat center left;
+.formInputArea .panelHeaderWithLink:nth-child(1) a:nth-child(2), 
+#id_CCMS_PD01_include_page_pd01 .panelHeaderWithLink a:nth-child(2),
+#id_CCMS_POA01_include_page_poa01_include_page_poa01_header > a
+{
+    background:url("../images/arrow-left.png") no-repeat center left;
     background-size: 13px;
     position: absolute;
-    top: -20px;
+    top: -15px;
     left: 0px;
 }
 
+.formInputArea .panelHeaderWithLink:nth-child(1) a:nth-child(2):hover,
+#id_CCMS_PD01_include_page_pd01 .panelHeaderWithLink a:nth-child(2):hover
+#id_CCMS_POA01_include_page_poa01_include_page_poa01_header > a:hover
+{
+    background:url("../images/arrow-left-hover.png") no-repeat center left;
+    background-size: 13px;   
+}
 
 
 .panelHeaderWithLink a:nth-child(2) {
@@ -2605,7 +2747,26 @@ td a {
 
 
 
-.panelHeaderWithLink a:nth-child(3),#id_CCMS_CA03_include_page_ca03 > a:nth-child(10), #id_CCMS_CA03_include_page_ca03 > a:nth-child(5) {
+/* 2nd level buttons grey */
+
+#id_CCMS_CA03_include_page_ca03 > a:nth-child(10), 
+#id_CCMS_CA03_include_page_ca03 > a:nth-child(5), 
+#id_CCMS_CA06_include_page_ca06 > a:nth-child(5), 
+#id_CCMS_OR01_include_page_or01 > div:nth-child(4) > a, #id_CCMS_NOT03_include_page_not03 > a, #id_CCMS_LP02_include_page_lp02_page_lp02_addopponentbuttons .button,
+.btnCalculate .button,
+.btnFindAddress .button,
+.scopeLimitationSummaryLinkBottom .linkShowingDirectionRight,
+#id_CCMS_CA04_include_page_ca04 > a:nth-child(7),
+#id_CCMS_CA04_include_page_ca04 > a:nth-child(8),
+#id_CCMS_CB01_include_page_cb01 > a:nth-child(5),
+#id_CCMS_CB01_include_page_cb01 > a:nth-child(8),
+.btnCreateRequest .button,
+#id_CCMS_PD01_include_page_pd01 > a:nth-child(8),
+#id_CCMS_PD01_include_page_pd01 > a:nth-child(7),
+.page_lp01_freeform a:nth-child(3),
+.btnSummaryPrintBottom .button
+
+{
     border: 1px solid #dee0e2;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -2614,16 +2775,55 @@ td a {
     color: black;
     padding: 5px 10px;
     text-decoration: none;
+    box-shadow: none;
+    background: #f8f8f8;
+    margin-right: 15px;
+    float: left;
 }
 
-.panelHeaderWithLink a:nth-child(3):hover,#id_CCMS_CA03_include_page_ca03 > a:nth-child(10):hover, #id_CCMS_CA03_include_page_ca03 > a:nth-child(5):hover {
+#id_CCMS_CA03_include_page_ca03 > a:nth-child(10):hover, 
+#id_CCMS_CA03_include_page_ca03 > a:nth-child(5):hover, 
+#id_CCMS_CA06_include_page_ca06 > a:nth-child(5):hover, 
+#id_CCMS_OR01_include_page_or01 > div:nth-child(4) > a:hover,
+#id_CCMS_NOT03_include_page_not03 > a:hover,
+#id_CCMS_LP02_include_page_lp02_page_lp02_addopponentbuttons .button:hover,
+.btnCalculate .button:hover,
+.btnFindAddress .button:hover,
+.scopeLimitationSummaryLinkBottom .linkShowingDirectionRight:hover
+#id_CCMS_CA04_include_page_ca04 > a:nth-child(7):hover,
+#id_CCMS_CA04_include_page_ca04 > a:nth-child(8):hover,
+#id_CCMS_CB01_include_page_cb01 > a:nth-child(5):hover,
+#id_CCMS_CB01_include_page_cb01 > a:nth-child(8):hover,
+.btnCreateRequest .button:hover,
+#id_CCMS_PD01_include_page_pd01 > a:nth-child(8):hover,
+#id_CCMS_PD01_include_page_pd01 > a:nth-child(7):hover,
+.page_lp01_freeform a:nth-child(3):hover
+{
     background-color: #ebebeb;
     color: black;
     border-color: black;
 }
 
-.panelHeaderWithLink a:nth-child(3):focus,#id_CCMS_CA03_include_page_ca03 > a:nth-child(10):focus, #id_CCMS_CA03_include_page_ca03 > a:nth-child(5):focus {
+#id_CCMS_CA03_include_page_ca03 > a:nth-child(10):focus, 
+#id_CCMS_CA03_include_page_ca03 > a:nth-child(5):focus, 
+#id_CCMS_CA06_include_page_ca06 > a:nth-child(5):focus, 
+#id_CCMS_OR01_include_page_or01 > div:nth-child(4) > a:focus, 
+#id_CCMS_NOT03_include_page_not03 > a:focus 
+#id_CCMS_LP02_include_page_lp02_page_lp02_addopponentbuttons .button:focus,
+.btnCalculate .button:focus,
+.btnFindAddress .button:focus,
+.scopeLimitationSummaryLinkBottom .linkShowingDirectionRight:focus
+#id_CCMS_CA04_include_page_ca04 > a:nth-child(7):focus,
+#id_CCMS_CA04_include_page_ca04 > a:nth-child(8):focus
+#id_CCMS_CB01_include_page_cb01 > a:nth-child(5):focus,
+#id_CCMS_CB01_include_page_cb01 > a:nth-child(8):focus,
+.btnCreateRequest .button:focus,
+#id_CCMS_PD01_include_page_pd01 > a:nth-child(8):focus,
+#id_CCMS_PD01_include_page_pd01 > a:nth-child(7):focus,
+.page_lp01_freeform a:nth-child(3):focus
+{
     outline: 3px solid #ffbf47;
+    background: #ebebeb!important;
 }
 
 .panelHeaderWithLink a, .panelHeaderWithLink .link {
@@ -2647,11 +2847,41 @@ td a {
     display: initial;
 }
 
-
-label {
-    width: 285px;
+label, .label, .fieldInfo {
+    width:auto;
 }
 
+.input, .inputPanel .input {
+    padding-left: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+.labelForReadonlyControl {
+    width: auto!important;
+    margin-left: 0!important;
+    padding-left: 0!important;
+    padding-top: 5px;
+    background:url("../images/colon.png") no-repeat right;
+    background-size: 4px;
+    padding-right: 7px;
+    margin-right: 6px;
+    font-weight: bold;
+    background-position-y: 65%;
+}
+
+
+.inputFieldDate input {
+    margin-left: 0;
+}
+/*
+label {
+    width: auto;
+}
+
+.inputFieldDate input {
+    margin-left: 0;
+}
 .input { 
     display: block;
     float: none;
@@ -2662,6 +2892,9 @@ label {
 	width: 300px;
 }
 
+.input .monetary {
+    display: block;
+}
 
 .textInput, .date {
     padding: 4px;
@@ -2670,6 +2903,10 @@ label {
     font-size: 1em;
 }
 
+*/
+.formInputArea .inputPanel {
+        overflow: initial;
+}
 .formInputArea .inputPanel {
     background-color: white;
 }
@@ -2679,6 +2916,9 @@ label {
     display: none;
 }
 
+.monetary {
+    margin-left: 0;
+}
 
 .textInput:focus, .input select:focus, .button:focus, .date:focus {
     outline: 3px solid #ffbf47;
@@ -2760,6 +3000,10 @@ hr {
 
 /****** errors *****/
 
+.errorMessagesRef {
+    margin-top: 0px;
+}
+
 .errorMessagesRef #messageInfo, .errorMessagesRef #messages {
     border: none;
     margin: 0;
@@ -2777,7 +3021,7 @@ hr {
 #messages .error {
     list-style-type: none;
     color: #c00;
-    background: transparent url("../resources/icon_error.gif") no-repeat;
+    background: transparent url("../images/icon_error.gif") no-repeat;
     background-position: 0 15%;
 }
 
@@ -2792,7 +3036,7 @@ hr {
     margin-bottom: 35px;
 }
 
-.btnBack .button, .btnAbandonApplication .button{
+.btnBack .button, .btnAbandonApplication .button, .lnkBack .button {
     background-color: white;
     color: #005EA5;
     text-decoration: underline;
@@ -2806,6 +3050,13 @@ hr {
     margin-top: 10px;
 }
 
+.btnBack .button:hover, .btnAbandonApplication .button:hover, .lnkBack .button:hover{
+    color: #2E8ACA; 
+}
+
+
+
+
 /******* check box ******/
 .check .input {
     width: auto;
@@ -2813,6 +3064,17 @@ hr {
 
 .checkbox { 
     font-size: 18px;
+}
+
+
+/* Recovery */
+
+.formInputArea .groupPanelBold {
+    background: white;
+}
+
+.formInputArea .groupPanel {
+    background: white;
 }
 
 /****** specific page tweaks ******/
@@ -2858,12 +3120,12 @@ hr {
 
 /* Client information*/
 
-.clientSummary th, .clientSummary td {
+.clientSummary th, .clientSummary td, .opponentSummaryReadOnly th, .opponentSummaryReadOnly td {
     border-bottom: none;
     padding: 2px;
 }
 
-.clientSummary {
+.clientSummary, .opponentSummaryReadOnly {
     border: 1px solid black;
     padding: 10px;
     border-collapse: inherit;
@@ -2886,4 +3148,343 @@ hr {
     float: inherit;
     display: inline-block;
 }
+
+/* Linked Cases Summary */
+#id_CCMS_CA06_include_page_ca06 > a:nth-child(3) {
+    display: none;
+}
+
+#id_CCMS_CA06_include_page_ca06 > a:nth-child(5) {
+    float: left;
+}
+
+#id_CCMS_CA06_include_page_ca06 > h2 {
+   margin-top: 30px;
+}
+
+/* Amend case NEW PAGE inconistent from others here is a temp fix */
+
+#id_CCMS_AC01_pageTitleRef > h1 {
+    display: block;
+    background: none;
+    font-size: 32px;
+    margin-top: 60px;
+    color: black;
+    
+}
+
+#id_CCMS_AC01_include_page_ac01 > div:nth-child(3) {
+    margin-top: 0;
+}
+
+#id_CCMS_AC01_pageTitleRef {
+    height: 45px;
+}
+
+#id_CCMS_AC01_include_page_ac01_include_page_ac01_header > a {
+    background:url("../images/arrow-left.png") no-repeat center left;
+    background-size: 13px;
+    position: absolute;
+    top: 78px;
+
+}
+
+.include_page_ac01_header .linkShowingDirection a:hover {
+    background:url("../images/arrow-left-hover.png") no-repeat center left;
+    background-size: 13px;   
+}
+
+#id_CCMS_AC01_include_page_ac01_btnSubmitAmendment > a {
+    float: left;
+    font-size: 18px;
+    -webkit-font-smoothing: antialiased;
+    font-weight: normal;
+    height: 38px;
+    line-height: 40px;
+    color: #fff;
+    background: #00823B;
+    padding: 5px 10px 5px 10px;
+    margin: 5px 10px 0px 0px;
+    border: 0;
+    overflow: visible;
+    box-shadow: 0 2px 0 #003518;
+    cursor: pointer;
+}
+#id_CCMS_AC01_include_page_ac01_btnSubmitAmendment > a:hover {
+    background: #006435;
+}
+
+#id_CCMS_AC01_include_page_ac01_btnSubmitAmendment > a:focus {
+    outline: 3px solid #ffbf47;
+    background: #006435!important;
+}
+
+/* Outcome page */
+
+#id_CCMS_AW04_include_page_aw04_include_aw04_inputpanel .groupPanel  label {
+    width: 30%
+}
+
+.btnCalculate {
+    width: 0;
+}
+
+.formInputArea .include_aw04_inputpanel {
+    margin-bottom: 60px;
+}
+#id_CCMS_AW04_include_page_aw04_include_aw04_inputpanel .groupPanel .input {
+    width: initial;
+}
+
+#id_CCMS_AW04_include_page_aw04_btnCalculate > input {
+    position: relative;
+    top: -100px;
+    border: 1px solid #dee0e2;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #f8f8f8;
+    color: black;
+    padding: 5px 10px;
+    text-decoration: none;
+    box-shadow: none;
+}
+
+#id_CCMS_AW04_include_page_aw04_btnCalculate > input:hover {
+    background-color: #ebebeb;
+    color: black;
+    border-color: black;
+}
+
+#id_CCMS_AW04_include_page_aw04_btnCalculate > input:focus {
+    outline: 3px solid #ffbf47;
+}
+
+#id_CCMS_AW04_include_page_aw04_btnBack .button {  
+    position: relative;
+    top: -42px;   
+}
+
+
+.textOnlyCurrency {
+    padding-left: 0;
+}
+
+.textOnlyInput { 
+    padding-left: 0;
+    font-weight: normal;
+}
+
+/* linked cases */
+
+#id_CCMS_CA06_include_page_ca06 h2:nth-child(1) {
+    font-size: 32px;
+}
+
+/* outcome and awards */
+
+#id_CCMS_OR01_pageTitleRef > h1 {
+    display: block;
+    margin-top: 65px;
+}
+
+
+#id_CCMS_OR01_include_page_or01_include_page_or01_header > a {
+    background:url("../images/arrow-left.png") no-repeat center left;
+    background-size: 13px;
+    position: absolute;
+    top: -105px;
+    left: 0px;
+}
+
+#id_CCMS_OR01_include_page_or01_include_page_or01_header > a:hover {
+    background:url("../images/arrow-left-hover.png") no-repeat center left;
+    background-size: 13px;   
+}
+
+#id_CCMS_OR01_include_page_or01 > div:nth-child(4) > a {
+    position: absolute;
+    left: 0px;
+    top: 130px;   
+}
+#id_CCMS_OR01_include_page_or01 > table:nth-child(5) {
+    margin-bottom: 60px;
+}
+
+.notificationHeader tr th {
+    width: 5%!important;
+}
+
+.notificationHeader tr td {
+    padding-right: 15px;
+    width: 50px!important;
+}
+
+/* Cost award */
+
+.awardsFieldHeader {
+    font-size: 24px;
+    width: auto;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#id_CCMS_AW02_include_page_aw02 .btnCalculate {
+    position: relative;
+    top: -100px;
+}
+
+#id_CCMS_AW02_include_page_aw02_include_aw02_inputpanel {
+    margin-bottom: 40px;
+}
+
+/* client address details */
+
+.btnFindAddress {
+    margin-left: 0;
+    left: 0;
+}
+
+.btnFindAddress .button {
+    margin-left: 0;
+     margin-bottom: 15px;
+}
+
+/* basic client details */
+
+.inputFieldCheck .check .req {
+    width: 0;
+    margin-left: 0;
+}
+
+.vulnerableClient, .highProfileClient, .highProfileCase, .vexatious, .mentalIncapacity, .includeClosedNotifications {
+    left: 0;
+}
+
+/* Fair Processing Agreement */
+
+.readonlyTextPanel {
+    max-height: inherit;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* Proceeding Details */
+input.linkShowingDirectionRight {
+    float: left;
+}
+.formInputArea .inputButtonPanel {
+    overflow: visible;
+}
+
+#id_CCMS_CA03GA_include_page_ca03ga_scopeLimitationSummaryLinkTop > input {
+    display: none;
+}
+
+/* opponents and other parties */
+
+#id_CCMS_CA04_include_page_ca04 > a:nth-child(4),#id_CCMS_CA04_include_page_ca04 > a:nth-child(5) {
+    display: none;
+}
+
+/* actions search */
+
+.includeClosedNotifications .check {
+    float: left;
+}
+
+.include_page_not01_form .fromDate label, .include_page_not01_form .toDate label {
+    text-indent: 0px;
+}
+
+.include_page_not01_form .comment {
+    font-weight: bold;
+}
+
+/* provide electronic docs */
+
+.fileSelect {
+    border: none;
+}
+
+#id_CCMS_NOT03_include_page_not03 > a {
+    float: none;
+}
+
+/* Billing case statement of account */
+
+td.data {
+    background: none;
+}
+
+#id_CCMS_CB01_include_page_cb01 > a:nth-child(3), #id_CCMS_CB01_include_page_cb01_include_page_cb01_bill_poa_overview > a {
+    display: none;
+}
+
+/* Provide doucments notification */
+
+#id_CCMS_PD01_include_page_pd01_include_page_pd01_documents_header > a:nth-child(3), #id_CCMS_PD01_include_page_pd01_include_page_pd01_documents_header > a:nth-child(2) {display: none;}
+
+.notificationNoteTable > tr > td > p {
+    width: 600px;
+}
+
+#id_CCMS_PD01_include_page_pd01 .panelHeaderWithLink a:nth-child(2) {
+    top: -150px;
+}
+
+
+/* create POA */
+
+#id_CCMS_POA01_include_page_poa01_include_page_poa01_header > a {
+        top: -130px;
+}
+
+/* increase H2 large font */
+
+#id_CCMS_POA01_include_page_poa01 > h2,
+#id_CCMS_PD01_include_page_pd01_include_page_pd01_header > h2 {
+    font-size: 32px;
+    margin-top: 50px;
+}
+
+/* outcome and awards liable parties */
+
+.page_lp01_freeform a:nth-child(1) {display: none;}
+
+/* outcome summary */
+
+.btnSummaryPrintTop {
+    margin: 0;
+    padding: 0;
+}
+
+#id_CCMS_SU02_include_page_su02_btnSummaryPrintTop > input {
+    display: none;
+}
+
+.summaryBottomNav .firstbutton  {
+    margin-left: 0;
+}
+
+.btnSummaryPrintBottom .button {
+    margin-bottom: 20px;
+}
+
+.summaryTable .columnDescriptionSubHeader, .inputPanelLabels th{
+    color: black;
+}
+
+#id_CCMS_SU02_pageTitleRef > h2 {
+    font-size: 32px;
+}
+
+.summaryTable td { border: none;}
+
+.summaryTable .columnDescription {font-size: 24px;}
+
+.summaryTable .labelForReadonlyControl {background: none;}
+
+.summaryTable th, #id_CCMS_SU02_include_page_su02_summary > table.summaryTable.recovery > tr.recoveryHeader, #id_CCMS_SU02_include_page_su02_summary > table:nth-child(4) > tr.liablePartyHeader {border-bottom: none}
+
 
