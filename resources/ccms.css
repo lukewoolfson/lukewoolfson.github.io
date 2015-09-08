@@ -185,6 +185,7 @@ a {
 	text-align:right;
 
 }
+
 .ccmsUserInfo span {
 	margin-right:15px;
 }
@@ -3501,5 +3502,7 @@ td.data {
 .summaryTable .labelForReadonlyControl {background: none;}
 
 .summaryTable th, #id_CCMS_SU02_include_page_su02_summary > table.summaryTable.recovery > tr.recoveryHeader, #id_CCMS_SU02_include_page_su02_summary > table:nth-child(4) > tr.liablePartyHeader {border-bottom: none}
+
+.pageTitleRef {margin-top: 50px;}
 
 
