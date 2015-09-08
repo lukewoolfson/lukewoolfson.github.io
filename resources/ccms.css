@@ -3505,7 +3505,10 @@ td.data {
 
 .pageTitleRef {
     margin-top: 50px;
-    color: hotpink;
+    color: blue;
 }
 
+.ccmsUserInfo span {
+	margin-right:0px!important;
+}
 
