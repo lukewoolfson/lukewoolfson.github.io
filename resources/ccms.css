@@ -12,7 +12,7 @@ html {
 }
 
 body {
-	font-family:nta;
+	font-family:nta,Arial,sans-serif;
 	font-size:100%;
 	color:#000;
 	background-color:#fff;
@@ -2271,7 +2271,7 @@ h2 {
     margin-bottom: 0;
 }
 
-a, input.link, {
+a, input.link {
     color: #005EA5;
     text-decoration:  underline;
 }
@@ -2280,6 +2280,10 @@ a:hover, input.link:hover {
     color: #2E8ACA;
 }
 
+a:focus {
+    outline: 3px solid #ffbf47;
+    background-color: #ffbf47;
+}
 
 
 .button {
@@ -2357,7 +2361,8 @@ a.helplink img {
     margin: 0;
     height: auto;
     position: relative;
-    padding: 8px 50px 2px 0px;
+    padding: 8px 0px 2px 0px;
+    margin-right: 50px;
 }
 
 
@@ -2434,11 +2439,12 @@ a.helplink img {
     display: none;
 }
 
+/*
 #menuItem2 a {
     padding-top: 10px;
     height: 29px;
 }
-
+*/
 
 
 #menuItem4 > a {
@@ -2449,7 +2455,7 @@ a.helplink img {
     float: right;
     width: 60px;
     /*background-color: pink;*/
-    height: 10px;
+    height: auto;
     z-index: 999;
     
 }
@@ -2568,6 +2574,11 @@ a.helplink img {
 
 #id_CCMS_NOT02A_include_page_not02a > div:nth-child(2) {
     display: none;
+}
+
+#id_CCMS_NOT02A_include_page_not02a_include_page_not02a_header > a:nth-child(3) {
+    position: relative;
+    top: 120px;
 }
 
 /**** table pages ****/
@@ -2738,6 +2749,10 @@ th.order2 a:hover {
 {
     background:url("../images/arrow-left-hover.png") no-repeat center left;
     background-size: 13px;   
+}
+
+.formInputArea .panelHeaderWithLink:nth-child(1) a:nth-child(2):focus {
+    background-color: #ffbf47;
 }
 
 
@@ -2933,7 +2948,7 @@ label {
    border: 0;
    border-radius: 0;
    -webkit-appearance: none;
-   background: url(down-arrow.png) no-repeat #fff;
+   background: url(../images/down-arrow.png) no-repeat #fff;
     background-size: 12px;
     background-position: 97% 50%;
     border: 1px solid #ccc;
