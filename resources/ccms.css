@@ -2361,8 +2361,8 @@ a.helplink img {
     margin: 0;
     height: auto;
     position: relative;
-    padding: 8px 0px 2px 0px;
-    margin-right: 50px;
+    padding: 8px 50px 2px 0px;
+    /*margin-right: 50px;*/
 }
 
 
