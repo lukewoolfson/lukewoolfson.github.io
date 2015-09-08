@@ -3503,6 +3503,9 @@ td.data {
 
 .summaryTable th, #id_CCMS_SU02_include_page_su02_summary > table.summaryTable.recovery > tr.recoveryHeader, #id_CCMS_SU02_include_page_su02_summary > table:nth-child(4) > tr.liablePartyHeader {border-bottom: none}
 
-.pageTitleRef {margin-top: 50px;}
+.pageTitleRef {
+    margin-top: 50px;
+    color: hotpink;
+}
 
 
