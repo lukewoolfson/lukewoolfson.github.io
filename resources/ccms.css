@@ -2363,7 +2363,7 @@ a.helplink img {
     height: auto;
     position: relative;
     padding: 8px 50px 2px 0px;
-    /*margin-right: 50px;*/
+    margin-right: 50px!important;
 }
 
 
