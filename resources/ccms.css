@@ -2362,8 +2362,10 @@ a.helplink img {
     margin: 0;
     height: auto;
     position: relative;
-    padding: 8px 50px 2px 0px;
-    margin-right: 50px!important;
+    padding: 8px 0px 2px 0px;
+    margin-right: 50px;
+    width: 350px;
+    background-color: pink;
 }
 
 
@@ -2776,7 +2778,7 @@ th.order2 a:hover {
 #id_CCMS_CA04_include_page_ca04 > a:nth-child(8),
 #id_CCMS_CB01_include_page_cb01 > a:nth-child(5),
 #id_CCMS_CB01_include_page_cb01 > a:nth-child(8),
-.btnCreateRequest .button,
+.btnCreateRequest button,
 #id_CCMS_PD01_include_page_pd01 > a:nth-child(8),
 #id_CCMS_PD01_include_page_pd01 > a:nth-child(7),
 .page_lp01_freeform a:nth-child(3),
@@ -3507,8 +3509,3 @@ td.data {
     margin-top: 50px;
     color: blue;
 }
-
-.ccmsUserInfo span {
-	margin-right:40px!important;
-}
-
