@@ -3154,9 +3154,11 @@ hr {
     display: none;
 }*/
 
+#id_CCMS_CA03_include_page_ca03  a:nth-child(3), #id_CCMS_CA03_include_page_ca03 div:nth-child(8) a { display: none;}
+
 /*bottom button*/
 
-#id_CCMS_CA03_include_page_ca03 > a:nth-child(10) {
+#id_CCMS_CA03_include_page_ca03 a:nth-child(10) {
     float: left;
     display: block;
 }
@@ -3164,6 +3166,7 @@ hr {
 #id_CCMS_CA03_include_page_ca03 a:nth-child(5) {
     float: inherit;
     display: inline-block;
+    color: blueviolet;
 }
 
 /* Linked Cases Summary */
