@@ -3510,3 +3510,7 @@ td.data {
 .pageTitleRef {
     margin-top: 50px;
 }
+
+select::-ms-expand {
+    display: none;
+}
