@@ -3514,3 +3514,9 @@ td.data {
 select::-ms-expand {
     display: none;
 }
+
+.input select {
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: "";
+  }
