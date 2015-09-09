@@ -3161,7 +3161,7 @@ hr {
     display: block;
 }
 
-#id_CCMS_CA03_include_page_ca03 > a:nth-child(5) {
+#id_CCMS_CA03_include_page_ca03 a:nth-child(5) {
     float: inherit;
     display: inline-block;
 }
