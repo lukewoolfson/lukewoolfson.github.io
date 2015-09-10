@@ -3531,7 +3531,7 @@ select::-ms-expand {
 
 /*IE7 play*/
 
-.btnCreateRequest.button
+.btnCreateRequest .button
 {
     border: 1px solid #dee0e2;
     -webkit-border-radius: 3px;
