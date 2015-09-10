@@ -2733,9 +2733,10 @@ th.order2 a:hover {
 /*move return to home link to top left of page */
 
 
-.formInputArea .panelHeaderWithLink:nth-child(1) a:nth-child(2), 
+.formInputArea .panelHeaderWithLink:nth-child(1) a:nth-child(2)
+/*, 
 #id_CCMS_PD01_include_page_pd01 .panelHeaderWithLink a:nth-child(2),
-#id_CCMS_POA01_include_page_poa01_include_page_poa01_header  a
+#id_CCMS_POA01_include_page_poa01_include_page_poa01_header  a*/
 {
     background:url("../images/arrow-left.png") no-repeat center left;
     background-size: 13px;
