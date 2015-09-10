@@ -3528,3 +3528,21 @@ select::-ms-expand {
 	background:url("../images/arrow-left.png") no-repeat center left;
 	baground-size: 13px;
 }
+
+/*IE7 play*/
+
+.btnCreateRequest.button
+{
+    border: 1px solid #dee0e2;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #f8f8f8;
+    color: deeppink;
+    padding: 5px 10px;
+    text-decoration: none;
+    box-shadow: none;
+    background: #f8f8f8;
+    margin-right: 15px;
+    float: left;
+}
