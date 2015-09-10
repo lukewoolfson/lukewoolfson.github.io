@@ -2765,37 +2765,7 @@ th.order2 a:hover {
 
 /* 2nd level buttons grey */
 
-#id_CCMS_CA03_include_page_ca03  a:nth-child(10), 
-#id_CCMS_CA03_include_page_ca03  a:nth-child(5), 
-#id_CCMS_CA06_include_page_ca06  a:nth-child(5), 
-#id_CCMS_OR01_include_page_or01  div:nth-child(4)  a, #id_CCMS_NOT03_include_page_not03  a, #id_CCMS_LP02_include_page_lp02_page_lp02_addopponentbuttons .button,
-.btnCalculate .button,
-.btnFindAddress .button,
-.scopeLimitationSummaryLinkBottom .linkShowingDirectionRight,
-#id_CCMS_CA04_include_page_ca04  a:nth-child(7),
-#id_CCMS_CA04_include_page_ca04  a:nth-child(8),
-#id_CCMS_CB01_include_page_cb01  a:nth-child(5),
-#id_CCMS_CB01_include_page_cb01  a:nth-child(8),
-.btnCreateRequest .button,
-#id_CCMS_PD01_include_page_pd01  a:nth-child(8),
-#id_CCMS_PD01_include_page_pd01  a:nth-child(7),
-.page_lp01_freeform a:nth-child(3),
-.btnSummaryPrintBottom .button
 
-{
-    border: 1px solid #dee0e2;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    background-color: #f8f8f8;
-    color: black;
-    padding: 5px 10px;
-    text-decoration: none;
-    box-shadow: none;
-    background: #f8f8f8;
-    margin-right: 15px;
-    float: left;
-}
 
 #id_CCMS_CA03_include_page_ca03  a:nth-child(10):hover, 
 #id_CCMS_CA03_include_page_ca03  a:nth-child(5):hover, 
@@ -3529,7 +3499,7 @@ select::-ms-expand {
 	baground-size: 13px;
 }
 
-/*IE7 play*/
+/*IE7 play
 
 .btnCreateRequest .button
 {
@@ -3539,6 +3509,41 @@ select::-ms-expand {
     border-radius: 3px;
     background-color: #f8f8f8;
     color: deeppink;
+    padding: 5px 10px;
+    text-decoration: none;
+    box-shadow: none;
+    background: #f8f8f8;
+    margin-right: 15px;
+    float: left;
+}
+*/
+
+#id_CCMS_CA03_include_page_ca03  a:nth-child(10), 
+#id_CCMS_CA03_include_page_ca03  a:nth-child(5), 
+#id_CCMS_CA06_include_page_ca06  a:nth-child(5), 
+#id_CCMS_OR01_include_page_or01  div:nth-child(4)  a, 
+#id_CCMS_NOT03_include_page_not03  a, 
+#id_CCMS_LP02_include_page_lp02_page_lp02_addopponentbuttons .button,
+.btnCalculate .button,
+.btnFindAddress .button,
+.scopeLimitationSummaryLinkBottom .linkShowingDirectionRight,
+#id_CCMS_CA04_include_page_ca04  a:nth-child(7),
+#id_CCMS_CA04_include_page_ca04  a:nth-child(8),
+#id_CCMS_CB01_include_page_cb01  a:nth-child(5),
+#id_CCMS_CB01_include_page_cb01  a:nth-child(8),
+.btnCreateRequest .button,
+#id_CCMS_PD01_include_page_pd01  a:nth-child(8),
+#id_CCMS_PD01_include_page_pd01  a:nth-child(7),
+.page_lp01_freeform a:nth-child(3),
+.btnSummaryPrintBottom .button
+
+{
+    border: 1px solid #dee0e2;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #f8f8f8;
+    color: black;
     padding: 5px 10px;
     text-decoration: none;
     box-shadow: none;
