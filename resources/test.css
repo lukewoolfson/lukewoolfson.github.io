@@ -1,0 +1,8 @@
+.formInputArea .panelHeaderWithLink:nth-child(1) a:nth-child(2)
+{
+    background:url("../images/arrow-left.png") no-repeat center left;
+    background-size: 13px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
