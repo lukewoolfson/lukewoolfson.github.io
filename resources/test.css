@@ -8,3 +8,8 @@
     background: blue;
     color: white;
 }
+
+#id_CCMS_CA03_include_page_ca03_include_page_ca03_header > a {
+    background: pink;
+    color: white;
+}
