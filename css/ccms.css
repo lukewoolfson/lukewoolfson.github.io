@@ -2305,6 +2305,13 @@ a.helplink img {
 	height:20px;
 }
 
+a.button:link, a.button:active, a.button:visited {
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 38px;
+    text-align: center;
+}
+
 
 /*** page layout ****/
 .pageHeaderRef, .pageTitleRef, .errorMessagesRef, .formInputArea, .pageFooterRef, .pageSubHeaderRef,  .include_page_ah01_mainpanel, .summaryBottomNav {
@@ -2431,7 +2438,7 @@ a.helplink img {
     height: 35px;
 }
 
-#menuItem1  a {
+#menuItem1 > a {
     padding-top: 10px;
     height: 29px;
 }
@@ -2448,7 +2455,7 @@ a.helplink img {
 */
 
 
-#menuItem4 a {
+#menuItem4 > a {
     color: #005EA5;
     text-decoration: underline;
     position: relative;
@@ -2461,7 +2468,7 @@ a.helplink img {
     
 }
 
-#menuItem4 a:hover {
+#menuItem4 > a:hover {
     border-bottom: none;
     color: #2E8ACA;
     
@@ -2483,7 +2490,7 @@ a.helplink img {
 }
 .ccmsPageHeaderLinks a {display: none; height: 0;}
 
-.ccmsPageHeaderLinks  a:nth-child(3) {
+.ccmsPageHeaderLinks > a:nth-child(3) {
     font-size: 14px;
     font-weight: normal;
     text-decoration: none;
@@ -2497,7 +2504,7 @@ a.helplink img {
     top: -14px;
 }
 
- .ccmsPageHeaderLinks  a:nth-child(3):hover {   
+ .ccmsPageHeaderLinks > a:nth-child(3):hover {   
      border-bottom: 3px solid #e7a101;
  }
 
@@ -2517,13 +2524,13 @@ a.helplink img {
     list-style-image: none;
 }
 
-#id_CCMS_AH01_include_page_ah01_include_page_ah01_mainpanel_include_page_ah01_startpanel  h2 {display: none;}
+#id_CCMS_AH01_include_page_ah01_include_page_ah01_mainpanel_include_page_ah01_startpanel > h2 {display: none;}
 
-#id_CCMS_AH01_include_page_ah01_include_page_ah01_mainpanel_include_page_ah01_startpanel  div.comment {display: none;}
+#id_CCMS_AH01_include_page_ah01_include_page_ah01_mainpanel_include_page_ah01_startpanel > div.comment {display: none;}
 
-#id_CCMS_AH01_include_page_ah01_include_page_ah01_mainpanel_include_page_ah01_requestpanel  div:nth-child(3) {display: none;}
+#id_CCMS_AH01_include_page_ah01_include_page_ah01_mainpanel_include_page_ah01_requestpanel > div:nth-child(3) {display: none;}
 
-#id_CCMS_AH01_include_page_ah01_include_page_ah01_mainpanel_include_page_ah01_notificationspanel  h2 {display: none;}
+#id_CCMS_AH01_include_page_ah01_include_page_ah01_mainpanel_include_page_ah01_notificationspanel > h2 {display: none;}
 
 
 .include_page_ah01_startpanel, .include_page_ah01_searchpanel, .include_page_ah01_notificationspanel, .include_page_ah01_requestpanel {
@@ -2573,11 +2580,11 @@ a.helplink img {
 /****** Your actions / notifications *******/
 
 
-#id_CCMS_NOT02A_include_page_not02a  div:nth-child(2) {
+#id_CCMS_NOT02A_include_page_not02a > div:nth-child(2) {
     display: none;
 }
 
-#id_CCMS_NOT02A_include_page_not02a_include_page_not02a_header  a:nth-child(3) {
+#id_CCMS_NOT02A_include_page_not02a_include_page_not02a_header > a:nth-child(3) {
     position: relative;
     top: 120px;
 }
@@ -2735,7 +2742,7 @@ th.order2 a:hover {
 
 .formInputArea .panelHeaderWithLink:nth-child(1) a:nth-child(2), 
 #id_CCMS_PD01_include_page_pd01 .panelHeaderWithLink a:nth-child(2),
-#id_CCMS_POA01_include_page_poa01_include_page_poa01_header  a
+#id_CCMS_POA01_include_page_poa01_include_page_poa01_header > a
 {
     background:url("../images/arrow-left.png") no-repeat center left;
     background-size: 13px;
@@ -2746,7 +2753,7 @@ th.order2 a:hover {
 
 .formInputArea .panelHeaderWithLink:nth-child(1) a:nth-child(2):hover,
 #id_CCMS_PD01_include_page_pd01 .panelHeaderWithLink a:nth-child(2):hover
-#id_CCMS_POA01_include_page_poa01_include_page_poa01_header  a:hover
+#id_CCMS_POA01_include_page_poa01_include_page_poa01_header > a:hover
 {
     background:url("../images/arrow-left-hover.png") no-repeat center left;
     background-size: 13px;   
@@ -2765,24 +2772,54 @@ th.order2 a:hover {
 
 /* 2nd level buttons grey */
 
+#id_CCMS_CA03_include_page_ca03 > a:nth-child(10), 
+#id_CCMS_CA03_include_page_ca03 > a:nth-child(5), 
+#id_CCMS_CA06_include_page_ca06 > a:nth-child(5), 
+#id_CCMS_OR01_include_page_or01 > div:nth-child(4) > a, #id_CCMS_NOT03_include_page_not03 > a, #id_CCMS_LP02_include_page_lp02_page_lp02_addopponentbuttons .button,
+.btnCalculate .button,
+.btnFindAddress .button,
+.scopeLimitationSummaryLinkBottom .linkShowingDirectionRight,
+#id_CCMS_CA04_include_page_ca04 > a:nth-child(7),
+#id_CCMS_CA04_include_page_ca04 > a:nth-child(8),
+#id_CCMS_CB01_include_page_cb01 > a:nth-child(5),
+#id_CCMS_CB01_include_page_cb01 > a:nth-child(8),
+.btnCreateRequest .button,
+#id_CCMS_PD01_include_page_pd01 > a:nth-child(8),
+#id_CCMS_PD01_include_page_pd01 > a:nth-child(7),
+.page_lp01_freeform a:nth-child(3),
+.btnSummaryPrintBottom .button
 
+{
+    border: 1px solid #dee0e2;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #f8f8f8;
+    color: black;
+    padding: 5px 10px;
+    text-decoration: none;
+    box-shadow: none;
+    background: #f8f8f8;
+    margin-right: 15px;
+    float: left;
+}
 
-#id_CCMS_CA03_include_page_ca03  a:nth-child(10):hover, 
-#id_CCMS_CA03_include_page_ca03  a:nth-child(5):hover, 
-#id_CCMS_CA06_include_page_ca06  a:nth-child(5):hover, 
-#id_CCMS_OR01_include_page_or01  div:nth-child(4)  a:hover,
-#id_CCMS_NOT03_include_page_not03  a:hover,
+#id_CCMS_CA03_include_page_ca03 > a:nth-child(10):hover, 
+#id_CCMS_CA03_include_page_ca03 > a:nth-child(5):hover, 
+#id_CCMS_CA06_include_page_ca06 > a:nth-child(5):hover, 
+#id_CCMS_OR01_include_page_or01 > div:nth-child(4) > a:hover,
+#id_CCMS_NOT03_include_page_not03 > a:hover,
 #id_CCMS_LP02_include_page_lp02_page_lp02_addopponentbuttons .button:hover,
 .btnCalculate .button:hover,
 .btnFindAddress .button:hover,
-.scopeLimitationSummaryLinkBottom .linkShowingDirectionRight:hover
-#id_CCMS_CA04_include_page_ca04  a:nth-child(7):hover,
-#id_CCMS_CA04_include_page_ca04  a:nth-child(8):hover,
-#id_CCMS_CB01_include_page_cb01  a:nth-child(5):hover,
-#id_CCMS_CB01_include_page_cb01  a:nth-child(8):hover,
+.scopeLimitationSummaryLinkBottom .linkShowingDirectionRight:hover,
+#id_CCMS_CA04_include_page_ca04 > a:nth-child(7):hover,
+#id_CCMS_CA04_include_page_ca04 > a:nth-child(8):hover,
+#id_CCMS_CB01_include_page_cb01 > a:nth-child(5):hover,
+#id_CCMS_CB01_include_page_cb01 > a:nth-child(8):hover,
 .btnCreateRequest .button:hover,
-#id_CCMS_PD01_include_page_pd01  a:nth-child(8):hover,
-#id_CCMS_PD01_include_page_pd01  a:nth-child(7):hover,
+#id_CCMS_PD01_include_page_pd01 > a:nth-child(8):hover,
+#id_CCMS_PD01_include_page_pd01 > a:nth-child(7):hover,
 .page_lp01_freeform a:nth-child(3):hover
 {
     background-color: #ebebeb;
@@ -2790,22 +2827,22 @@ th.order2 a:hover {
     border-color: black;
 }
 
-#id_CCMS_CA03_include_page_ca03  a:nth-child(10):focus, 
-#id_CCMS_CA03_include_page_ca03  a:nth-child(5):focus, 
-#id_CCMS_CA06_include_page_ca06  a:nth-child(5):focus, 
-#id_CCMS_OR01_include_page_or01  div:nth-child(4)  a:focus, 
-#id_CCMS_NOT03_include_page_not03  a:focus 
+#id_CCMS_CA03_include_page_ca03 > a:nth-child(10):focus, 
+#id_CCMS_CA03_include_page_ca03 > a:nth-child(5):focus, 
+#id_CCMS_CA06_include_page_ca06 > a:nth-child(5):focus, 
+#id_CCMS_OR01_include_page_or01 > div:nth-child(4) > a:focus, 
+#id_CCMS_NOT03_include_page_not03 > a:focus 
 #id_CCMS_LP02_include_page_lp02_page_lp02_addopponentbuttons .button:focus,
 .btnCalculate .button:focus,
 .btnFindAddress .button:focus,
-.scopeLimitationSummaryLinkBottom .linkShowingDirectionRight:focus
-#id_CCMS_CA04_include_page_ca04  a:nth-child(7):focus,
-#id_CCMS_CA04_include_page_ca04  a:nth-child(8):focus
-#id_CCMS_CB01_include_page_cb01  a:nth-child(5):focus,
-#id_CCMS_CB01_include_page_cb01  a:nth-child(8):focus,
+.scopeLimitationSummaryLinkBottom .linkShowingDirectionRight:focus,
+#id_CCMS_CA04_include_page_ca04 > a:nth-child(7):focus,
+#id_CCMS_CA04_include_page_ca04 > a:nth-child(8):focus,
+#id_CCMS_CB01_include_page_cb01 > a:nth-child(5):focus,
+#id_CCMS_CB01_include_page_cb01 > a:nth-child(8):focus,
 .btnCreateRequest .button:focus,
-#id_CCMS_PD01_include_page_pd01  a:nth-child(8):focus,
-#id_CCMS_PD01_include_page_pd01  a:nth-child(7):focus,
+#id_CCMS_PD01_include_page_pd01 > a:nth-child(8):focus,
+#id_CCMS_PD01_include_page_pd01 > a:nth-child(7):focus,
 .page_lp01_freeform a:nth-child(3):focus
 {
     outline: 3px solid #ffbf47;
@@ -2848,9 +2885,9 @@ label, .label, .fieldInfo {
     margin-left: 0!important;
     padding-left: 0!important;
     padding-top: 5px;
-    background:url("../images/colon.png") no-repeat right;
+    /*background:url("../images/colon.png") no-repeat right;
     background-size: 4px;
-    padding-right: 7px;
+    padding-right: 7px;*/
     margin-right: 6px;
     font-weight: bold;
     background-position-y: 65%;
@@ -2921,7 +2958,7 @@ label {
    -webkit-appearance: none;
    background: url(../images/down-arrow.png) no-repeat #fff;
     background-size: 12px;
-    background-position: 97.5% 50%;
+    background-position: 97% 50%;
     border: 1px solid #ccc;
    }
 
@@ -2968,7 +3005,7 @@ label {
     padding-bottom: 15px;
 }
 
-#id_CCMS_YCA01_include_page_yca01  div.comment {
+#id_CCMS_YCA01_include_page_yca01 > div.comment {
     max-width: 680px;
 }
 
@@ -3022,7 +3059,7 @@ hr {
     margin-bottom: 35px;
 }
 
-.btnBack .button, .btnAbandonApplication .button, .lnkBack .button {
+.btnBack .button, .btnAbandonApplication .button, .lnkBack .button, .btnCancel .button {
     background-color: white;
     color: #005EA5;
     text-decoration: underline;
@@ -3121,7 +3158,10 @@ hr {
 
 /*#id_CCMS_CA03_include_page_ca03 .linkShowingDirection {display: none;}*/
 
-#id_CCMS_CA03_include_page_ca03 a:nth-child(3), #id_CCMS_CA03_include_page_ca03 div:nth-child(8) a { display: none;}
+#id_CCMS_CA03_include_page_ca03 a:nth-child(3), 
+#id_CCMS_CA03_include_page_ca03 div:nth-child(8) a { 
+    display: none;
+}
 
 /*bottom button*/
 
@@ -3137,21 +3177,21 @@ hr {
 
 
 /* Linked Cases Summary */
-#id_CCMS_CA06_include_page_ca06  a:nth-child(3) {
+#id_CCMS_CA06_include_page_ca06 > a:nth-child(3) {
     display: none;
 }
 
-#id_CCMS_CA06_include_page_ca06  a:nth-child(5) {
+#id_CCMS_CA06_include_page_ca06 > a:nth-child(5) {
     float: left;
 }
 
-#id_CCMS_CA06_include_page_ca06  h2 {
+#id_CCMS_CA06_include_page_ca06 > h2 {
    margin-top: 30px;
 }
 
 /* Amend case NEW PAGE inconistent from others here is a temp fix */
 
-#id_CCMS_AC01_pageTitleRef  h1 {
+#id_CCMS_AC01_pageTitleRef > h1 {
     display: block;
     background: none;
     font-size: 32px;
@@ -3160,7 +3200,7 @@ hr {
     
 }
 
-#id_CCMS_AC01_include_page_ac01  div:nth-child(3) {
+#id_CCMS_AC01_include_page_ac01 > div:nth-child(3) {
     margin-top: 0;
 }
 
@@ -3168,7 +3208,7 @@ hr {
     height: 45px;
 }
 
-#id_CCMS_AC01_include_page_ac01_include_page_ac01_header  a {
+#id_CCMS_AC01_include_page_ac01_include_page_ac01_header > a {
     background:url("../images/arrow-left.png") no-repeat center left;
     background-size: 13px;
     position: absolute;
@@ -3181,7 +3221,7 @@ hr {
     background-size: 13px;   
 }
 
-#id_CCMS_AC01_include_page_ac01_btnSubmitAmendment  a {
+#id_CCMS_AC01_include_page_ac01_btnSubmitAmendment > a {
     float: left;
     font-size: 18px;
     -webkit-font-smoothing: antialiased;
@@ -3197,11 +3237,11 @@ hr {
     box-shadow: 0 2px 0 #003518;
     cursor: pointer;
 }
-#id_CCMS_AC01_include_page_ac01_btnSubmitAmendment  a:hover {
+#id_CCMS_AC01_include_page_ac01_btnSubmitAmendment > a:hover {
     background: #006435;
 }
 
-#id_CCMS_AC01_include_page_ac01_btnSubmitAmendment  a:focus {
+#id_CCMS_AC01_include_page_ac01_btnSubmitAmendment > a:focus {
     outline: 3px solid #ffbf47;
     background: #006435!important;
 }
@@ -3223,7 +3263,7 @@ hr {
     width: initial;
 }
 
-#id_CCMS_AW04_include_page_aw04_btnCalculate  input {
+#id_CCMS_AW04_include_page_aw04_btnCalculate > input {
     position: relative;
     top: -100px;
     border: 1px solid #dee0e2;
@@ -3237,13 +3277,13 @@ hr {
     box-shadow: none;
 }
 
-#id_CCMS_AW04_include_page_aw04_btnCalculate  input:hover {
+#id_CCMS_AW04_include_page_aw04_btnCalculate > input:hover {
     background-color: #ebebeb;
     color: black;
     border-color: black;
 }
 
-#id_CCMS_AW04_include_page_aw04_btnCalculate  input:focus {
+#id_CCMS_AW04_include_page_aw04_btnCalculate > input:focus {
     outline: 3px solid #ffbf47;
 }
 
@@ -3270,13 +3310,13 @@ hr {
 
 /* outcome and awards */
 
-#id_CCMS_OR01_pageTitleRef  h1 {
+#id_CCMS_OR01_pageTitleRef > h1 {
     display: block;
     margin-top: 65px;
 }
 
 
-#id_CCMS_OR01_include_page_or01_include_page_or01_header  a {
+#id_CCMS_OR01_include_page_or01_include_page_or01_header > a {
     background:url("../images/arrow-left.png") no-repeat center left;
     background-size: 13px;
     position: absolute;
@@ -3284,17 +3324,17 @@ hr {
     left: 0px;
 }
 
-#id_CCMS_OR01_include_page_or01_include_page_or01_header  a:hover {
+#id_CCMS_OR01_include_page_or01_include_page_or01_header > a:hover {
     background:url("../images/arrow-left-hover.png") no-repeat center left;
     background-size: 13px;   
 }
 
-#id_CCMS_OR01_include_page_or01  div:nth-child(4)  a {
+#id_CCMS_OR01_include_page_or01 > div:nth-child(4) > a {
     position: absolute;
     left: 0px;
     top: 130px;   
 }
-#id_CCMS_OR01_include_page_or01  table:nth-child(5) {
+#id_CCMS_OR01_include_page_or01 > table:nth-child(5) {
     margin-bottom: 60px;
 }
 
@@ -3364,13 +3404,13 @@ input.linkShowingDirectionRight {
     overflow: visible;
 }
 
-#id_CCMS_CA03GA_include_page_ca03ga_scopeLimitationSummaryLinkTop  input {
+#id_CCMS_CA03GA_include_page_ca03ga_scopeLimitationSummaryLinkTop > input {
     display: none;
 }
 
 /* opponents and other parties */
 
-#id_CCMS_CA04_include_page_ca04  a:nth-child(4),#id_CCMS_CA04_include_page_ca04  a:nth-child(5) {
+#id_CCMS_CA04_include_page_ca04 > a:nth-child(4),#id_CCMS_CA04_include_page_ca04 > a:nth-child(5) {
     display: none;
 }
 
@@ -3394,7 +3434,7 @@ input.linkShowingDirectionRight {
     border: none;
 }
 
-#id_CCMS_NOT03_include_page_not03  a {
+#id_CCMS_NOT03_include_page_not03 > a {
     float: none;
 }
 
@@ -3404,15 +3444,15 @@ td.data {
     background: none;
 }
 
-#id_CCMS_CB01_include_page_cb01  a:nth-child(3), #id_CCMS_CB01_include_page_cb01_include_page_cb01_bill_poa_overview  a {
+#id_CCMS_CB01_include_page_cb01 > a:nth-child(3), #id_CCMS_CB01_include_page_cb01_include_page_cb01_bill_poa_overview > a {
     display: none;
 }
 
 /* Provide doucments notification */
 
-#id_CCMS_PD01_include_page_pd01_include_page_pd01_documents_header  a:nth-child(3), #id_CCMS_PD01_include_page_pd01_include_page_pd01_documents_header  a:nth-child(2) {display: none;}
+#id_CCMS_PD01_include_page_pd01_include_page_pd01_documents_header > a:nth-child(3), #id_CCMS_PD01_include_page_pd01_include_page_pd01_documents_header > a:nth-child(2) {display: none;}
 
-.notificationNoteTable  tr  td  p {
+.notificationNoteTable > tr > td > p {
     width: 600px;
 }
 
@@ -3423,14 +3463,14 @@ td.data {
 
 /* create POA */
 
-#id_CCMS_POA01_include_page_poa01_include_page_poa01_header  a {
+#id_CCMS_POA01_include_page_poa01_include_page_poa01_header > a {
         top: -130px;
 }
 
 /* increase H2 large font */
 
-#id_CCMS_POA01_include_page_poa01  h2,
-#id_CCMS_PD01_include_page_pd01_include_page_pd01_header  h2 {
+#id_CCMS_POA01_include_page_poa01 > h2,
+#id_CCMS_PD01_include_page_pd01_include_page_pd01_header > h2 {
     font-size: 32px;
     margin-top: 50px;
 }
@@ -3446,7 +3486,7 @@ td.data {
     padding: 0;
 }
 
-#id_CCMS_SU02_include_page_su02_btnSummaryPrintTop  input {
+#id_CCMS_SU02_include_page_su02_btnSummaryPrintTop > input {
     display: none;
 }
 
@@ -3462,7 +3502,7 @@ td.data {
     color: black;
 }
 
-#id_CCMS_SU02_pageTitleRef  h2 {
+#id_CCMS_SU02_pageTitleRef > h2 {
     font-size: 32px;
 }
 
@@ -3472,7 +3512,7 @@ td.data {
 
 .summaryTable .labelForReadonlyControl {background: none;}
 
-.summaryTable th, #id_CCMS_SU02_include_page_su02_summary  table.summaryTable.recovery  tr.recoveryHeader, #id_CCMS_SU02_include_page_su02_summary  table:nth-child(4)  tr.liablePartyHeader {border-bottom: none}
+.summaryTable th, #id_CCMS_SU02_include_page_su02_summary > table.summaryTable.recovery > tr.recoveryHeader, #id_CCMS_SU02_include_page_su02_summary > table:nth-child(4) > tr.liablePartyHeader {border-bottom: none}
 
 
 /* IE fixes */
@@ -3493,54 +3533,10 @@ select::-ms-expand {
   }
 
 /* cancel */
-#cancel_link a {
-	float: left;
-	background:url("../images/arrow-left.png") no-repeat center left;
-	baground-size: 13px;
+
+#cancel_link  a {
+ float: left;
+ background:url("../images/arrow-left.png") no-repeat center left;
+ background-size: 13px;  
 }
 
-/*IE7 play
-
-.btnCreateRequest .button
-{
-    border: 1px solid #dee0e2;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    background-color: #f8f8f8;
-    color: deeppink;
-    padding: 5px 10px;
-    text-decoration: none;
-    box-shadow: none;
-    background: #f8f8f8;
-    margin-right: 15px;
-    float: left;
-}
-*/
-
-#id_CCMS_CA03_include_page_ca03 > a:nth-child(10), 
-#id_CCMS_CA03_include_page_ca03 > a:nth-child(5),
-#id_CCMS_CA06_include_page_ca06 > a:nth-child(5), 
-#id_CCMS_OR01_include_page_or01 > div:nth-child(4)  a, 
-#id_CCMS_NOT03_include_page_not03 > a, 
-#id_CCMS_LP02_include_page_lp02_page_lp02_addopponentbuttons .button,
-.btnCalculate .button,.btnFindAddress .button,
-.scopeLimitationSummaryLinkBottom .linkShowingDirectionRight,
-#id_CCMS_CA04_include_page_ca04 > a:nth-child(7),
-#id_CCMS_CA04_include_page_ca04 > a:nth-child(8),
-#id_CCMS_CB01_include_page_cb01 > a:nth-child(5),
-#id_CCMS_CB01_include_page_cb01 > a:nth-child(8),
-.btnCreateRequest .button {
-    border: 1px solid #dee0e2;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    background-color: #f8f8f8;
-    color: purple;
-    padding: 5px 10px;
-    text-decoration: none;
-    box-shadow: none;
-    background: #f8f8f8;
-    margin-right: 15px;
-    float: left;
-}
