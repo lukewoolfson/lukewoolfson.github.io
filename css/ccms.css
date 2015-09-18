@@ -998,6 +998,8 @@ select.readonly {
 /* end dropdown styling */
 
 /* begin radio buttons styling */
+
+/* 
 .input.radio {
 	display: block;
 	float: left;
@@ -1016,6 +1018,7 @@ select.readonly {
 	top: -1px;
 	position: relative;
 }
+*/
 
 .groupInput .radio .label {
     display: none;
@@ -2314,10 +2317,15 @@ a.button:link, a.button:active, a.button:visited {
 
 
 /*** page layout ****/
-.pageHeaderRef, .pageTitleRef, .errorMessagesRef, .formInputArea, .pageFooterRef, .pageSubHeaderRef,  .include_page_ah01_mainpanel, .summaryBottomNav {
+body {
     width: 1020px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.errorMessagesRef, .formInputArea {
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .pageHeaderRef {
@@ -2447,13 +2455,6 @@ a.button:link, a.button:active, a.button:visited {
     display: none;
 }
 
-/*
-#menuItem2 a {
-    padding-top: 10px;
-    height: 29px;
-}
-*/
-
 
 #menuItem4 > a {
     color: #005EA5;
@@ -2462,7 +2463,6 @@ a.button:link, a.button:active, a.button:visited {
     top: 44px;
     float: right;
     width: 60px;
-    /*background-color: pink;*/
     height: auto;
     z-index: 999;
     
@@ -2519,6 +2519,9 @@ a.button:link, a.button:active, a.button:visited {
 
 /*** landing page formating ***/
 
+#id_CCMS_AH01_include_page_ah01_include_page_ah01_mainpanel_include_page_ah01_notificationspanel {
+    min-height: 106px;
+}
 
 .include_page_ah01_notificationspanel li {
     list-style-image: none;
@@ -2622,6 +2625,7 @@ td {
    border: none;
    /*border-bottom: 1px solid black;*/
    background-color: white;
+    font-size: 16px;
 }
 
 tr {
@@ -2703,9 +2707,6 @@ th.order2 a:hover {
     padding-right: 16px;
 }
 
-
-
-
 .paginationPanel .page {
     color: #005EA5;
     border: none;
@@ -2731,6 +2732,7 @@ th.order2 a:hover {
     color: white;
     background-color: #005EA5;
     text-decoration: none;
+    padding-top: 2px;
 }
 
 .paginationPanel .active:hover {
@@ -2740,9 +2742,13 @@ th.order2 a:hover {
 /*move return to home link to top left of page */
 
 
+
+
 .formInputArea .panelHeaderWithLink:nth-child(1) a:nth-child(2), 
 #id_CCMS_PD01_include_page_pd01 .panelHeaderWithLink a:nth-child(2),
-#id_CCMS_POA01_include_page_poa01_include_page_poa01_header > a
+#id_CCMS_POA01_include_page_poa01_include_page_poa01_header > a,
+#id_CCMS_SU02_pageTitleRef > a,
+#id_CCMS_MNA01_include_page_00_00_page_00_00_screen_include_page_00_00_header > a
 {
     background:url("../images/arrow-left.png") no-repeat center left;
     background-size: 13px;
@@ -2753,7 +2759,9 @@ th.order2 a:hover {
 
 .formInputArea .panelHeaderWithLink:nth-child(1) a:nth-child(2):hover,
 #id_CCMS_PD01_include_page_pd01 .panelHeaderWithLink a:nth-child(2):hover
-#id_CCMS_POA01_include_page_poa01_include_page_poa01_header > a:hover
+#id_CCMS_POA01_include_page_poa01_include_page_poa01_header > a:hover,
+#id_CCMS_SU02_pageTitleRef > a:hover,
+#id_CCMS_MNA01_include_page_00_00_page_00_00_screen_include_page_00_00_header > a:hover
 {
     background:url("../images/arrow-left-hover.png") no-repeat center left;
     background-size: 13px;   
@@ -2787,8 +2795,9 @@ th.order2 a:hover {
 #id_CCMS_PD01_include_page_pd01 > a:nth-child(8),
 #id_CCMS_PD01_include_page_pd01 > a:nth-child(7),
 .page_lp01_freeform a:nth-child(3),
-.btnSummaryPrintBottom .button
-
+.btnSummaryPrintBottom .button,
+.btnCreateNewOrganisation .button,
+#id_CCMS_CA03JB_include_page_ca03jb_include_page_ca03jb_bottomAddCounselLink > input
 {
     border: 1px solid #dee0e2;
     -webkit-border-radius: 3px;
@@ -2820,7 +2829,9 @@ th.order2 a:hover {
 .btnCreateRequest .button:hover,
 #id_CCMS_PD01_include_page_pd01 > a:nth-child(8):hover,
 #id_CCMS_PD01_include_page_pd01 > a:nth-child(7):hover,
-.page_lp01_freeform a:nth-child(3):hover
+.page_lp01_freeform a:nth-child(3):hover,
+.btnCreateNewOrganisation .button:hover,
+#id_CCMS_CA03JB_include_page_ca03jb_include_page_ca03jb_bottomAddCounselLink > input:hover
 {
     background-color: #ebebeb;
     color: black;
@@ -2843,7 +2854,9 @@ th.order2 a:hover {
 .btnCreateRequest .button:focus,
 #id_CCMS_PD01_include_page_pd01 > a:nth-child(8):focus,
 #id_CCMS_PD01_include_page_pd01 > a:nth-child(7):focus,
-.page_lp01_freeform a:nth-child(3):focus
+.page_lp01_freeform a:nth-child(3):focus,
+.btnCreateNewOrganisation .button:focus,
+#id_CCMS_CA03JB_include_page_ca03jb_include_page_ca03jb_bottomAddCounselLink > input:focus
 {
     outline: 3px solid #ffbf47;
     background: #ebebeb!important;
@@ -2852,9 +2865,9 @@ th.order2 a:hover {
 .panelHeaderWithLink a, .panelHeaderWithLink .link {
     color: #005EA5;
     background: white;
-    position: relative;
+   /*position: relative;
     top: 15px;
-    padding-right: 0;
+    padding-right: 0;*/
 }
 
 .panelHeaderWithLink a:hover {
@@ -3100,14 +3113,15 @@ hr {
     background: white;
 }
 
+
+.disabled {
+    zoom: 1;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    cursor: default;
+}
+
 /****** specific page tweaks ******/
-
-/* Submission confirmation gap */
-
-/*
-#CCMS_GS08_form .formInputArea {
-    margin-top: 0;
-} */
 
 /* Submission in progress */
 
@@ -3156,12 +3170,16 @@ hr {
 
 /* Proceedings and Costs */
 
-/*#id_CCMS_CA03_include_page_ca03 .linkShowingDirection {display: none;}*/
-
 #id_CCMS_CA03_include_page_ca03 a:nth-child(3), 
 #id_CCMS_CA03_include_page_ca03 div:nth-child(8) a { 
     display: none;
 }
+
+
+#id_CCMS_CA03_include_page_ca03 > table:nth-child(4) > tbody > tr > td:nth-child(6), #id_CCMS_CA03_include_page_ca03 > table:nth-child(4) > tbody > tr > td:nth-child(1) {
+    white-space: nowrap;
+}
+
 
 /*bottom button*/
 
@@ -3212,7 +3230,7 @@ hr {
     background:url("../images/arrow-left.png") no-repeat center left;
     background-size: 13px;
     position: absolute;
-    top: 78px;
+    top: 125px;
 
 }
 
@@ -3538,5 +3556,158 @@ select::-ms-expand {
  float: left;
  background:url("../images/arrow-left.png") no-repeat center left;
  background-size: 13px;  
+}
+
+/* create a bill */
+
+#id_CCMS_CB03_include_page_cb03_include_page_cb03_header_section2 > a {
+    background:url("../images/arrow-left.png") no-repeat center left;
+    background-size: 13px;
+    position: absolute;
+    top: -120px;
+    left: 0px; 
+}
+
+#id_CCMS_CB03_include_page_cb03_include_page_cb03_header_section2 > a:hover {
+    background:url("../images/arrow-left-hover.png") no-repeat center left;
+    background-size: 13px; 
+}
+
+/* view outcome */
+
+#id_CCMS_SU02_pageTitleRef > a {
+    left: 20px;
+}
+
+/* Case Costs */
+
+#id_CCMS_CA03JB_include_page_ca03jb_include_page_ca03jb_subheader > input {
+    display: none;
+}
+
+#id_CCMS_CA03JB_include_page_ca03jb_include_page_ca03jb_bottomAddCounselLink > input {
+    margin-bottom: 20px;
+}
+
+.costSummary .readonlyData {
+    width: auto;
+}
+
+.costSummary .totalRemaining .textOnlyCurrency {
+    padding-left: 12px;
+    width: auto;
+}
+
+/* browser back */
+
+#id_CCMS_GN04_pageTitleRef > h1 {
+    display: block;
+}
+
+#id_CCMS_GN04_include_page_gn04 {
+        position: relative;
+    top: -40px;
+    
+}
+
+#id_CCMS_GN04_include_page_gn04_include_page_gn04_header {
+    height: 0px;
+    margin-top: 0px;
+}
+
+#id_CCMS_GN04_include_page_gn04_include_page_gn04_header > a {
+    float: left;
+	font-size:1em;
+    -webkit-font-smoothing: antialiased;
+	font-weight: normal;
+	height:38px;
+	line-height:27px;
+	color:#fff;
+	background: #00823B;
+	padding:5px 10px 5px 10px;
+	margin:5px 10px 0px 0px;
+	border:0;
+	overflow:visible;
+    box-shadow: 0 2px 0 #003518;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 38px;
+    text-align: center;
+    position: relative ;
+    top: 170px
+}
+
+/* OPA Means */
+
+#id_CCMS_MNA01_include_page_00_00_page_00_00_screen_page_00_00_inputPanel .label {
+    width: 600px;
+}
+
+.inline {
+    overflow: visible;
+}
+
+fieldset {
+    border: none;
+}
+
+.block-label input {
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    cursor: pointer;
+}
+
+.block-label {
+    display: inline-block;
+    float: none;
+    clear: left;
+    position: relative;
+    background: #dee0e2;
+    border: 1px solid #dee0e2;
+    padding: 18px 30px 15px 45px!important;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.block-label:hover {
+    border-color: #0b0c0c;
+}
+
+.block-label.selected {
+    background: #fff;
+    border-color: #0b0c0c;
+}
+
+.block-label.add-focus {
+    outline: 3px solid #ffbf47
+}
+
+.opaText .strongTextOnlyInput, .opaText .textOnlyInput {
+    padding-left: 0px;
+}
+
+#id_CCMS_MNA01_include_page_00_00_page_00_00_screen_include_page_00_00_header > h2 {
+    font-weight: bold;
+}
+
+/* pop up help text */
+
+
+.csh h1 {
+    padding-left: 30px;
+    background:url("../images/icon_csh.gif") no-repeat center left;
+    color: black;
+    border: none;
+}
+
+.cshtext {
+    padding-left: 30px;
+    padding-top: 0px;
+    background: none;
+    color: black;
+    border: none;
 }
 
