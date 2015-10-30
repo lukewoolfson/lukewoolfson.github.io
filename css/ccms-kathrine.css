@@ -207,10 +207,16 @@ a {
 	padding: 0px 10px;
 }
 .clientCaseInfo #clientName {
+	color: #000;
+	background-color: #DEE0E2;
+	width:auto !important;
 	width:33%;
 }
 
 .clientCaseInfo #lscReference {
+	color: #000;
+	background-color: #DEE0E2;
+	width:auto !important;
 	width:33%;
 }
 
@@ -2332,13 +2338,7 @@ body {
     width: 1020px;
     margin-left: auto;
     margin-right: auto;
-    /*text-align: center;*/
 }
-
-.pageHeaderRef, .pageSubHeaderRef, .pageTitleRef, .errorMessagesRef, .formInputArea, .pageFooterRef {
-    /*text-align: left;*/
-}
-
 
 .errorMessagesRef, .formInputArea {
     padding-left: 15px;
@@ -2362,7 +2362,8 @@ body {
     margin-bottom: 5px;
     font-size: 16px;
     background: #dee0e2;
-    top: -27px;
+   	top: -27px;
+   	*top: 0px;
     position: relative;
     z-index: -1;
 }
@@ -2374,18 +2375,23 @@ body {
 }
 #clientName {
     background:url("../images/case-open.png") no-repeat center left;
-    width: auto!important;
+    color: #000;
+    background-color: #DEE0E2;
+    width:auto !important;
     padding-left: 25px;
 }
 
 #lscReference, #providerReference {
-    width: auto!important;
+	color: #000;
+	background-color: #DEE0E2;
+    width:auto !important;
+   
 }
 
 
-#clientName span.strong, #lscReference span.strong, #providerReference span.strong, #clientName br, #lscReference br, #providerReference br {
+/*#clientName span.strong, #lscReference span.strong, #providerReference span.strong, #clientName br, #lscReference br, #providerReference br {
     display: none;
-}
+}*/
     
 /***header****/
 .ccmsUserInfo {
@@ -2435,7 +2441,7 @@ body {
 
 .ccmsPageHeaderLinks a {
     color: white;
-    background-color: black;
+    background-color: transparent;
     text-decoration: underline;
 }
 
@@ -2504,10 +2510,8 @@ body {
     padding-right: 0;
     padding-top: 0;
 }
-.ccmsPageHeaderLinks a {display: none; height: 0;}
-
-.ccmsPageHeaderLinks > a:nth-child(3) {
-    font-size: 14px;
+.ccmsPageHeaderLinks a {display: block; 
+	font-size: 14px;
     font-weight: normal;
     text-decoration: none;
     position: relative;
@@ -2516,9 +2520,21 @@ body {
     height: 27px;
     display: block;
     text-align: center;
+    padding-top: 2px;}
+
+/*.ccmsPageHeaderLinks > a:nth-child(3) {
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: none;
+    position: relative;
+    background-color: aqua;
+    width: 140px;
+    height: 27px;
+    display: block;
+    text-align: center;
     padding-top: 10px;
     top: -14px;
-}
+}*/
 
  .ccmsPageHeaderLinks > a:nth-child(3):hover {   
      border-bottom: 3px solid #e7a101;
@@ -2596,6 +2612,7 @@ body {
      padding: 0px 22px;
 }
 
+
 /****** Your actions / notifications *******/
 
 
@@ -2641,7 +2658,7 @@ td {
    border: none;
    border-bottom: 1px solid black;
    background-color: white;
-    font-size: 16px;
+   font-size: 16px;
 }
 
 tr {
@@ -3058,10 +3075,6 @@ hr {
 
 /****** errors *****/
 
-.error {
-    width: 600px;
-}
-
 .errorMessagesRef {
     margin-top: 0px;
 }
@@ -3069,7 +3082,7 @@ hr {
 .errorMessagesRef #messageInfo, .errorMessagesRef #messages {
     border: none;
     margin: 0;
-    width: 600px;
+    width: auto;
     border: 5px solid #b10e1e;
     padding: 20px 15px 15px 15px;
     
@@ -3251,7 +3264,7 @@ hr {
 }
 
 #id_CCMS_AC01_include_page_ac01 > div:nth-child(3) {
-    margin-top: 0;
+    margin-top: 0px;
 }
 
 #id_CCMS_AC01_pageTitleRef {
@@ -3639,8 +3652,9 @@ select::-ms-expand {
 }
 
 #id_CCMS_GN04_include_page_gn04 {
-        position: relative;
+    position: relative;
     top: -40px;
+    *top: 0px;
     
 }
 
@@ -3748,12 +3762,9 @@ fieldset {
 /* loading iframe page */
 
 #cancel_link  a {
-    float: left;
-    top: -68px;
-    background: url("../images/arrow-left.png") no-repeat center left;
-    background-size: 13px;
-    position: relative;
-    margin-bottom: 0;
+ float: left;
+ background:url("../images/arrow-left.png") no-repeat center left;
+ background-size: 13px;  
 }
 
 #cancel_link  a:hover {
@@ -3763,6 +3774,7 @@ fieldset {
 
 #iframe-wrapper {
     position: relative;
+    margin-top: 85px;
 }
 
 #loadImg {
@@ -3823,48 +3835,15 @@ fieldset {
     color: black;
 }
 
-#id_CCMS_PT07_include_page_pt07 {
-    position: relative;
-}
-#id_CCMS_PT07_include_page_pt07_page_pt_topNav_btnBackPrintTop > input {
-    padding: 0;
-    padding-left: 20px;
-    height: 20px;
-    text-align: left;
-    width: auto;
-    line-height: 20px;
-    background-color: #fff;
-        color: #005EA5;
-    box-shadow: none;
-    position: absolute;
-    left: 0;
-    top: -70px;
-    background: url("../images/arrow-left.png") no-repeat center left;
-    background-size: 13px;
-    color: #005EA5;
-    margin-left: 15px;
-}
-
-#id_CCMS_PT07_include_page_pt07_page_pt_topNav_btnBackPrintTop > input:hover {
-        background: url("../images/arrow-left-hover.png") no-repeat center left;
-    background-size: 13px;
-   
-        color: #2E8ACA;
-}
-
-#id_CCMS_PT07_pageTitleRef > h1 {
-    padding-top: 10px;
-}
-
 /* Amend provider details and Amend Correspondence Address */
 
 #id_CCMS_CA05_pageTitleRef > h1, #id_CCMS_CA02B_pageTitleRef > h1 {
-    display: block;
+    display: none;
     margin-top: 60px;
 }
 
 #id_CCMS_CA05_include_page_ca05_include_page_ca05_header > h2, #id_CCMS_CA02B_include_page_ca02b_include_page_ca02b_header > h2 {
-    display: none;
+    display: block;
 }
 
 #id_CCMS_CA05_include_page_ca05_include_page_ca05_header, #id_CCMS_CA02B_include_page_ca02b_include_page_ca02b_header {
@@ -3872,7 +3851,7 @@ fieldset {
 }
 
 #id_CCMS_CA05_include_page_ca05_include_page_ca05_header > a, #id_CCMS_CA02B_include_page_ca02b_include_page_ca02b_header > a {
-    top: -70px;
+    /*top: -70px;*/
 }
 
 /* Summary */
@@ -3889,10 +3868,4 @@ fieldset {
 #id_CCMS_SU01_page_su01_mainContent_summary_summary_provider_providerData_officeId
 {
     border-bottom: 1px solid black!important;
-}
-
-/* doc download */
-
-#id_CCMS_GN05_include_page_gn05 > div.ccmsPageHeaderLogo > a > img {
-    display: none;
 }
