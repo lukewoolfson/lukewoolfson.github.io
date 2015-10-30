@@ -2868,7 +2868,7 @@ th.order2 a:hover {
 .page_lp01_freeform a:nth-child(3):hover,
 .btnCreateNewOrganisation .button:hover,
 #id_CCMS_CA03JB_include_page_ca03jb_include_page_ca03jb_bottomAddCounselLink > input:hover,
-.btnSummaryPrintTop .button:hover
+.btnSummaryPrintTop .button:hover, .btnSummaryPrintBottom .button:hover
 {
     background-color: #ebebeb;
     color: black;
