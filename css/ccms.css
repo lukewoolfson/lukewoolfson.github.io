@@ -2526,7 +2526,8 @@ body {
     padding-right: 0;
     padding-top: 0;
 }
-.ccmsPageHeaderLinks a {display: block; 
+.ccmsPageHeaderLinks a {
+    display: block; 
 	font-size: 14px;
     font-weight: normal;
     text-decoration: none;
@@ -2536,7 +2537,12 @@ body {
     height: 27px;
     display: block;
     text-align: center;
-    padding-top: 2px;}
+    padding-top: 12px;
+}
+
+.ccmsPageHeaderLinks a:hover {
+    border-bottom: 3px solid #e7a101;
+}
 
 /*.ccmsPageHeaderLinks > a:nth-child(3) {
     font-size: 14px;
@@ -2550,11 +2556,12 @@ body {
     text-align: center;
     padding-top: 10px;
     top: -14px;
-}*/
+}
 
  .ccmsPageHeaderLinks > a:nth-child(3):hover {   
      border-bottom: 3px solid #e7a101;
  }
+*/
 
 
 /*** footer ***/
