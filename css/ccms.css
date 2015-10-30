@@ -2335,6 +2335,11 @@ body {
     text-align: center;
 }
 
+.pageHeaderRef, .pageSubHeaderRef, .pageTitleRef, .errorMessagesRef, .formInputArea, .pageFooterRef {
+    text-align: left;
+}
+
+
 .errorMessagesRef, .formInputArea {
     padding-left: 15px;
     padding-right: 15px;
