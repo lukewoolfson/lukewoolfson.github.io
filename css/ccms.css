@@ -2332,11 +2332,11 @@ body {
     width: 1020px;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
+    /*text-align: center;*/
 }
 
 .pageHeaderRef, .pageSubHeaderRef, .pageTitleRef, .errorMessagesRef, .formInputArea, .pageFooterRef {
-    text-align: left;
+    /*text-align: left;*/
 }
 
 
