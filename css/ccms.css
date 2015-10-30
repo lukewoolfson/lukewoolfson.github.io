@@ -3,6 +3,7 @@
 Based upton Kathrines CSS
 
 Friday 30/10/15 fixes to:
+-- v1--
 
 IE7 bugs:
  - AW02 Cost award 100% width to subtitles
@@ -10,6 +11,10 @@ IE7 bugs:
  - SU01 lines in summary page 
 
 New print button
+
+--v2--
+Nowrap turned off
+--
 
 Begin basic elements
  *******************************************************************************/
