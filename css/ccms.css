@@ -2662,7 +2662,7 @@ th {
 th {
     border: none;
     border-bottom: 1px solid black;
-    white-space: nowrap;
+    /*white-space: nowrap;*/
 }
 
 td {
