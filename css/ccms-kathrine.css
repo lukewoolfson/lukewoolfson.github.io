@@ -3570,7 +3570,9 @@ td.data {
     font-size: 32px;
 }
 
-.summaryTable td { border: none;}
+.summaryTable td { 
+    border-bottom: 1px solid black;
+}
 
 .summaryTable .columnDescription {
     font-size: 18px;
