@@ -3572,6 +3572,9 @@ td.data {
 
 .summaryTable td { 
     border-bottom: 1px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
 }
 
 .summaryTable .columnDescription {
