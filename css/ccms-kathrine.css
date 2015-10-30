@@ -3420,6 +3420,10 @@ hr {
     padding-left: 0;
 }
 
+#id_CCMS_AW02_include_page_aw02 .btnCalculate {
+    display: inline-block;
+}
+
 /*
 #id_CCMS_AW02_include_page_aw02 .btnCalculate {
     position: relative;
