@@ -3079,7 +3079,7 @@ label {
 }
 
 .reqfield {
-    background-size: 12px;
+    /*background-size: 12px;*/
     margin-bottom: 8px;
     font-size: 100%;
 }
