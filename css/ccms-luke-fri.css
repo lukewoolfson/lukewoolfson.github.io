@@ -4,6 +4,7 @@ Based upton Kathrines CSS
 
 Friday 30/10/15 fixes to:
 -- v1--
+
 IE7 bugs:
  - AW02 Cost award 100% width to subtitles
  - AW02 Cost award next and calc next to each other
@@ -16,12 +17,6 @@ Nowrap turned off
 put help in the middle
 turned on hover for help
 --
-
-Sat  31/10/2015 fixes to
---v3--
-IE7 bugs:
- - VC01 Set h2 width to 100% to fix h2 headers
- - SU02 Set h2 width to 100% to fix h2 headers
 
 Begin basic elements
  *******************************************************************************/
@@ -2047,8 +2042,6 @@ table.clientSummary th{
 /*** end css CCMS.POA03 ***/
 
 /*** begin css CCMS.VC01 ***/
-#id_CCMS_VC01_include_page_vc01 > h2 {float: left; width: 100%}
-
 .caseinfosummary td,
 .caseinfosummary th{
 	width: 25%;
@@ -3587,10 +3580,6 @@ td.data {
 .btnSummaryPrintTop {
     margin: 0;
     padding: 0;
-}
-
-#id_CCMS_SU02_include_page_su02_summary > h2 {
-    width: 100%;
 }
 
 #id_CCMS_SU02_include_page_su02_btnSummaryPrintTop > input {
