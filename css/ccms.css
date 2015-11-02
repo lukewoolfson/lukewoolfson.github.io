@@ -3965,4 +3965,5 @@ fieldset {
 #id_CCMS_SF01_page_sf01 > br {
     display: block;
     content: close-quote;
+    margin-bottom: 5px;
 }
