@@ -30,6 +30,9 @@ Mon 02/11/15
 --v5--
 SF01 advocate names shown as a list
 
+--v6--
+Added home link back again
+
 Begin basic elements
  *******************************************************************************/
 
@@ -2505,7 +2508,7 @@ body {
 }
 
 #menuItem1 {
-    display: none;
+    /*display: none;*/
 }
 
 
