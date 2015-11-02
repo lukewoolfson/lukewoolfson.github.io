@@ -32,6 +32,8 @@ SF01 advocate names shown as a list
 
 --v6--
 Added home link back again
+NotificationNoteTable width
+Added notificationHeader th no wrap
 
 Begin basic elements
  *******************************************************************************/
@@ -3569,6 +3571,9 @@ td.data {
     width: 600px;
 }
 
+.notificationHeader th {
+    white-space: nowrap;
+}
 
 #id_CCMS_PD01_include_page_pd01 .panelHeaderWithLink a:nth-child(2) {
     top: -150px;
