@@ -3565,9 +3565,10 @@ td.data {
 
 #id_CCMS_PD01_include_page_pd01_include_page_pd01_documents_header > a:nth-child(3), #id_CCMS_PD01_include_page_pd01_include_page_pd01_documents_header > a:nth-child(2) {display: none;}
 
-.notificationNoteTable > tr > td > p {
+.notificationNoteTable p {
     width: 600px;
 }
+
 
 #id_CCMS_PD01_include_page_pd01 .panelHeaderWithLink a:nth-child(2) {
     top: -150px;
