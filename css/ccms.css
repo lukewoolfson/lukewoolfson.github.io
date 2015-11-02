@@ -23,6 +23,13 @@ IE7 bugs:
  - VC01 Set h2 width to 100% to fix h2 headers
  - SU02 Set h2 width to 100% to fix h2 headers
 
+--v4--
+Fixed required icon size commented out .reqfield background size (not supported in IE7/8 so changed icon instead.
+
+Mon 02/11/15
+--v5--
+SF01 advocate names shown as a list
+
 Begin basic elements
  *******************************************************************************/
 
@@ -3951,4 +3958,11 @@ fieldset {
 #id_CCMS_SU01_page_su01_mainContent_summary_summary_provider_providerData_officeId
 {
     border-bottom: 1px solid black!important;
+}
+
+/* Advocate list */
+
+#id_CCMS_SF01_page_sf01 > br {
+    display: block;
+    content: close-quote;
 }
