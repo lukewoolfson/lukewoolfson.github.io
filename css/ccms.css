@@ -34,6 +34,7 @@ SF01 advocate names shown as a list
 Added home link back again
 NotificationNoteTable width
 Added notificationHeader th no wrap
+Fixed notifications <br>
 
 Begin basic elements
  *******************************************************************************/
@@ -1804,6 +1805,10 @@ table.clientSummary th{
 
 .notificationNoteTable td{
 	height: auto;
+}
+
+.formInputArea .notificationNoteTable br {
+    display: block;
 }
 
 .scopeLimitationLinkTable td{
