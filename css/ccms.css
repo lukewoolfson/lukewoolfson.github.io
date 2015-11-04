@@ -41,7 +41,9 @@ Wends 03/12/15
 OR01 Moved 'Add Award' to top of table to handle more than 1 award
 CB03 table elements all on 1 row
 CB03 Cancel and return link positioned to top of page. Will remain in same place once bills have been created.
-NOT02A 
+NOT02A fixed table headings to be in 1 line
+PO03 move slect court to left and re styled as secondary button
+
 
 Begin basic elements
  *******************************************************************************/
@@ -2889,7 +2891,8 @@ th.order2 a:hover {
 .btnSummaryPrintBottom .button,
 .btnCreateNewOrganisation .button,
 #id_CCMS_CA03JB_include_page_ca03jb_include_page_ca03jb_bottomAddCounselLink > input,
-.btnSummaryPrintTop .button
+.btnSummaryPrintTop .button,
+#id_CCMS_PO03_include_page_po03 .selectCourt input
 {
     border: 1px solid #dee0e2;
     -webkit-border-radius: 3px;
@@ -2924,7 +2927,8 @@ th.order2 a:hover {
 .page_lp01_freeform a:nth-child(3):hover,
 .btnCreateNewOrganisation .button:hover,
 #id_CCMS_CA03JB_include_page_ca03jb_include_page_ca03jb_bottomAddCounselLink > input:hover,
-.btnSummaryPrintTop .button:hover, .btnSummaryPrintBottom .button:hover
+.btnSummaryPrintTop .button:hover, .btnSummaryPrintBottom .button:hover,
+#id_CCMS_PO03_include_page_po03 .selectCourt input:hover
 {
     background-color: #ebebeb;
     color: black;
@@ -2949,7 +2953,8 @@ th.order2 a:hover {
 #id_CCMS_PD01_include_page_pd01 > a:nth-child(7):focus,
 .page_lp01_freeform a:nth-child(3):focus,
 .btnCreateNewOrganisation .button:focus,
-#id_CCMS_CA03JB_include_page_ca03jb_include_page_ca03jb_bottomAddCounselLink > input:focus
+#id_CCMS_CA03JB_include_page_ca03jb_include_page_ca03jb_bottomAddCounselLink > input:focus,
+#id_CCMS_PO03_include_page_po03 .selectCourt input:focus
 {
     outline: 3px solid #ffbf47;
     background: #ebebeb!important;
@@ -4009,4 +4014,25 @@ fieldset {
     display: block;
     content: close-quote;
     margin-bottom: 5px;
+}
+
+/* notifications search results */
+
+#id_CCMS_NOT02A_include_page_not02a th {
+    white-space: nowrap;
+}
+
+/* PD03 Record proceeding outcome*/
+
+#id_CCMS_PO03_include_page_po03_include_po03_displaypanel_include_po03_inputpanel_selectCourt {
+    position: relative;
+    padding-top: 30px;
+}
+
+#id_CCMS_PO03_include_page_po03 .selectCourt input {
+    position: absolute;
+    left: 0;
+    top: -10px;
+    margin-left: 0;
+
 }
