@@ -44,7 +44,10 @@ CB03 Cancel and return link positioned to top of page. Will remain in same place
 NOT02A fixed table headings to be in 1 line
 NOT02A Fixed arrow size on IE7
 PO03 move slect court to left and re styled as secondary button
-page errors have a set width of 600px
+Page errors have a set width of 600px
+Should fix roaming astertix eg CA03J
+Return links are now absolute positioning to the body of the page
+Added H1 title back to SF01
 
 
 Begin basic elements
@@ -2334,6 +2337,7 @@ h1 { display: block;
     padding-bottom: 0;
    padding-top: 10px;
     width: auto;
+    font-weight: bold;
 }
 
 h2 {
@@ -2391,9 +2395,10 @@ body {
     width: 1020px;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
 }
 
-.errorMessagesRef, .formInputArea {
+.formInputArea {
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -2750,12 +2755,13 @@ input {
 .panelHeaderWithLink {
     border-bottom: 0;
     margin-bottom: 0;
-    position: relative;
+    /*position: relative;*/ /*changed to body*/
 }
 
 .formInputArea .panelHeaderWithLink:nth-child(1) {
-    margin-top: 50px; /*should only be first one */
+    /* margin-top: 50px; no longer needed*/
 }
+
 
 .formInputArea br {
     display: none;
@@ -2847,8 +2853,8 @@ th.order2 a:hover {
     background:url("../images/arrow-left.png") no-repeat center left;
     background-size: 13px;
     position: absolute;
-    top: -15px;
-    left: 0px;
+    top: 120px;
+    left: 15px;
 }
 
 .formInputArea .panelHeaderWithLink:nth-child(1) a:nth-child(2):hover,
@@ -3143,7 +3149,8 @@ hr {
 }
 
 .errorMessagesRef {
-    margin-top: 0px;
+    /*margin-top: 65px;*/
+    padding: 0px 15px;
 }
 
 .errorMessagesRef #messageInfo, .errorMessagesRef #messages {
@@ -3175,7 +3182,6 @@ hr {
 .errorMessagesRef #messages {
     border-top: 0;
     padding-top: 0;
-    margin-bottom: 35px;
 }
 
 .btnBack .button, .btnAbandonApplication .button, .lnkBack .button, .btnCancel .button {
@@ -3342,7 +3348,7 @@ hr {
     background:url("../images/arrow-left.png") no-repeat center left;
     background-size: 13px;
     position: absolute;
-    top: 125px;
+    top: 120px;
 
 }
 
@@ -3607,18 +3613,11 @@ td.data {
 }
 
 
-/* create POA */
-
-#id_CCMS_POA01_include_page_poa01_include_page_poa01_header > a {
-        top: -130px;
-}
-
 /* increase H2 large font */
 
 #id_CCMS_POA01_include_page_poa01 > h2,
 #id_CCMS_PD01_include_page_pd01_include_page_pd01_header > h2 {
     font-size: 32px;
-    margin-top: 50px;
 }
 
 /* outcome and awards liable parties */
@@ -3679,7 +3678,7 @@ td.data {
 /* IE fixes */
 
 .pageTitleRef {
-    margin-top: 50px;
+    margin-top: 65px;
     padding-left: 15px;
 }
 
@@ -3729,11 +3728,7 @@ select::-ms-expand {
 }
 
 
-/* view outcome */
 
-#id_CCMS_SU02_pageTitleRef > a {
-    left: 20px;
-}
 
 /* Case Costs */
 
@@ -3746,7 +3741,7 @@ select::-ms-expand {
 }
 
 .costSummary .readonlyData {
-    width: auto;
+  /*  width: auto;*/
 }
 
 .costSummary .totalRemaining .textOnlyCurrency {
@@ -3947,9 +3942,7 @@ fieldset {
 
 /**** new bits for print buttons ***/
 
-#id_CCMS_PT07_include_page_pt07 {
-    position: relative;
-}
+
 #id_CCMS_PT07_include_page_pt07_page_pt_topNav_btnBackPrintTop > input {
     padding: 0;
     padding-left: 20px;
@@ -3962,11 +3955,12 @@ fieldset {
     box-shadow: none;
     position: absolute;
     left: 0;
-    top: -70px;
+    top: 120px;
     background: url("../images/arrow-left.png") no-repeat center left;
     background-size: 13px;
-    color: #005EA5;
     margin-left: 15px;
+    text-decoration: underline;
+    font-size: 14px;
 }
 
 #id_CCMS_PT07_include_page_pt07_page_pt_topNav_btnBackPrintTop > input:hover {
@@ -4041,4 +4035,31 @@ fieldset {
     top: -10px;
     margin-left: 0;
 
+}
+
+/* CA03J */
+
+.costSummary .readonlyData {
+    text-align: left;
+}
+
+.costSummary input {
+    width: 84px;
+}
+
+.prefix {
+    padding-right: 4px;
+}
+
+.costSummary input {
+    text-align: left;
+}
+
+/* SF01 Pick chamber*/
+#id_CCMS_SF01_pageTitleRef > h1 {
+    display: block;
+}
+
+#id_CCMS_PT07_pageTitleRef {
+    margin-top: 0;
 }
