@@ -3443,13 +3443,15 @@ hr {
 }
 
 #id_CCMS_OR01_include_page_or01 > div:nth-child(4) > a {
-    position: absolute;
+  position: absolute;
     left: 0px;
-    top: 130px;   
+    top: 45px; 
 }
-#id_CCMS_OR01_include_page_or01 > table:nth-child(5) {
-    margin-bottom: 60px;
+
+#CCMS_OR01_form .panelHeaderWithLink:nth-child(4) h2 {
+    margin-bottom: 35px;
 }
+
 
 .notificationHeader tr th {
     width: 5%!important;
