@@ -38,7 +38,10 @@ Fixed notifications <br>
 
 Wends 03/12/15
 --v7--
-Moved 'Add Award' to top of table on OR01
+OR01 Moved 'Add Award' to top of table to handle more than 1 award
+CB03 table elements all on 1 row
+CB03 Cancel and return link positioned to top of page. Will remain in same place once bills have been created.
+NOT02A 
 
 Begin basic elements
  *******************************************************************************/
@@ -3554,6 +3557,8 @@ input.linkShowingDirectionRight {
     font-weight: bold;
 }
 
+
+
 /* provide electronic docs */
 
 .fileSelect {
@@ -3682,18 +3687,36 @@ select::-ms-expand {
 
 /* create a bill */
 
+#id_CCMS_CB03_include_page_cb03_include_page_cb03_header_section2 {
+    position: inherit;
+}
+
 #id_CCMS_CB03_include_page_cb03_include_page_cb03_header_section2 > a {
     background:url("../images/arrow-left.png") no-repeat center left;
     background-size: 13px;
     position: absolute;
-    top: -120px;
-    left: 0px; 
+    top: 118px;
 }
 
 #id_CCMS_CB03_include_page_cb03_include_page_cb03_header_section2 > a:hover {
     background:url("../images/arrow-left-hover.png") no-repeat center left;
     background-size: 13px; 
 }
+
+
+#id_CCMS_CB03_include_page_cb03 > table > tbody > tr > td {
+    white-space: nowrap;
+}
+
+
+#id_CCMS_CB03_include_page_cb03 > h2 {
+    font-size: 32px;
+}
+
+#id_CCMS_CB03_include_page_cb03_include_page_cb03_header_section2 > h2 {
+    display: none;
+}
+
 
 /* view outcome */
 
