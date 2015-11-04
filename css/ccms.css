@@ -44,6 +44,7 @@ CB03 Cancel and return link positioned to top of page. Will remain in same place
 NOT02A fixed table headings to be in 1 line
 NOT02A Fixed arrow size on IE7
 PO03 move slect court to left and re styled as secondary button
+page errors have a set width of 600px
 
 
 Begin basic elements
@@ -3137,6 +3138,10 @@ hr {
 
 /****** errors *****/
 
+.error {
+    width: 600px;
+}
+
 .errorMessagesRef {
     margin-top: 0px;
 }
@@ -3144,7 +3149,7 @@ hr {
 .errorMessagesRef #messageInfo, .errorMessagesRef #messages {
     border: none;
     margin: 0;
-    width: auto;
+    width: 600px;
     border: 5px solid #b10e1e;
     padding: 20px 15px 15px 15px;
     
