@@ -36,18 +36,22 @@ NotificationNoteTable width
 Added notificationHeader th no wrap
 Fixed notifications <br>
 
-Wends 03/12/15
+Thurs 04/12/15
 --v7--
 OR01 Moved 'Add Award' to top of table to handle more than 1 award
 CB03 table elements all on 1 row
 CB03 Cancel and return link positioned to top of page. Will remain in same place once bills have been created.
 NOT02A fixed table headings to be in 1 line
 NOT02A Fixed arrow size on IE7
-PO03 move slect court to left and re styled as secondary button
+PO03 move select court to left and re styled as secondary button
 Page errors have a set width of 600px
 Should fix roaming astertix eg CA03J
 Return links are now absolute positioning to the body of the page
 Added H1 title back to SF01
+max-width of 600px applied to input text such as Billing (CB03B) or the means/mertits
+Showed comment 2 on front page
+Set width to 100% on front page comments
+warning text is now black
 
 
 Begin basic elements
@@ -1359,6 +1363,10 @@ table.applicationSummaryFourColumns th{
 }
 
 /*** CCMS.AH01 ***/
+
+#id_CCMS_AH01_include_page_ah01_include_page_ah01_mainpanel {
+    padding-left: 15px;
+}
 .include_page_ah01_panel {
 	width:96%;
 }
@@ -2616,6 +2624,11 @@ body {
 
 /*** landing page formating ***/
 
+.include_page_ah01_mainpanel .comment {
+    width: 100%;
+    max-width: 100%;
+}
+
 #id_CCMS_AH01_include_page_ah01_include_page_ah01_mainpanel_include_page_ah01_notificationspanel {
     min-height: 106px;
 }
@@ -2627,8 +2640,6 @@ body {
 #id_CCMS_AH01_include_page_ah01_include_page_ah01_mainpanel_include_page_ah01_startpanel > h2 {display: none;}
 
 #id_CCMS_AH01_include_page_ah01_include_page_ah01_mainpanel_include_page_ah01_startpanel > div.comment {display: none;}
-
-#id_CCMS_AH01_include_page_ah01_include_page_ah01_mainpanel_include_page_ah01_requestpanel > div:nth-child(3) {display: none;}
 
 #id_CCMS_AH01_include_page_ah01_include_page_ah01_mainpanel_include_page_ah01_notificationspanel > h2 {display: none;}
 
@@ -2841,14 +2852,15 @@ th.order2 a:hover {
 /*move return to home link to top left of page */
 
 
-
-
 .formInputArea .panelHeaderWithLink:nth-child(1) a:nth-child(2), 
 #id_CCMS_PD01_include_page_pd01 .panelHeaderWithLink a:nth-child(2),
 #id_CCMS_POA01_include_page_poa01_include_page_poa01_header > a,
 #id_CCMS_SU02_pageTitleRef > a,
 #id_CCMS_MNA01_include_page_00_00_page_00_00_screen_include_page_00_00_header > a,
-#id_CCMS_MNA05_pageTitleRef > a
+#id_CCMS_MNA05_pageTitleRef > a,
+#id_CCMS_AC01_include_page_ac01_include_page_ac01_header > a,
+#id_CCMS_CB03_include_page_cb03_include_page_cb03_header_section2 > a,
+#id_CCMS_OR01_include_page_or01_include_page_or01_header > a
 {
     background:url("../images/arrow-left.png") no-repeat center left;
     background-size: 13px;
@@ -2862,7 +2874,10 @@ th.order2 a:hover {
 #id_CCMS_POA01_include_page_poa01_include_page_poa01_header > a:hover,
 #id_CCMS_SU02_pageTitleRef > a:hover,
 #id_CCMS_MNA01_include_page_00_00_page_00_00_screen_include_page_00_00_header > a:hover,
-#id_CCMS_MNA05_pageTitleRef > a:hover
+#id_CCMS_MNA05_pageTitleRef > a:hover,
+#id_CCMS_AC01_include_page_ac01_include_page_ac01_header > a:hover,
+#id_CCMS_CB03_include_page_cb03_include_page_cb03_header_section2 > a:hover,
+#id_CCMS_OR01_include_page_or01_include_page_or01_header > a:hover
 {
     background:url("../images/arrow-left-hover.png") no-repeat center left;
     background-size: 13px;   
@@ -2991,6 +3006,7 @@ th.order2 a:hover {
 
 label, .label, .fieldInfo {
     width:auto;
+    max-width: 600px;
 }
 
 .input, .inputPanel .input {
@@ -3344,18 +3360,6 @@ hr {
     height: 45px;
 }
 
-#id_CCMS_AC01_include_page_ac01_include_page_ac01_header > a {
-    background:url("../images/arrow-left.png") no-repeat center left;
-    background-size: 13px;
-    position: absolute;
-    top: 120px;
-
-}
-
-.include_page_ac01_header .linkShowingDirection a:hover {
-    background:url("../images/arrow-left-hover.png") no-repeat center left;
-    background-size: 13px;   
-}
 
 #id_CCMS_AC01_include_page_ac01_btnSubmitAmendment > a {
     float: left;
@@ -3450,20 +3454,6 @@ hr {
 #id_CCMS_OR01_pageTitleRef > h1 {
     display: block;
     margin-top: 65px;
-}
-
-
-#id_CCMS_OR01_include_page_or01_include_page_or01_header > a {
-    background:url("../images/arrow-left.png") no-repeat center left;
-    background-size: 13px;
-    position: absolute;
-    top: -105px;
-    left: 0px;
-}
-
-#id_CCMS_OR01_include_page_or01_include_page_or01_header > a:hover {
-    background:url("../images/arrow-left-hover.png") no-repeat center left;
-    background-size: 13px;   
 }
 
 #id_CCMS_OR01_include_page_or01 > div:nth-child(4) > a {
@@ -3608,10 +3598,6 @@ td.data {
     white-space: nowrap;
 }
 
-#id_CCMS_PD01_include_page_pd01 .panelHeaderWithLink a:nth-child(2) {
-    top: -150px;
-}
-
 
 /* increase H2 large font */
 
@@ -3701,19 +3687,6 @@ select::-ms-expand {
     position: inherit;
 }
 
-#id_CCMS_CB03_include_page_cb03_include_page_cb03_header_section2 > a {
-    background:url("../images/arrow-left.png") no-repeat center left;
-    background-size: 13px;
-    position: absolute;
-    top: 118px;
-}
-
-#id_CCMS_CB03_include_page_cb03_include_page_cb03_header_section2 > a:hover {
-    background:url("../images/arrow-left-hover.png") no-repeat center left;
-    background-size: 13px; 
-}
-
-
 #id_CCMS_CB03_include_page_cb03 > table > tbody > tr > td {
     white-space: nowrap;
 }
@@ -3786,8 +3759,8 @@ select::-ms-expand {
     font-size: 18px;
     line-height: 38px;
     text-align: center;
-    position: relative ;
-    top: 170px
+    position: relative;
+    top: 170px;
 }
 
 /* OPA Means */
@@ -3912,6 +3885,7 @@ fieldset {
     float: left;
     position: relative;
     top: 0;
+    left: 0;
 }
 
 #id_CCMS_MNA05_include_page_mna05 > div.panelHeaderWithLink.clearfix {
@@ -3988,10 +3962,6 @@ fieldset {
     margin-top: 0;
 }
 
-#id_CCMS_CA05_include_page_ca05_include_page_ca05_header > a, #id_CCMS_CA02B_include_page_ca02b_include_page_ca02b_header > a {
-    /*top: -70px;*/
-}
-
 /* Summary */
 
 #id_CCMS_SU01_pageTitleRef > h1 {
@@ -4062,4 +4032,20 @@ fieldset {
 
 #id_CCMS_PT07_pageTitleRef {
     margin-top: 0;
+}
+
+/* Billing */
+
+#messages .warning {
+    color: black;
+    background-position: 0 15%;
+}
+
+.errorInd > img {
+    height: 19px;
+    width: 19px;
+}
+
+#id_CCMS_AH01_pageHeaderRef > div.ccmsUserInfo > span:nth-child(5) { 
+    display: none;
 }
