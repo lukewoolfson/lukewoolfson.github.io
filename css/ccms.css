@@ -4101,3 +4101,7 @@ fieldset {
 #id_CCMS_AW06_include_page_aw06_include_aw06_inputpanel_noRecoveryDetails > label {
     max-width: 700px;
 }
+
+.awardAndRecoveryFields .groupInput {
+    wdith: 400px;
+}
