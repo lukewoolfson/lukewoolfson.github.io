@@ -4113,4 +4113,5 @@ fieldset {
 
 .formInputArea .groupPanel {
     background: aqua;
+    float: none;
 }
