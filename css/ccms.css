@@ -53,6 +53,16 @@ Showed comment 2 on front page
 Set width to 100% on front page comments
 warning text is now black
 
+--v8---
+Fixed add award button
+
+Fri 06/11/15
+--v9--
+Tidy up error border added padding to right side
+Showed H1 heading on notifcations serach page NOT02A its now Your Actions / Notifications
+
+
+
 
 Begin basic elements
  *******************************************************************************/
@@ -2689,7 +2699,7 @@ body {
 }
 
 
-/****** Your actions / notifications *******/
+/****** Your actions / notifications NOT02A *******/
 
 
 #id_CCMS_NOT02A_include_page_not02a > div:nth-child(2) {
@@ -2698,8 +2708,22 @@ body {
 
 #id_CCMS_NOT02A_include_page_not02a_include_page_not02a_header > a:nth-child(3) {
     position: relative;
-    top: 120px;
+    top: 80px;
 }
+
+#id_CCMS_NOT02A_include_page_not02a th {
+    white-space: nowrap;
+}
+
+#id_CCMS_NOT02A_include_page_not02a_include_page_not02a_header > h2 {
+    display: none;
+}
+
+#id_CCMS_NOT02A_pageTitleRef > h1 {
+    display: block;
+}
+
+
 
 /**** table pages ****/
 
@@ -3172,7 +3196,7 @@ hr {
 .errorMessagesRef #messageInfo, .errorMessagesRef #messages {
     border: none;
     margin: 0;
-    width: 600px;
+    width: 620px;
     border: 5px solid #b10e1e;
     padding: 20px 15px 15px 15px;
     
@@ -3458,13 +3482,20 @@ hr {
 
 #id_CCMS_OR01_include_page_or01 > div:nth-child(4) > a {
   position: absolute;
-    left: 0px;
-    top: 45px; 
+  left: 0px;
+  top: 45px; 
+}
+
+
+#id_CCMS_OR01_include_page_or01 > div:nth-child(4) {
+    position: relative;     
 }
 
 #CCMS_OR01_form .panelHeaderWithLink:nth-child(4) h2 {
     margin-bottom: 35px;
 }
+
+
 
 
 .notificationHeader tr th {
@@ -3619,10 +3650,6 @@ td.data {
 
 #id_CCMS_SU02_include_page_su02_summary > h2 {
     width: 100%;
-}
-
-#id_CCMS_SU02_include_page_su02_btnSummaryPrintTop > input {
-    display: none;
 }
 
 .summaryBottomNav .firstbutton  {
@@ -3986,11 +4013,7 @@ fieldset {
     margin-bottom: 5px;
 }
 
-/* notifications search results */
 
-#id_CCMS_NOT02A_include_page_not02a th {
-    white-space: nowrap;
-}
 
 /* PD03 Record proceeding outcome*/
 
@@ -4048,4 +4071,10 @@ fieldset {
 
 #id_CCMS_AH01_pageHeaderRef > div.ccmsUserInfo > span:nth-child(5) { 
     display: none;
+}
+
+/* AW06 Awards and recovery other asset */
+
+#id_CCMS_AW06_include_page_aw06_include_aw06_inputpanel_awardAndRecoveryText > div {
+    float:none;
 }
