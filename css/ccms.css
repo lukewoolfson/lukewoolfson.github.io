@@ -4105,13 +4105,11 @@ fieldset {
 
 .awardAndRecoveryFields .groupInput {
     width: 400px;
-}
-
-.groupInput {
-    background: blue!important;
+    float: none;
+    background: red!important;
 }
 
 .formInputArea .groupPanel {
-    background: aqua;
-    float: none;
+    background: green;
+
 }
