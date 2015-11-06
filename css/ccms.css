@@ -60,6 +60,7 @@ Fri 06/11/15
 --v9--
 Tidy up error border added padding to right side
 Showed H1 heading on notifcations serach page NOT02A its now Your Actions / Notifications
+Fixed AW06 Other Asset: award and recovery percent and amount layout
 
 
 
@@ -3504,7 +3505,7 @@ hr {
 
 .notificationHeader tr td {
     padding-right: 15px;
-    width: 50px!important;
+    width: 25%!important;
 }
 
 /* Cost award */
@@ -4076,5 +4077,27 @@ fieldset {
 /* AW06 Awards and recovery other asset */
 
 #id_CCMS_AW06_include_page_aw06_include_aw06_inputpanel_awardAndRecoveryText > div {
-    float:none;
+    width: 100%;
+    display: block;
+}
+
+#id_CCMS_AW06_include_page_aw06_include_aw06_inputpanel_awardAndRecoveryText_awardAndRecoveryColumnHeaders {
+    width: 480px;
+    padding-left: 150px;
+}
+
+#id_CCMS_AW06_include_page_aw06_include_aw06_inputpanel_awardAndRecoveryFields .input {
+    width: auto;
+}
+
+#id_CCMS_AW06_include_page_aw06_include_aw06_inputpanel_awardAndRecoveryFields label {
+    width: 120px;
+}
+
+.orText {
+    padding-right: 18px;
+}
+
+#id_CCMS_AW06_include_page_aw06_include_aw06_inputpanel_noRecoveryDetails > label {
+    max-width: 700px;
 }
