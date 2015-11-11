@@ -3580,7 +3580,7 @@ hr {
 
 /* Cost award */
 
-#id_CCMS_AW02_include_page_aw02_btnCalculate {
+#id_CCMS_AW02_include_page_aw02_btnCalculate, #id_CCMS_AW05_include_page_aw05_btnCalculate {
     float: left;
 }
 
@@ -3591,20 +3591,20 @@ hr {
     padding-left: 0;
 }
 
-#id_CCMS_AW02_include_page_aw02 .btnCalculate {
+/*#id_CCMS_AW02_include_page_aw02 .btnCalculate {
     display: inline-block;
-}
+}*/
 
 #id_CCMS_AW02_include_page_aw02, #id_CCMS_AW02_include_page_aw02_include_aw02_inputpanel {
     margin-bottom: 0;
 }
 
-#id_CCMS_AW02_include_page_aw02_btnNext > input {
+#id_CCMS_AW02_include_page_aw02_btnNext > input, #id_CCMS_AW05_include_page_aw05_btnNext > input {
     position: relative;
     top: 65px;
 }
 
-#id_CCMS_AW02_include_page_aw02_btnCalculate > input {
+#id_CCMS_AW02_include_page_aw02_btnCalculate > input, #id_CCMS_AW05_include_page_aw05_btnCalculate > input {
     position: absolute;
     left: 15px;
     margin-top: 0px;
@@ -4201,11 +4201,11 @@ fieldset {
         margin-bottom: 50px;
 }
     
-#id_CCMS_AW05_include_page_aw05_btnCalculate > input {
+/* #id_CCMS_AW05_include_page_aw05_btnCalculate > input {
     position: relative;
-    top: -80px;
+    top: -100px;
     left: 0;
-}
+}*/
 
 /* CB03B PFLRS Bill Line OPA 10.1 Tweaks */ 
 
@@ -4269,6 +4269,10 @@ fieldset {
 
 #id_CCMS_GS11_include_page_gs11 {
     padding: 0;
+}
+
+#id_CCMS_GS11_include_page_gs11 > div:nth-child(7) {
+    display: none;
 }
 
 #id_CCMS_GS09_include_page_gs09 > h2:nth-child(1) {
@@ -4359,4 +4363,5 @@ max-width: 620px;
 #id_CCMS_DE01_include_page_de01 > div.comment {
     max-width: 670px;
 }
+
 
