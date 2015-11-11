@@ -66,13 +66,22 @@ Linked case CA06B headers action coloumn are set to nowrap
 Moved 'Calculate button' above Next button on AW05
 Styled CB03B (OPA billing): ADD and remove buttons are no longer green.
 Copied error style to error messages that dont sit inside errorMessagesRef eg CA03JB Error.
-
-
-
-
+CA03JB re aligned add counsel and calculate buttons so next button is on bottom row
+Put error border back to 100% width
+show BR on comments such as GS09
+Fixed double padding on GS11
+Matched system error color on GS11 and GS09
+fixed return link on POA01
+Heading now in bold on POA01a
+top back button to be like other return to on top left PT05 and PT07
+SU01 Styled correctly
+GS09 H2 tile now correct size
+GN05 Page title correct size
+GN05 LAA logo now hidden.
+Styled CA03K fixed confirm buttons, cancel button and max-width.
 
 Begin basic elements
- *******************************************************************************/
+*******************************************************************************/
 
 
 
@@ -2412,8 +2421,15 @@ a.button:link, a.button:active, a.button:visited {
     font-size: 18px;
     line-height: 38px;
     text-align: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    cursor: pointer;
+    min-width: 80px;
 }
 
+a.button:link:hover {
+    color: white;
+}
 
 /*** page layout ****/
 body {
@@ -2902,7 +2918,8 @@ th.order2 a:hover {
 #id_CCMS_MNA05_pageTitleRef > a,
 #id_CCMS_AC01_include_page_ac01_include_page_ac01_header > a,
 #id_CCMS_CB03_include_page_cb03_include_page_cb03_header_section2 > a,
-#id_CCMS_OR01_include_page_or01_include_page_or01_header > a
+#id_CCMS_OR01_include_page_or01_include_page_or01_header > a,
+#cancel_link a
 {
     background:url("../images/arrow-left.png") no-repeat center left;
     background-size: 13px;
@@ -2919,7 +2936,8 @@ th.order2 a:hover {
 #id_CCMS_MNA05_pageTitleRef > a:hover,
 #id_CCMS_AC01_include_page_ac01_include_page_ac01_header > a:hover,
 #id_CCMS_CB03_include_page_cb03_include_page_cb03_header_section2 > a:hover,
-#id_CCMS_OR01_include_page_or01_include_page_or01_header > a:hover
+#id_CCMS_OR01_include_page_or01_include_page_or01_header > a:hover,
+#cancel_link a:hover
 {
     background:url("../images/arrow-left-hover.png") no-repeat center left;
     background-size: 13px;   
@@ -2960,18 +2978,20 @@ th.order2 a:hover {
 #id_CCMS_PO03_include_page_po03 .selectCourt input,
 .newInstance input[value=Add]
 {
-    border: 1px solid #dee0e2;
+    border: 1px solid #7D7D7D;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-    background-color: #f8f8f8;
+    background-color: #f2f2f2;
     color: black;
-    padding: 5px 10px;
+    padding: 0px 10px;
     text-decoration: none;
     box-shadow: none;
-    background: #f8f8f8;
+    background: #f2f2f2;
     margin-right: 15px;
     float: left;
+    height: 38px;
+    line-height: 38px;
 }
 
 #id_CCMS_CA03_include_page_ca03 > a:nth-child(10):hover, 
@@ -3030,9 +3050,7 @@ th.order2 a:hover {
 .panelHeaderWithLink a, .panelHeaderWithLink .link {
     color: #005EA5;
     background: white;
-   /*position: relative;
-    top: 15px;
-    padding-right: 0;*/
+    padding-right: 0;
 }
 
 .panelHeaderWithLink a:hover {
@@ -3204,6 +3222,10 @@ hr {
 
 /****** errors *****/
 
+.errorText {
+    color: red;
+}
+
 .error {
     width: 600px;
 }
@@ -3215,7 +3237,7 @@ hr {
 
 .errorMessagesRef #messageInfo, .errorMessagesRef #messages, #messages, #messageInfo {
     margin: 0;
-    width: 620px;
+    width: 950px;
     padding: 20px 15px 15px 15px;
     border-style: solid;
     border-color: #b10e1e;
@@ -3888,17 +3910,6 @@ fieldset {
 
 /* loading iframe page */
 
-#cancel_link  a {
- float: left;
- background:url("../images/arrow-left.png") no-repeat center left;
- background-size: 13px;  
-}
-
-#cancel_link  a:hover {
-    background:url("../images/arrow-left-hover.png") no-repeat center left;
-    background-size: 13px; 
-}
-
 #iframe-wrapper {
     position: relative;
     margin-top: 85px;
@@ -3967,7 +3978,9 @@ fieldset {
 /**** new bits for print buttons ***/
 
 
-#id_CCMS_PT07_include_page_pt07_page_pt_topNav_btnBackPrintTop > input {
+#CCMS_PT05_form .btnBackPrintTop > input,
+#CCMS_PT07_form .btnBackPrintTop > input
+{
     padding: 0;
     padding-left: 20px;
     height: 20px;
@@ -3987,7 +4000,8 @@ fieldset {
     font-size: 14px;
 }
 
-#id_CCMS_PT07_include_page_pt07_page_pt_topNav_btnBackPrintTop > input:hover {
+#CCMS_PT05_form .btnBackPrintTop > input:hover,
+#CCMS_PT07_form .btnBackPrintTop > input:hover {
     background: url("../images/arrow-left-hover.png") no-repeat center left;
     background-size: 13px;
     color: #2E8ACA;
@@ -4173,4 +4187,83 @@ fieldset {
 
 .removeInstance input[value=Remove]:hover {
     color: #2E8ACA;
+}
+
+/* CA03JB Case Costs */
+
+#id_CCMS_CA03JB_include_page_ca03jb_include_page_ca03jb_bottomAddCounselLink > input {
+    margin-bottom: 0;
+}
+
+#id_CCMS_CA03JB_include_page_ca03jb_include_page_ca03jb_calculateButton_btnCalculate > input {
+    float: none;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.include_page_ca03jb_bottomAddCounselLink {
+    height: 0;
+}
+
+/* comment */
+
+.comment br {
+    display: block;
+}
+
+/* GS11 Submission error */
+
+#id_CCMS_GS11_include_page_gs11 {
+    padding: 0;
+}
+
+#id_CCMS_GS09_include_page_gs09 > h2:nth-child(1) {
+    font-size: 32px;
+}
+
+/* GN05 Document download*/
+
+#id_CCMS_GN05_include_page_gn05 > div.ccmsPageHeaderLogo > a > img {
+    display: none;
+}
+
+#id_CCMS_GN05_include_page_gn05 > h2 {
+    font-size: 32px;
+}
+
+/* POA01 */
+
+#id_CCMS_POA01A_include_page_00_00_page_00_00_screen_requiredFieldsMessageRef {
+    margin-bottom: 30px;
+}
+
+/* CA03K */
+#id_CCMS_CA03K_include_page_ca03k {
+    max-width: 600px;
+}
+
+#id_CCMS_CA03K_include_page_ca03k_btnConfirm > a:nth-child(2) {
+    background-color: white;
+    color: #005EA5;
+    text-decoration: underline;
+    width: auto;
+    box-shadow: none;
+    width: auto;
+    height: auto;
+    padding: 0px 2px;
+    min-width: inherit;
+    margin-left: 30px!important;
+    margin-top: 10px;
+}
+
+#id_CCMS_CA03K_include_page_ca03k_btnConfirm > a:nth-child(2):hover {
+    color: #2E8ACA;
+}
+
+#id_CCMS_CA03K_include_page_ca03k_btnConfirm {
+    margin-top: 20px;
+}
+/* GS11 Error page*/
+#id_CCMS_GS11_include_page_gs11 > h2, #id_CCMS_GS11_include_page_gs11 > div:nth-child(6) {
+    display: none;
 }
