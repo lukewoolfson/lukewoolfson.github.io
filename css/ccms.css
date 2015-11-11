@@ -59,10 +59,10 @@ Fixed add award button
 Mon 09/11/15
 --v9--
 Tidy up error border added padding to right side
-Showed H1 heading on notifcations serach page NOT02A its now Your Actions / Notifications
+Showed H1 heading on notifications search page NOT02A its now Your Actions / Notifications
 Fixed AW06 Other Asset: award and recovery percent and amount layout
 Styled previous to match next links on 2nd results page eg CA06B page 2
-Linked case CA06B headers action coloumn are set to nowrap
+Linked case CA06B headers action column are set to nowrap
 Moved 'Calculate button' above Next button on AW05
 Styled CB03B (OPA billing): ADD and remove buttons are no longer green.
 Copied error style to error messages that dont sit inside errorMessagesRef eg CA03JB Error.
@@ -81,7 +81,7 @@ GN05 LAA logo now hidden.
 Styled CA03K fixed confirm buttons, cancel button and max-width.
 AW02 moved calculate above next button (works on IE7 too)
 CA03 fixed table headings to be one line
-CA03a removed right padding on 'edit scope limiatations'
+CA03a removed right padding on 'edit scope limitations'
 CB03B 'Payment On Account (POA) Recoupment' fixed alignment of checkbox to text
 CD04A/CR05A removed table border
 CR01 set width of text to 600px
@@ -93,6 +93,10 @@ Hid web address from GS09 and GS11
 MNA05 fixed right padding on 'Means Assessment'
 PD04 Changed cancel link
 PT05 text width to 600px
+Fixed focus overlay on input fields in IE see AW05
+
+v10
+Fixed AW04 in IE10
 
 Begin basic elements
 *******************************************************************************/
@@ -3472,7 +3476,7 @@ hr {
     margin-bottom: 60px;
 }
 #id_CCMS_AW04_include_page_aw04_include_aw04_inputpanel .groupPanel .input {
-    width: initial;
+    width: 150px;
 }
 
 #id_CCMS_AW04_include_page_aw04_btnCalculate > input {
