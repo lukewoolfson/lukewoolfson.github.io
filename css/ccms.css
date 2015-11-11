@@ -3116,11 +3116,11 @@ label, .label, .fieldInfo {
 }
 
 .inputField {
-    overflow: initial;
+    overflow: visible;
 }
 
 .formInputArea .inputPanel {
-        overflow: initial;
+        overflow: visible;
 }
 .formInputArea .inputPanel {
     background-color: white;
