@@ -3483,6 +3483,12 @@ hr {
 #id_CCMS_AW04_include_page_aw04_include_aw04_inputpanel .groupPanel .input {
     width: 150px;
 }
+
+#id_CCMS_AW04_include_page_aw04_btnBack > input {
+    position: relative;
+    top: 65px;
+}
+    
 /*
 #id_CCMS_AW04_include_page_aw04_btnCalculate > input {
     position: relative;
@@ -3501,10 +3507,6 @@ hr {
     background-color: #ebebeb;
     color: black;
     border-color: black;
-}
-
-#id_CCMS_AW04_include_page_aw04_btnCalculate > input:focus {
-    outline: 3px solid #ffbf47;
 }
 
 #id_CCMS_AW04_include_page_aw04_btnBack .button {  
