@@ -79,7 +79,20 @@ GS09 H2 tile now correct size
 GN05 Page title correct size
 GN05 LAA logo now hidden.
 Styled CA03K fixed confirm buttons, cancel button and max-width.
-AW02 moved calculate above next button
+AW02 moved calculate above next button (works on IE7 too)
+CA03 fixed table headings to be one line
+CA03a removed right padding on 'edit scope limiatations'
+CB03B 'Payment On Account (POA) Recoupment' fixed alignment of checkbox to text
+CD04A/CR05A removed table border
+CR01 set width of text to 600px
+CR01 change print link to match others
+CR05 moved No fixed abode to left
+CS01A 'Copy case' no longer wraps
+DE01 single line of text for top comment
+Hid web address from GS09 and GS11
+MNA05 fixed right padding on 'Means Assessment'
+PD04 Changed cancel link
+PT05 text width to 600px
 
 Begin basic elements
 *******************************************************************************/
@@ -2823,7 +2836,7 @@ input {
 
 
 .formInputArea br {
-    /* display: none; */
+    display: none; 
 }
 
 th.sortable a {
@@ -2977,7 +2990,8 @@ th.order2 a:hover {
 #id_CCMS_CA03JB_include_page_ca03jb_include_page_ca03jb_bottomAddCounselLink > input,
 .btnSummaryPrintTop .button,
 #id_CCMS_PO03_include_page_po03 .selectCourt input,
-.newInstance input[value=Add]
+.newInstance input[value=Add],
+#id_CCMS_CR01_include_page_cr01 > a
 {
     border: 1px solid #7D7D7D;
     -webkit-border-radius: 3px;
@@ -3016,7 +3030,8 @@ th.order2 a:hover {
 #id_CCMS_CA03JB_include_page_ca03jb_include_page_ca03jb_bottomAddCounselLink > input:hover,
 .btnSummaryPrintTop .button:hover, .btnSummaryPrintBottom .button:hover,
 #id_CCMS_PO03_include_page_po03 .selectCourt input:hover,
-.newInstance input[value=Add]:hover
+.newInstance input[value=Add]:hover,
+#id_CCMS_CR01_include_page_cr01 > a:hover
 {
     background-color: #ebebeb;
     color: black;
@@ -3051,6 +3066,10 @@ th.order2 a:hover {
 .panelHeaderWithLink a, .panelHeaderWithLink .link {
     color: #005EA5;
     background: white;
+    padding-right: 0;
+}
+
+.linkShowingDirection {
     padding-right: 0;
 }
 
@@ -3270,7 +3289,11 @@ hr {
     margin-left: 15px;
 }
 
-.btnBack .button, .btnAbandonApplication .button, .lnkBack .button, .btnCancel .button {
+.btnBack .button, 
+.btnAbandonApplication .button, 
+.lnkBack .button,
+.btnCancel .button,
+#id_CCMS_PD04_include_page_pd04_lnkCancel > input {
     background-color: white;
     color: #005EA5;
     text-decoration: underline;
@@ -3284,7 +3307,10 @@ hr {
     margin-top: 10px;
 }
 
-.btnBack .button:hover, .btnAbandonApplication .button:hover, .lnkBack .button:hover{
+.btnBack .button:hover,
+.btnAbandonApplication .button:hover,
+.lnkBack .button:hover,
+#id_CCMS_PD04_include_page_pd04_lnkCancel > input:hover {
     color: #2E8ACA; 
 }
 
@@ -3483,7 +3509,6 @@ hr {
     border-radius: 3px;
     background-color: #f8f8f8;
     color: black;
-    padding: 5px 10px;
     text-decoration: none;
     box-shadow: none;
 }
@@ -3956,6 +3981,7 @@ fieldset {
     position: inherit;
     top: 25px;
     position: relative;
+    left: auto;
 }
 
 #id_CCMS_MNA05_pageTitleRef > a {
@@ -4083,6 +4109,12 @@ fieldset {
 
 }
 
+/* CA03 */
+
+.include_page_ca03 th {
+    white-space: nowrap;
+}
+
 /* CA03J */
 
 .costSummary .readonlyData {
@@ -4115,6 +4147,7 @@ fieldset {
 #messages .warning {
     color: black;
     background-position: 0 15%;
+    width: 600px;
 }
 
 .errorInd > img {
@@ -4247,12 +4280,6 @@ fieldset {
     font-size: 32px;
 }
 
-/* POA01 */
-
-#id_CCMS_POA01A_include_page_00_00_page_00_00_screen_requiredFieldsMessageRef {
-    margin-bottom: 30px;
-}
-
 /* CA03K */
 #id_CCMS_CA03K_include_page_ca03k {
     max-width: 600px;
@@ -4279,7 +4306,52 @@ fieldset {
 #id_CCMS_CA03K_include_page_ca03k_btnConfirm {
     margin-top: 20px;
 }
-/* GS11 Error page*/
-#id_CCMS_GS11_include_page_gs11 > h2, #id_CCMS_GS11_include_page_gs11 > div:nth-child(6) {
+/* GS11 & GS09 Error page*/
+#id_CCMS_GS11_include_page_gs11 > div:nth-child(6), #id_CCMS_GS09_include_page_gs09 > div:nth-child(5) {
     display: none;
 }
+
+/* CB03B 'Payment On Account (POA) Recoupment'*/
+.checkSelect label {
+    top: 0;
+}
+
+/* CD04A */
+#CCMS_CD04A_form td, #CCMS_CD04A_form tr, #CCMS_CR05A_form td, #CCMS_CR05A_form tr {
+    border-bottom: none;
+}
+
+/* CR01 */
+#id_CCMS_CR01_include_page_cr01_include_page_cr01_inputpanel_include_page_cr01_fpatext, #id_CCMS_PT05_include_page_pt05_printFairProcessingAgreement {
+    width: 600px;
+}
+
+#id_CCMS_CR01_include_page_cr01_include_page_cr01_inputpanel_page_cr01_fpaconfirmation > span > label {
+    max-width: 100%;
+}
+
+#id_CCMS_CR01_include_page_cr01 > a {
+    float: right;
+    margin-right: 0;
+}
+
+/* CR05 */
+
+#id_CCMS_CR05_include_page_cr05_include_page_cr05_inputpanel_page_cr05_nofixedabode > span > span.req {
+    width: 0;
+}
+
+#id_CCMS_CR05_include_page_cr05_include_page_cr05_inputpanel_page_cr05_nofixedabode > span > span.input {
+    margin-left: 0;
+}
+
+/* CS01A */
+
+#id_CCMS_CS01A_include_page_cs01a > div.comment {
+max-width: 620px;
+}
+
+#id_CCMS_DE01_include_page_de01 > div.comment {
+    max-width: 670px;
+}
+
