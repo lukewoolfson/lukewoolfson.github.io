@@ -3114,36 +3114,11 @@ label, .label, .fieldInfo {
 .inputFieldDate input {
     margin-left: 0;
 }
-/*
-label {
-    width: auto;
+
+.inputField {
+    overflow: initial;
 }
 
-.inputFieldDate input {
-    margin-left: 0;
-}
-.input { 
-    display: block;
-    float: none;
-    padding-left: 0;  
-}
-
-.inputPanel .input{
-	width: 300px;
-}
-
-.input .monetary {
-    display: block;
-}
-
-.textInput, .date {
-    padding: 4px;
-    background-color: #fff;
-    border: 1px solid #bfc1c3;
-    font-size: 1em;
-}
-
-*/
 .formInputArea .inputPanel {
         overflow: initial;
 }
@@ -4194,18 +4169,6 @@ fieldset {
 .awardAndRecoveryFields .groupInput {
     width: 400px;
 }
-
-/* AW05 Land and property award */
-
-#id_CCMS_AW05_include_page_aw05_include_aw05_inputpanel {
-        /* margin-bottom: 50px; */
-}
-    
-/* #id_CCMS_AW05_include_page_aw05_btnCalculate > input {
-    position: relative;
-    top: -100px;
-    left: 0;
-}*/
 
 /* CB03B PFLRS Bill Line OPA 10.1 Tweaks */ 
 
