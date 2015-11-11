@@ -3580,6 +3580,10 @@ hr {
 
 /* Cost award */
 
+#id_CCMS_AW05_include_page_aw05_btnCalculate {
+    float: left;
+}
+
 .awardsFieldHeader {
     font-size: 24px;
     width: 100%;
