@@ -4203,7 +4203,8 @@ fieldset {
     
 #id_CCMS_AW05_include_page_aw05_btnCalculate > input {
     position: relative;
-    top: -100px;
+    top: -80px;
+    left: 0;
 }
 
 /* CB03B PFLRS Bill Line OPA 10.1 Tweaks */ 
