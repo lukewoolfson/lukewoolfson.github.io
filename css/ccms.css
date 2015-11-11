@@ -3483,7 +3483,7 @@ hr {
 #id_CCMS_AW04_include_page_aw04_include_aw04_inputpanel .groupPanel .input {
     width: 150px;
 }
-
+/*
 #id_CCMS_AW04_include_page_aw04_btnCalculate > input {
     position: relative;
     top: -100px;
@@ -3511,7 +3511,7 @@ hr {
     position: relative;
     top: -42px;   
 }
-
+*/
 
 .textOnlyCurrency {
     padding-left: 0;
@@ -3541,7 +3541,6 @@ hr {
   top: 45px; 
 }
 
-
 #id_CCMS_OR01_include_page_or01 > div:nth-child(4) {
     position: relative;     
 }
@@ -3549,9 +3548,6 @@ hr {
 #CCMS_OR01_form .panelHeaderWithLink:nth-child(4) h2 {
     margin-bottom: 35px;
 }
-
-
-
 
 .notificationHeader tr th {
     width: 5%!important;
@@ -3564,8 +3560,30 @@ hr {
 
 /* Cost award */
 
-#id_CCMS_AW02_include_page_aw02_btnCalculate, #id_CCMS_AW05_include_page_aw05_btnCalculate {
+#id_CCMS_AW02_include_page_aw02_btnCalculate, 
+#id_CCMS_AW05_include_page_aw05_btnCalculate, 
+#id_CCMS_AW04_include_page_aw04_btnCalculate {
     float: left;
+}
+
+#id_CCMS_AW02_include_page_aw02, 
+#id_CCMS_AW02_include_page_aw02_include_aw02_inputpanel {
+    margin-bottom: 0;
+}
+
+#id_CCMS_AW02_include_page_aw02_btnNext > input, 
+#id_CCMS_AW05_include_page_aw05_btnNext > input, 
+#id_CCMS_AW04_include_page_aw04_btnNext > input  {
+    position: relative;
+    top: 65px;
+}
+
+#id_CCMS_AW02_include_page_aw02_btnCalculate > input, 
+#id_CCMS_AW05_include_page_aw05_btnCalculate > input, 
+#id_CCMS_AW04_include_page_aw04_btnCalculate > input {
+    position: absolute;
+    left: 15px;
+    margin-top: 0px;
 }
 
 .awardsFieldHeader {
@@ -3574,37 +3592,6 @@ hr {
     margin-left: 0;
     padding-left: 0;
 }
-
-/*#id_CCMS_AW02_include_page_aw02 .btnCalculate {
-    display: inline-block;
-}*/
-
-#id_CCMS_AW02_include_page_aw02, #id_CCMS_AW02_include_page_aw02_include_aw02_inputpanel {
-    margin-bottom: 0;
-}
-
-#id_CCMS_AW02_include_page_aw02_btnNext > input, #id_CCMS_AW05_include_page_aw05_btnNext > input {
-    position: relative;
-    top: 65px;
-}
-
-#id_CCMS_AW02_include_page_aw02_btnCalculate > input, #id_CCMS_AW05_include_page_aw05_btnCalculate > input {
-    position: absolute;
-    left: 15px;
-    margin-top: 0px;
-}
-
-/*
-#id_CCMS_AW02_include_page_aw02 .btnCalculate {
-    position: relative;
-    top: -100px;
-    text-align: left;
-}
-
-#id_CCMS_AW02_include_page_aw02_include_aw02_inputpanel {
-    margin-bottom: 80px;
-}
-*/
 
 /* client address details */
 
