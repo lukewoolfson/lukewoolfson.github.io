@@ -79,6 +79,7 @@ GS09 H2 tile now correct size
 GN05 Page title correct size
 GN05 LAA logo now hidden.
 Styled CA03K fixed confirm buttons, cancel button and max-width.
+AW02 moved calculate above next button
 
 Begin basic elements
 *******************************************************************************/
@@ -2822,7 +2823,7 @@ input {
 
 
 .formInputArea br {
-    display: none;
+    /* display: none; */
 }
 
 th.sortable a {
@@ -3563,6 +3564,21 @@ hr {
 
 #id_CCMS_AW02_include_page_aw02 .btnCalculate {
     display: inline-block;
+}
+
+#id_CCMS_AW02_include_page_aw02, #id_CCMS_AW02_include_page_aw02_include_aw02_inputpanel {
+    margin-bottom: 0;
+}
+
+#id_CCMS_AW02_include_page_aw02_btnNext > input {
+    position: relative;
+    top: 65px;
+}
+
+#id_CCMS_AW02_include_page_aw02_btnCalculate > input {
+    position: absolute;
+    left: 15px;
+    margin-top: 0px;
 }
 
 /*
