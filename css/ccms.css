@@ -95,8 +95,9 @@ PD04 Changed cancel link
 PT05 text width to 600px
 Fixed focus overlay on input fields in IE see AW05
 
-v10
+--v10--
 Fixed AW04 in IE10
+
 
 Begin basic elements
 *******************************************************************************/
@@ -3464,8 +3465,12 @@ hr {
 
 /* Outcome page */
 
-#id_CCMS_AW04_include_page_aw04_include_aw04_inputpanel .groupPanel  label {
-    width: 30%
+.groupPanelBold .label {
+    width: 10%;
+}
+
+#id_CCMS_AW04_include_page_aw04_include_aw04_inputpanel .groupPanel label {
+    width: 10%;
 }
 
 .btnCalculate {
