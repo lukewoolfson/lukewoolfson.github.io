@@ -95,8 +95,12 @@ PD04 Changed cancel link
 PT05 text width to 600px
 Fixed focus overlay on input fields in IE see AW05
 
+Thurs 12/11/15
 --v10--
 Fixed AW04 in IE10
+Hid contact details from GS09 and GS11
+Brought case number to the front so its selectable.
+
 
 
 Begin basic elements
@@ -2483,7 +2487,7 @@ body {
    	top: -27px;
    	*top: 0px;
     position: relative;
-    z-index: -1;
+    z-index: 1;
 }
 
 .clientCaseInfo div {
@@ -2520,6 +2524,7 @@ body {
     padding: 8px 0px 2px 0px;
     margin-right: 55px;
     width: auto;
+    z-index: 2;
 }
 
 .ccmsUserInfo br {display: none;}
@@ -3088,7 +3093,7 @@ th.order2 a:hover {
 
 .errorInd {
     float: none;
-    display: initial;
+    display: inline;
 }
 
 label, .label, .fieldInfo {
@@ -3485,32 +3490,6 @@ hr {
     position: relative;
     top: 65px;
 }
-    
-/*
-#id_CCMS_AW04_include_page_aw04_btnCalculate > input {
-    position: relative;
-    top: -100px;
-    border: 1px solid #dee0e2;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    background-color: #f8f8f8;
-    color: black;
-    text-decoration: none;
-    box-shadow: none;
-}
-
-#id_CCMS_AW04_include_page_aw04_btnCalculate > input:hover {
-    background-color: #ebebeb;
-    color: black;
-    border-color: black;
-}
-
-#id_CCMS_AW04_include_page_aw04_btnBack .button {  
-    position: relative;
-    top: -42px;   
-}
-*/
 
 .textOnlyCurrency {
     padding-left: 0;
@@ -4229,9 +4208,6 @@ fieldset {
     padding: 0;
 }
 
-#id_CCMS_GS11_include_page_gs11 > div:nth-child(7) {
-    display: none;
-}
 
 #id_CCMS_GS09_include_page_gs09 > h2:nth-child(1) {
     font-size: 32px;
@@ -4273,8 +4249,21 @@ fieldset {
 #id_CCMS_CA03K_include_page_ca03k_btnConfirm {
     margin-top: 20px;
 }
-/* GS11 & GS09 Error page*/
-#id_CCMS_GS11_include_page_gs11 > div:nth-child(6), #id_CCMS_GS09_include_page_gs09 > div:nth-child(5) {
+/* GS11 & GS09 Error page*/ 
+
+/* hide contact details */
+#id_CCMS_GS09_include_page_gs09 > h2:nth-child(4),
+#id_CCMS_GS09_include_page_gs09 > div:nth-child(5),
+#id_CCMS_GS09_include_page_gs09 > div:nth-child(6),
+#id_CCMS_GS09_include_page_gs09 > div:nth-child(7),
+#id_CCMS_GS09_include_page_gs09 > div:nth-child(8),
+#id_CCMS_GS11_include_page_gs11 > h2,
+#id_CCMS_GS11_include_page_gs11 > div:nth-child(6),
+#id_CCMS_GS11_include_page_gs11 > div:nth-child(7),
+#id_CCMS_GS11_include_page_gs11 > div:nth-child(8),
+#id_CCMS_GS11_include_page_gs11 > div:nth-child(9),
+#id_CCMS_GS11_include_page_gs11 > div:nth-child(10)
+{
     display: none;
 }
 
