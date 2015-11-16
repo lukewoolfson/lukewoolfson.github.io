@@ -103,6 +103,13 @@ Brought case number to the front so its selectable.
 Fixed CA03JB calculate button in IE10
 Fixed AW06 error icon in IE10
 
+Mon 16/11/15
+--v11--
+.stackTrace is now red text on GN01 System Busy to match other error styles
+Fixed text overlap on PT07
+Showed H1 page title on PT05, PT01
+Changed back button style on PT05 & PT07
+
 
 
 Begin basic elements
@@ -3229,7 +3236,7 @@ hr {
 
 /****** errors *****/
 
-.errorText {
+.errorText, .stackTrace {
     color: red;
 }
 
@@ -3974,7 +3981,8 @@ fieldset {
 
 /**** new bits for print buttons ***/
 
-
+#CCMS_PT01_form .btnBackPrintTop > input,
+#CCMS_PT02_form .btnBackPrintTop > input,
 #CCMS_PT05_form .btnBackPrintTop > input,
 #CCMS_PT07_form .btnBackPrintTop > input
 {
@@ -3997,6 +4005,8 @@ fieldset {
     font-size: 14px;
 }
 
+#CCMS_PT01_form .btnBackPrintTop > input:hover,
+#CCMS_PT02_form .btnBackPrintTop > input:hover,
 #CCMS_PT05_form .btnBackPrintTop > input:hover,
 #CCMS_PT07_form .btnBackPrintTop > input:hover {
     background: url("../images/arrow-left-hover.png") no-repeat center left;
@@ -4005,12 +4015,18 @@ fieldset {
 }
 
 #id_CCMS_PT07_pageTitleRef > h1 {
-    padding-top: 10px;
+    padding-top: 40px;
+}
+
+#id_CCMS_PT05_pageTitleRef > h1, 
+#id_CCMS_PT01_pageTitleRef > h1 {
+    display: block;
 }
 
 /* Amend provider details and Amend Correspondence Address */
 
-#id_CCMS_CA05_pageTitleRef > h1, #id_CCMS_CA02B_pageTitleRef > h1 {
+#id_CCMS_CA05_pageTitleRef > h1, 
+#id_CCMS_CA02B_pageTitleRef > h1 {
     display: none;
     margin-top: 60px;
 }
