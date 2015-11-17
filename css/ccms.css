@@ -3789,7 +3789,6 @@ select::-ms-expand {
 
 #id_CCMS_CA03JB_include_page_ca03jb_include_page_ca03jb_bottomAddCounselLink > input {
     margin-bottom: 20px;
-    width: 110px;
 }
 
 .costSummary .readonlyData {
@@ -4206,6 +4205,7 @@ fieldset {
 
 #id_CCMS_CA03JB_include_page_ca03jb_include_page_ca03jb_calculateButton {
     display: inline-block;
+    *display: inline;
 }
     
 
