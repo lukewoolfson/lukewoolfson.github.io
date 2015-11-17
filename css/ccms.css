@@ -110,6 +110,9 @@ Fixed text overlap on PT07
 Showed H1 page title on PT05, PT01
 Changed back button style on PT05 & PT07
 
+Tues 17/11/15
+--v12--
+fixed back button on CA03JB now is underlined and hover works correctly
 
 
 Begin basic elements
@@ -3290,7 +3293,7 @@ hr {
 #id_CCMS_PD04_include_page_pd04_lnkCancel > input {
     background-color: white;
     color: #005EA5;
-    text-decoration: underline;
+    text-decoration: underline!important;
     width: auto;
     box-shadow: none;
     width: auto;
@@ -3305,7 +3308,7 @@ hr {
 .btnAbandonApplication .button:hover,
 .lnkBack .button:hover,
 #id_CCMS_PD04_include_page_pd04_lnkCancel > input:hover {
-    color: #2E8ACA; 
+    color: #2E8ACA!important; 
 }
 
 
@@ -4333,5 +4336,3 @@ max-width: 620px;
 #id_CCMS_DE01_include_page_de01 > div.comment {
     max-width: 670px;
 }
-
-
