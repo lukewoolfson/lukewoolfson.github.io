@@ -4215,6 +4215,10 @@ fieldset {
     height: 0;
 }
 
+#id_CCMS_CA03JB_include_page_ca03jb_include_page_ca03jb_bottomAddCounselLink > input {
+    width: 110px;
+}
+
 /*
 #id_CCMS_CA03JB_include_page_ca03jb_include_page_ca03jb_calculateButton {
     display: inline-block;
