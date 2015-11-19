@@ -4207,12 +4207,30 @@ fieldset {
         height: 55px;
 }
 
+#id_CCMS_CA03JB_include_page_ca03jb_include_page_ca03jb_bottomAddCounselLink > input,
+
+#id_CCMS_CA03JB_include_page_ca03jb_include_page_ca03jb_calculateButton_btnCalculate > input {
+    border: 1px solid #7D7D7D;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    color: black;
+    padding: 0px 10px;
+    text-decoration: none;
+    box-shadow: none;
+    background: #f2f2f2;
+    margin-right: 15px;
+    float: left;
+    height: 38px;
+    line-height: 38px;
+}
+
 #id_CCMS_CA03JB_include_page_ca03jb_include_page_ca03jb_calculateButton_btnCalculate > input {
     position: relative;
     top: -58px;
     left: 120PX;
     clear: both;
-    margin-top: 0px;
 }
 
 #id_CCMS_CA03JB_include_page_ca03jb_include_page_ca03jb_nextBackPerpective_btnNext > input {
