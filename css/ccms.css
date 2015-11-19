@@ -3013,7 +3013,9 @@ th.order2 a:hover {
 .btnSummaryPrintTop .button,
 #id_CCMS_PO03_include_page_po03 .selectCourt input,
 .newInstance input[value=Add],
-#id_CCMS_CR01_include_page_cr01 > a
+#id_CCMS_CR01_include_page_cr01 > a,
+#lnkPrintThisPageTop >a,
+#lnkPrintThisPageBottom > a
 {
     border: 1px solid #7D7D7D;
     -webkit-border-radius: 3px;
@@ -3053,7 +3055,10 @@ th.order2 a:hover {
 .btnSummaryPrintTop .button:hover, .btnSummaryPrintBottom .button:hover,
 #id_CCMS_PO03_include_page_po03 .selectCourt input:hover,
 .newInstance input[value=Add]:hover,
-#id_CCMS_CR01_include_page_cr01 > a:hover
+#id_CCMS_CR01_include_page_cr01 > a:hover,
+#id_CCMS_CA03JB_include_page_ca03jb_include_page_ca03jb_calculateButton_btnCalculate > input:hover,
+#lnkPrintThisPageTop >a:hover,
+#lnkPrintThisPageBottom > a:hover
 {
     background-color: #ebebeb;
     color: black;
@@ -3984,6 +3989,10 @@ fieldset {
 
 /**** new bits for print buttons ***/
 
+#lnkPrintThisPageBottom {
+    height: 60px;
+}
+
 #CCMS_PT01_form .btnBackPrintTop > input,
 #CCMS_PT02_form .btnBackPrintTop > input,
 #CCMS_PT05_form .btnBackPrintTop > input,
@@ -4224,6 +4233,7 @@ fieldset {
     height: 38px;
     line-height: 38px;
 }
+
 
 #id_CCMS_CA03JB_include_page_ca03jb_include_page_ca03jb_calculateButton_btnCalculate > input {
     position: relative;
