@@ -4208,7 +4208,6 @@ fieldset {
 }
 
 #id_CCMS_CA03JB_include_page_ca03jb_include_page_ca03jb_bottomAddCounselLink > input,
-
 #id_CCMS_CA03JB_include_page_ca03jb_include_page_ca03jb_calculateButton_btnCalculate > input {
     border: 1px solid #7D7D7D;
     -webkit-border-radius: 3px;
@@ -4231,6 +4230,7 @@ fieldset {
     top: -58px;
     left: 120PX;
     clear: both;
+    margin-top: 0;
 }
 
 #id_CCMS_CA03JB_include_page_ca03jb_include_page_ca03jb_nextBackPerpective_btnNext > input {
