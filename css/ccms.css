@@ -3452,6 +3452,10 @@ hr {
     
 }
 
+#id_CCMS_AC01_include_page_ac01 h2 {
+    float: left
+}
+
 #id_CCMS_AC01_include_page_ac01 > div:nth-child(3) {
     margin-top: 0px;
 }
