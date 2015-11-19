@@ -4203,21 +4203,23 @@ fieldset {
 
 /* CA03JB Case Costs */
 
+#id_CCMS_CA03JB_include_page_ca03jb_include_page_ca03jb_bottomAddCounselLink {
+        height: 55px;
+}
+
 #id_CCMS_CA03JB_include_page_ca03jb_include_page_ca03jb_calculateButton_btnCalculate > input {
+    position: relative;
+    top: -58px;
+    left: 120PX;
+    clear: both;
     margin-top: 0px;
 }
 
-#id_CCMS_CA03JB_include_page_ca03jb_include_page_ca03jb_calculateButton_btnCalculate {
-    display: inline;
+#id_CCMS_CA03JB_include_page_ca03jb_include_page_ca03jb_nextBackPerpective_btnNext > input {
+    position: absolute;
+    left: 15px;
 }
-
-#id_CCMS_CA03JB_include_page_ca03jb_include_page_ca03jb_bottomAddCounselLink {
-    height: 0;
-}
-
-#id_CCMS_CA03JB_include_page_ca03jb_include_page_ca03jb_bottomAddCounselLink > input {
-    width: 110px;
-}
+    
 
 /*
 #id_CCMS_CA03JB_include_page_ca03jb_include_page_ca03jb_calculateButton {
