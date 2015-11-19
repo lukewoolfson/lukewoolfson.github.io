@@ -115,6 +115,8 @@ Thurs 19/11/15
 fixed back button on CA03JB now is underlined and hover works correctly
 Fixed CA03JB in IE7 buttons are no longer over lapping
 PT05 made print buttons grey
+AC01 fixed h1 title overlap
+
 
 
 Begin basic elements
@@ -3444,16 +3446,12 @@ hr {
 /* Amend case NEW PAGE inconistent from others here is a temp fix */
 
 #id_CCMS_AC01_pageTitleRef > h1 {
-    display: block;
-    /*background: none;
-    font-size: 32px;
-    margin-top: 60px;
-    color: black;*/
-    
+    display: block;   
 }
 
 #id_CCMS_AC01_include_page_ac01 h2 {
-    float: left
+    float: left;
+    clear: both;
 }
 
 #id_CCMS_AC01_include_page_ac01 > div:nth-child(3) {
