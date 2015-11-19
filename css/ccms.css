@@ -110,9 +110,11 @@ Fixed text overlap on PT07
 Showed H1 page title on PT05, PT01
 Changed back button style on PT05 & PT07
 
-Tues 17/11/15
+Thurs 19/11/15
 --v12--
 fixed back button on CA03JB now is underlined and hover works correctly
+Fixed CA03JB in IE7 buttons are no longer over lapping
+PT05 made print buttons grey
 
 
 Begin basic elements
@@ -4243,34 +4245,11 @@ fieldset {
     margin-top: 0;
 }
 
-#id_CCMS_CA03JB_include_page_ca03jb_include_page_ca03jb_nextBackPerpective_btnNext > input {
+#id_CCMS_CA03JB_include_page_ca03jb_include_page_ca03jb_nextBackPerpective_btnNext > input[value="Next"] {
     position: absolute;
     left: 15px;
 }
-    
 
-/*
-#id_CCMS_CA03JB_include_page_ca03jb_include_page_ca03jb_calculateButton {
-    display: inline-block;
-    zoom: 1;
-    *display: inline;   
-}
-    
-
-#id_CCMS_CA03JB_include_page_ca03jb_include_page_ca03jb_bottomAddCounselLink > input {
-    margin-bottom: 0;
-}
-
-#id_CCMS_CA03JB_include_page_ca03jb_include_page_ca03jb_calculateButton_btnCalculate > input {
-    /*float: none;*//*
-    margin-top: 0;
-    margin-bottom: 20px;
-}
-
-.include_page_ca03jb_bottomAddCounselLink {
-    height: 0;
-}
-*/
 
 /* comment */
 
