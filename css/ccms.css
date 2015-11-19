@@ -3445,10 +3445,10 @@ hr {
 
 #id_CCMS_AC01_pageTitleRef > h1 {
     display: block;
-    background: none;
+    /*background: none;
     font-size: 32px;
     margin-top: 60px;
-    color: black;
+    color: black;*/
     
 }
 
