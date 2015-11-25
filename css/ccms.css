@@ -118,6 +118,10 @@ PT05 made print buttons grey
 AC01 fixed h1 title overlap (IE7)
 AC01 fixed proceeding type to be under proceeding H2 title (IE7)
 
+Mon 23/11/15
+--v13---
+Fix beta CA05 iframe page to match system defualts
+
 
 
 Begin basic elements
@@ -3928,7 +3932,7 @@ fieldset {
 
 #iframe-wrapper {
     position: relative;
-    margin-top: 85px;
+    /*margin-top: 85px;*/
 }
 
 #loadImg {
@@ -4042,15 +4046,6 @@ fieldset {
 
 /* Amend provider details and Amend Correspondence Address */
 
-#id_CCMS_CA05_pageTitleRef > h1, 
-#id_CCMS_CA02B_pageTitleRef > h1 {
-    display: none;
-    margin-top: 60px;
-}
-
-#id_CCMS_CA05_include_page_ca05_include_page_ca05_header > h2, #id_CCMS_CA02B_include_page_ca02b_include_page_ca02b_header > h2 {
-    display: block;
-}
 
 #id_CCMS_CA05_include_page_ca05_include_page_ca05_header, #id_CCMS_CA02B_include_page_ca02b_include_page_ca02b_header {
     margin-top: 0;
