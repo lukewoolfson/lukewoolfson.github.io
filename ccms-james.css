@@ -1,140 +1,7 @@
 /*******************************************************************************
 /*******************************************************************************
-Based upton Kathrines CSS
-
-Friday 30/10/15 fixes to:
--- v1--
-IE7 bugs:
- - AW02 Cost award 100% width to subtitles
- - AW02 Cost award next and calc next to each other
- - SU01 lines in summary page 
-
-New print button
-
---v2--
-Nowrap turned off
-put help in the middle
-turned on hover for help
---
-
-Sat  31/10/2015 fixes to
---v3--
-IE7 bugs:
- - VC01 Set h2 width to 100% to fix h2 headers
- - SU02 Set h2 width to 100% to fix h2 headers
-
---v4--
-Fixed required icon size commented out .reqfield background size (not supported in IE7/8 so changed icon instead.
-
-Mon 02/11/15
---v5--
-SF01 advocate names shown as a list
-
---v6--
-Added home link back again
-NotificationNoteTable width
-Added notificationHeader th no wrap
-Fixed notifications <br>
-
-Thurs 04/12/15
---v7--
-OR01 Moved 'Add Award' to top of table to handle more than 1 award
-CB03 table elements all on 1 row
-CB03 Cancel and return link positioned to top of page. Will remain in same place once bills have been created.
-NOT02A fixed table headings to be in 1 line
-NOT02A Fixed arrow size on IE7
-PO03 move select court to left and re styled as secondary button
-Page errors have a set width of 600px
-Should fix roaming astertix eg CA03J
-Return links are now absolute positioning to the body of the page
-Added H1 title back to SF01
-max-width of 600px applied to input text such as Billing (CB03B) or the means/mertits
-Showed comment 2 on front page
-Set width to 100% on front page comments
-warning text is now black
-
---v8---
-Fixed add award button
-
-Mon 09/11/15
---v9--
-Tidy up error border added padding to right side
-Showed H1 heading on notifications search page NOT02A its now Your Actions / Notifications
-Fixed AW06 Other Asset: award and recovery percent and amount layout
-Styled previous to match next links on 2nd results page eg CA06B page 2
-Linked case CA06B headers action column are set to nowrap
-Moved 'Calculate button' above Next button on AW05
-Styled CB03B (OPA billing): ADD and remove buttons are no longer green.
-Copied error style to error messages that dont sit inside errorMessagesRef eg CA03JB Error.
-CA03JB re aligned add counsel and calculate buttons so next button is on bottom row
-Put error border back to 100% width
-show BR on comments such as GS09
-Fixed double padding on GS11
-Matched system error color on GS11 and GS09
-fixed return link on POA01
-Heading now in bold on POA01a
-top back button to be like other return to on top left PT05 and PT07
-SU01 Styled correctly
-GS09 H2 tile now correct size
-GN05 Page title correct size
-GN05 LAA logo now hidden.
-Styled CA03K fixed confirm buttons, cancel button and max-width.
-AW02 moved calculate above next button (works on IE7 too)
-CA03 fixed table headings to be one line
-CA03a removed right padding on 'edit scope limitations'
-CB03B 'Payment On Account (POA) Recoupment' fixed alignment of checkbox to text
-CD04A/CR05A removed table border
-CR01 set width of text to 600px
-CR01 change print link to match others
-CR05 moved No fixed abode to left
-CS01A 'Copy case' no longer wraps
-DE01 single line of text for top comment
-Hid web address from GS09 and GS11
-MNA05 fixed right padding on 'Means Assessment'
-PD04 Changed cancel link
-PT05 text width to 600px
-Fixed focus overlay on input fields in IE see AW05
-
-Thurs 12/11/15
---v10--
-Fixed AW04/AW06 in IE10 & IE7
-Hid contact details from GS09 and GS11
-Brought case number to the front so its selectable.
-Fixed CA03JB calculate button in IE10
-Fixed AW06 error icon in IE10
-
-Mon 16/11/15
---v11--
-.stackTrace is now red text on GN01 System Busy to match other error styles
-Fixed text overlap on PT07
-Showed H1 page title on PT05, PT01
-Changed back button style on PT05 & PT07
-
-Thurs 19/11/15
---v12--
-fixed back button on CA03JB now is underlined and hover works correctly
-Fixed CA03JB in buttons are no longer over lapping (IE7)
-PT05 made print buttons grey
-AC01 fixed h1 titlifre overlap (IE7)
-AC01 fixed proceeding type to be under proceeding H2 title (IE7)
-
-Mon 23/11/15
---v13---
-Fix beta CA05 iframe page to match system defualts
-
-Wends 25/11/15
---v14--
-Added beta logo class
-fixed iframe page loading img overlap
-Removed referances to #cancel_link a
-
---v15--
-added padding to top of iframe (.owdFrame)
-
-
-
-Begin basic elements
-*******************************************************************************/
+ Begin basic elements
+ *******************************************************************************/
 
 
 
@@ -251,6 +118,16 @@ a {
 	margin-bottom: -1px;
 }
 
+.beta-logo{
+	display : inline;
+	background : darkorange;
+	padding : 2px 3px 0px 3px;
+	color : white;
+	font-size : 12px;
+	font-weight : normal;
+	letter-spacing : 1px; 
+}
+
 /*******************************************************************************
  End basic elements
  *******************************************************************************/
@@ -340,16 +217,10 @@ a {
 	padding: 0px 10px;
 }
 .clientCaseInfo #clientName {
-	color: #000;
-	background-color: #DEE0E2;
-	width:auto !important;
 	width:33%;
 }
 
 .clientCaseInfo #lscReference {
-	color: #000;
-	background-color: #DEE0E2;
-	width:auto !important;
 	width:33%;
 }
 
@@ -1442,10 +1313,6 @@ table.applicationSummaryFourColumns th{
 }
 
 /*** CCMS.AH01 ***/
-
-#id_CCMS_AH01_include_page_ah01_include_page_ah01_mainpanel {
-    padding-left: 15px;
-}
 .include_page_ah01_panel {
 	width:96%;
 }
@@ -1908,10 +1775,6 @@ table.clientSummary th{
 	height: auto;
 }
 
-.formInputArea .notificationNoteTable br {
-    display: block;
-}
-
 .scopeLimitationLinkTable td{
 	display: block;
 	margin: 0px;
@@ -2165,8 +2028,6 @@ table.clientSummary th{
 /*** end css CCMS.POA03 ***/
 
 /*** begin css CCMS.VC01 ***/
-#id_CCMS_VC01_include_page_vc01 > h2 {float: left; width: 100%}
-
 .caseinfosummary td,
 .caseinfosummary th{
 	width: 25%;
@@ -2424,7 +2285,6 @@ h1 { display: block;
     padding-bottom: 0;
    padding-top: 10px;
     width: auto;
-    font-weight: bold;
 }
 
 h2 {
@@ -2474,25 +2334,17 @@ a.button:link, a.button:active, a.button:visited {
     font-size: 18px;
     line-height: 38px;
     text-align: center;
-    padding-top: 0;
-    padding-bottom: 0;
-    cursor: pointer;
-    min-width: 80px;
 }
 
-a.button:link:hover {
-    color: white;
-}
 
 /*** page layout ****/
 body {
     width: 1020px;
     margin-left: auto;
     margin-right: auto;
-    position: relative;
 }
 
-.formInputArea {
+.errorMessagesRef, .formInputArea {
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -2514,10 +2366,9 @@ body {
     margin-bottom: 5px;
     font-size: 16px;
     background: #dee0e2;
-   	top: -27px;
-   	*top: 0px;
+    top: -27px;
     position: relative;
-    z-index: 1;
+    z-index: -1;
 }
 
 .clientCaseInfo div {
@@ -2527,23 +2378,18 @@ body {
 }
 #clientName {
     background:url("../images/case-open.png") no-repeat center left;
-    color: #000;
-    background-color: #DEE0E2;
-    width:auto !important;
+    width: auto!important;
     padding-left: 25px;
 }
 
 #lscReference, #providerReference {
-	color: #000;
-	background-color: #DEE0E2;
-    width:auto !important;
-   
+    width: auto!important;
 }
 
 
-/*#clientName span.strong, #lscReference span.strong, #providerReference span.strong, #clientName br, #lscReference br, #providerReference br {
+#clientName span.strong, #lscReference span.strong, #providerReference span.strong, #clientName br, #lscReference br, #providerReference br {
     display: none;
-}*/
+}
     
 /***header****/
 .ccmsUserInfo {
@@ -2554,7 +2400,6 @@ body {
     padding: 8px 0px 2px 0px;
     margin-right: 55px;
     width: auto;
-    z-index: 2;
 }
 
 .ccmsUserInfo br {display: none;}
@@ -2594,7 +2439,7 @@ body {
 
 .ccmsPageHeaderLinks a {
     color: white;
-    background-color: transparent;
+    background-color: black;
     text-decoration: underline;
 }
 
@@ -2626,7 +2471,7 @@ body {
 }
 
 #menuItem1 {
-    /*display: none;*/
+    display: none;
 }
 
 
@@ -2663,30 +2508,14 @@ body {
     padding-right: 0;
     padding-top: 0;
 }
-.ccmsPageHeaderLinks a {
-    display: block; 
-	font-size: 14px;
-    font-weight: normal;
-    text-decoration: none;
-    position: relative;
-    /*background-color: aqua;*/
-    width: 140px;
-    height: 27px;
-    display: block;
-    text-align: center;
-    padding-top: 12px;
-}
+.ccmsPageHeaderLinks a {display: none; height: 0;}
 
-.ccmsPageHeaderLinks a:hover {
-    border-bottom: 3px solid #e7a101;
-}
-
-/*.ccmsPageHeaderLinks > a:nth-child(3) {
+.ccmsPageHeaderLinks > a:nth-child(3) {
     font-size: 14px;
     font-weight: normal;
     text-decoration: none;
     position: relative;
-    background-color: aqua;
+    /*background-color: aqua;*/
     width: 140px;
     height: 27px;
     display: block;
@@ -2698,7 +2527,6 @@ body {
  .ccmsPageHeaderLinks > a:nth-child(3):hover {   
      border-bottom: 3px solid #e7a101;
  }
-*/
 
 
 /*** footer ***/
@@ -2711,11 +2539,6 @@ body {
 
 /*** landing page formating ***/
 
-.include_page_ah01_mainpanel .comment {
-    width: 100%;
-    max-width: 100%;
-}
-
 #id_CCMS_AH01_include_page_ah01_include_page_ah01_mainpanel_include_page_ah01_notificationspanel {
     min-height: 106px;
 }
@@ -2727,6 +2550,8 @@ body {
 #id_CCMS_AH01_include_page_ah01_include_page_ah01_mainpanel_include_page_ah01_startpanel > h2 {display: none;}
 
 #id_CCMS_AH01_include_page_ah01_include_page_ah01_mainpanel_include_page_ah01_startpanel > div.comment {display: none;}
+
+#id_CCMS_AH01_include_page_ah01_include_page_ah01_mainpanel_include_page_ah01_requestpanel > div:nth-child(3) {display: none;}
 
 #id_CCMS_AH01_include_page_ah01_include_page_ah01_mainpanel_include_page_ah01_notificationspanel > h2 {display: none;}
 
@@ -2775,8 +2600,7 @@ body {
      padding: 0px 22px;
 }
 
-
-/****** Your actions / notifications NOT02A *******/
+/****** Your actions / notifications *******/
 
 
 #id_CCMS_NOT02A_include_page_not02a > div:nth-child(2) {
@@ -2785,22 +2609,8 @@ body {
 
 #id_CCMS_NOT02A_include_page_not02a_include_page_not02a_header > a:nth-child(3) {
     position: relative;
-    top: 80px;
+    top: 120px;
 }
-
-#id_CCMS_NOT02A_include_page_not02a th {
-    white-space: nowrap;
-}
-
-#id_CCMS_NOT02A_include_page_not02a_include_page_not02a_header > h2 {
-    display: none;
-}
-
-#id_CCMS_NOT02A_pageTitleRef > h1 {
-    display: block;
-}
-
-
 
 /**** table pages ****/
 
@@ -2828,14 +2638,14 @@ th {
 th {
     border: none;
     border-bottom: 1px solid black;
-    /*white-space: nowrap;*/
+    white-space: nowrap;
 }
 
 td {
    border: none;
-   border-bottom: 1px solid black;
+   /*border-bottom: 1px solid black;*/
    background-color: white;
-   font-size: 16px;
+    font-size: 16px;
 }
 
 tr {
@@ -2867,16 +2677,15 @@ input {
 .panelHeaderWithLink {
     border-bottom: 0;
     margin-bottom: 0;
-    /*position: relative;*/ /*changed to body*/
+    position: relative;
 }
 
 .formInputArea .panelHeaderWithLink:nth-child(1) {
-    /* margin-top: 50px; no longer needed*/
+    margin-top: 50px; /*should only be first one */
 }
 
-
 .formInputArea br {
-    display: none; 
+    display: none;
 }
 
 th.sortable a {
@@ -2930,16 +2739,14 @@ th.order2 a:hover {
     color: #2E8ACA;
 }
 
-.paginationPanel .next, .paginationPanel .previous {
+.paginationPanel .next {
     background: none;
     color: #005EA5;  
 }
 
-.paginationPanel .next:hover, .paginationPanel .previous:hover {
+.paginationPanel .next:hover {
     color: #2E8ACA;
 }
-
-
 
 .paginationPanel .active {
     color: white;
@@ -2952,16 +2759,9 @@ th.order2 a:hover {
     color: white;
 }
 
-#id_CCMS_CA06B_include_page_ca06b th {
-    white-space: nowrap;
-}
-
-#id_CCMS_CA06B_include_page_ca06b table > tbody > tr > td:nth-child(7) {
-    white-space: nowrap;
-}
-    
-
 /*move return to home link to top left of page */
+
+
 
 
 .formInputArea .panelHeaderWithLink:nth-child(1) a:nth-child(2), 
@@ -2969,16 +2769,13 @@ th.order2 a:hover {
 #id_CCMS_POA01_include_page_poa01_include_page_poa01_header > a,
 #id_CCMS_SU02_pageTitleRef > a,
 #id_CCMS_MNA01_include_page_00_00_page_00_00_screen_include_page_00_00_header > a,
-#id_CCMS_MNA05_pageTitleRef > a,
-#id_CCMS_AC01_include_page_ac01_include_page_ac01_header > a,
-#id_CCMS_CB03_include_page_cb03_include_page_cb03_header_section2 > a,
-#id_CCMS_OR01_include_page_or01_include_page_or01_header > a
+#id_CCMS_MNA05_pageTitleRef > a
 {
     background:url("../images/arrow-left.png") no-repeat center left;
     background-size: 13px;
     position: absolute;
-    top: 120px;
-    left: 15px;
+    top: -15px;
+    left: 0px;
 }
 
 .formInputArea .panelHeaderWithLink:nth-child(1) a:nth-child(2):hover,
@@ -2986,10 +2783,7 @@ th.order2 a:hover {
 #id_CCMS_POA01_include_page_poa01_include_page_poa01_header > a:hover,
 #id_CCMS_SU02_pageTitleRef > a:hover,
 #id_CCMS_MNA01_include_page_00_00_page_00_00_screen_include_page_00_00_header > a:hover,
-#id_CCMS_MNA05_pageTitleRef > a:hover,
-#id_CCMS_AC01_include_page_ac01_include_page_ac01_header > a:hover,
-#id_CCMS_CB03_include_page_cb03_include_page_cb03_header_section2 > a:hover,
-#id_CCMS_OR01_include_page_or01_include_page_or01_header > a:hover
+#id_CCMS_MNA05_pageTitleRef > a:hover
 {
     background:url("../images/arrow-left-hover.png") no-repeat center left;
     background-size: 13px;   
@@ -3026,27 +2820,20 @@ th.order2 a:hover {
 .btnSummaryPrintBottom .button,
 .btnCreateNewOrganisation .button,
 #id_CCMS_CA03JB_include_page_ca03jb_include_page_ca03jb_bottomAddCounselLink > input,
-.btnSummaryPrintTop .button,
-#id_CCMS_PO03_include_page_po03 .selectCourt input,
-.newInstance input[value=Add],
-#id_CCMS_CR01_include_page_cr01 > a,
-#lnkPrintThisPageTop >a,
-#lnkPrintThisPageBottom > a
+.btnSummaryPrintTop .button
 {
-    border: 1px solid #7D7D7D;
+    border: 1px solid #dee0e2;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-    background-color: #f2f2f2;
+    background-color: #f8f8f8;
     color: black;
-    padding: 0px 10px;
+    padding: 5px 10px;
     text-decoration: none;
     box-shadow: none;
-    background: #f2f2f2;
+    background: #f8f8f8;
     margin-right: 15px;
     float: left;
-    height: 38px;
-    line-height: 38px;
 }
 
 #id_CCMS_CA03_include_page_ca03 > a:nth-child(10):hover, 
@@ -3068,13 +2855,7 @@ th.order2 a:hover {
 .page_lp01_freeform a:nth-child(3):hover,
 .btnCreateNewOrganisation .button:hover,
 #id_CCMS_CA03JB_include_page_ca03jb_include_page_ca03jb_bottomAddCounselLink > input:hover,
-.btnSummaryPrintTop .button:hover, .btnSummaryPrintBottom .button:hover,
-#id_CCMS_PO03_include_page_po03 .selectCourt input:hover,
-.newInstance input[value=Add]:hover,
-#id_CCMS_CR01_include_page_cr01 > a:hover,
-#id_CCMS_CA03JB_include_page_ca03jb_include_page_ca03jb_calculateButton_btnCalculate > input:hover,
-#lnkPrintThisPageTop >a:hover,
-#lnkPrintThisPageBottom > a:hover
+.btnSummaryPrintTop .button:hover
 {
     background-color: #ebebeb;
     color: black;
@@ -3099,8 +2880,7 @@ th.order2 a:hover {
 #id_CCMS_PD01_include_page_pd01 > a:nth-child(7):focus,
 .page_lp01_freeform a:nth-child(3):focus,
 .btnCreateNewOrganisation .button:focus,
-#id_CCMS_CA03JB_include_page_ca03jb_include_page_ca03jb_bottomAddCounselLink > input:focus,
-#id_CCMS_PO03_include_page_po03 .selectCourt input:focus
+#id_CCMS_CA03JB_include_page_ca03jb_include_page_ca03jb_bottomAddCounselLink > input:focus
 {
     outline: 3px solid #ffbf47;
     background: #ebebeb!important;
@@ -3109,11 +2889,9 @@ th.order2 a:hover {
 .panelHeaderWithLink a, .panelHeaderWithLink .link {
     color: #005EA5;
     background: white;
-    padding-right: 0;
-}
-
-.linkShowingDirection {
-    padding-right: 0;
+   /*position: relative;
+    top: 15px;
+    padding-right: 0;*/
 }
 
 .panelHeaderWithLink a:hover {
@@ -3126,12 +2904,11 @@ th.order2 a:hover {
 
 .errorInd {
     float: none;
-    display: inline;
+    display: initial;
 }
 
 label, .label, .fieldInfo {
     width:auto;
-    max-width: 600px;
 }
 
 .input, .inputPanel .input {
@@ -3157,13 +2934,38 @@ label, .label, .fieldInfo {
 .inputFieldDate input {
     margin-left: 0;
 }
-
-.inputField {
-    overflow: visible;
+/*
+label {
+    width: auto;
 }
 
+.inputFieldDate input {
+    margin-left: 0;
+}
+.input { 
+    display: block;
+    float: none;
+    padding-left: 0;  
+}
+
+.inputPanel .input{
+	width: 300px;
+}
+
+.input .monetary {
+    display: block;
+}
+
+.textInput, .date {
+    padding: 4px;
+    background-color: #fff;
+    border: 1px solid #bfc1c3;
+    font-size: 1em;
+}
+
+*/
 .formInputArea .inputPanel {
-        overflow: visible;
+        overflow: initial;
 }
 .formInputArea .inputPanel {
     background-color: white;
@@ -3232,7 +3034,7 @@ label, .label, .fieldInfo {
 }
 
 .reqfield {
-    /*background-size: 12px;*/
+    background-size: 12px;
     margin-bottom: 8px;
     font-size: 100%;
 }
@@ -3260,28 +3062,20 @@ hr {
 
 /****** errors *****/
 
-.errorText, .stackTrace {
-    color: red;
-}
-
-.error {
-    width: 600px;
-}
-
 .errorMessagesRef {
-    /*margin-top: 65px;*/
-    padding: 0px 15px;
+    margin-top: 0px;
 }
 
-.errorMessagesRef #messageInfo, .errorMessagesRef #messages, #messages, #messageInfo {
+.errorMessagesRef #messageInfo, .errorMessagesRef #messages {
+    border: none;
     margin: 0;
-    width: 950px;
+    width: auto;
+    border: 5px solid #b10e1e;
     padding: 20px 15px 15px 15px;
-    border-style: solid;
-    border-color: #b10e1e;
+    
 }
 
-.errorMessagesRef #messageInfo, #messageInfo {
+.errorMessagesRef #messageInfo {
     color: black;
     font-size: 24px;
 }
@@ -3293,28 +3087,21 @@ hr {
     background-position: 0 15%;
 }
 
-.errorMessagesRef #messageInfo, #messageInfo {
-    border-width: 5px 5px 0px 5px;
+.errorMessagesRef #messageInfo {
+    border-bottom: 0;
     padding-bottom: 5px;
 }
 
-.errorMessagesRef #messages, #messages {
-    border-width: 0px 5px 5px 5px;
+.errorMessagesRef #messages {
+    border-top: 0;
     padding-top: 0;
+    margin-bottom: 35px;
 }
 
-#messageInfo, #messages {
-    margin-left: 15px;
-}
-
-.btnBack .button, 
-.btnAbandonApplication .button, 
-.lnkBack .button,
-.btnCancel .button,
-#id_CCMS_PD04_include_page_pd04_lnkCancel > input {
+.btnBack .button, .btnAbandonApplication .button, .lnkBack .button, .btnCancel .button {
     background-color: white;
     color: #005EA5;
-    text-decoration: underline!important;
+    text-decoration: underline;
     width: auto;
     box-shadow: none;
     width: auto;
@@ -3325,11 +3112,8 @@ hr {
     margin-top: 10px;
 }
 
-.btnBack .button:hover,
-.btnAbandonApplication .button:hover,
-.lnkBack .button:hover,
-#id_CCMS_PD04_include_page_pd04_lnkCancel > input:hover {
-    color: #2E8ACA!important; 
+.btnBack .button:hover, .btnAbandonApplication .button:hover, .lnkBack .button:hover{
+    color: #2E8ACA; 
 }
 
 
@@ -3458,22 +3242,34 @@ hr {
 /* Amend case NEW PAGE inconistent from others here is a temp fix */
 
 #id_CCMS_AC01_pageTitleRef > h1 {
-    display: block;   
-}
-
-#id_CCMS_AC01_include_page_ac01 h2 {
-    float: left;
-    clear: both;
+    display: block;
+    background: none;
+    font-size: 32px;
+    margin-top: 60px;
+    color: black;
+    
 }
 
 #id_CCMS_AC01_include_page_ac01 > div:nth-child(3) {
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 #id_CCMS_AC01_pageTitleRef {
     height: 45px;
 }
 
+#id_CCMS_AC01_include_page_ac01_include_page_ac01_header > a {
+    background:url("../images/arrow-left.png") no-repeat center left;
+    background-size: 13px;
+    position: absolute;
+    top: 125px;
+
+}
+
+.include_page_ac01_header .linkShowingDirection a:hover {
+    background:url("../images/arrow-left-hover.png") no-repeat center left;
+    background-size: 13px;   
+}
 
 #id_CCMS_AC01_include_page_ac01_btnSubmitAmendment > a {
     float: left;
@@ -3503,26 +3299,50 @@ hr {
 
 /* Outcome page */
 
-.groupPanelBold .label {
-    width: 10%;
-}
-
-#id_CCMS_AW04_include_page_aw04_include_aw04_inputpanel .groupPanel label {
-    width: 10%;
+#id_CCMS_AW04_include_page_aw04_include_aw04_inputpanel .groupPanel  label {
+    width: 30%
 }
 
 .btnCalculate {
     width: 0;
 }
 
+.formInputArea .include_aw04_inputpanel {
+    margin-bottom: 60px;
+}
 #id_CCMS_AW04_include_page_aw04_include_aw04_inputpanel .groupPanel .input {
-    width: 150px;
+    width: initial;
 }
 
-#id_CCMS_AW04_include_page_aw04_btnBack > input {
+#id_CCMS_AW04_include_page_aw04_btnCalculate > input {
     position: relative;
-    top: 65px;
+    top: -100px;
+    border: 1px solid #dee0e2;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #f8f8f8;
+    color: black;
+    padding: 5px 10px;
+    text-decoration: none;
+    box-shadow: none;
 }
+
+#id_CCMS_AW04_include_page_aw04_btnCalculate > input:hover {
+    background-color: #ebebeb;
+    color: black;
+    border-color: black;
+}
+
+#id_CCMS_AW04_include_page_aw04_btnCalculate > input:focus {
+    outline: 3px solid #ffbf47;
+}
+
+#id_CCMS_AW04_include_page_aw04_btnBack .button {  
+    position: relative;
+    top: -42px;   
+}
+
 
 .textOnlyCurrency {
     padding-left: 0;
@@ -3546,18 +3366,27 @@ hr {
     margin-top: 65px;
 }
 
+
+#id_CCMS_OR01_include_page_or01_include_page_or01_header > a {
+    background:url("../images/arrow-left.png") no-repeat center left;
+    background-size: 13px;
+    position: absolute;
+    top: -105px;
+    left: 0px;
+}
+
+#id_CCMS_OR01_include_page_or01_include_page_or01_header > a:hover {
+    background:url("../images/arrow-left-hover.png") no-repeat center left;
+    background-size: 13px;   
+}
+
 #id_CCMS_OR01_include_page_or01 > div:nth-child(4) > a {
-  position: absolute;
-  left: 0px;
-  top: 45px; 
+    position: absolute;
+    left: 0px;
+    top: 130px;   
 }
-
-#id_CCMS_OR01_include_page_or01 > div:nth-child(4) {
-    position: relative;     
-}
-
-#CCMS_OR01_form .panelHeaderWithLink:nth-child(4) h2 {
-    margin-bottom: 35px;
+#id_CCMS_OR01_include_page_or01 > table:nth-child(5) {
+    margin-bottom: 60px;
 }
 
 .notificationHeader tr th {
@@ -3566,42 +3395,25 @@ hr {
 
 .notificationHeader tr td {
     padding-right: 15px;
-    width: 25%!important;
+    width: 50px!important;
 }
 
 /* Cost award */
 
-#id_CCMS_AW02_include_page_aw02_btnCalculate, 
-#id_CCMS_AW05_include_page_aw05_btnCalculate, 
-#id_CCMS_AW04_include_page_aw04_btnCalculate {
-    float: left;
-}
-
-#id_CCMS_AW02_include_page_aw02, 
-#id_CCMS_AW02_include_page_aw02_include_aw02_inputpanel {
-    margin-bottom: 0;
-}
-
-#id_CCMS_AW02_include_page_aw02_btnNext > input, 
-#id_CCMS_AW05_include_page_aw05_btnNext > input, 
-#id_CCMS_AW04_include_page_aw04_btnNext > input  {
-    position: relative;
-    top: 65px;
-}
-
-#id_CCMS_AW02_include_page_aw02_btnCalculate > input, 
-#id_CCMS_AW05_include_page_aw05_btnCalculate > input, 
-#id_CCMS_AW04_include_page_aw04_btnCalculate > input {
-    position: absolute;
-    left: 15px;
-    margin-top: 0px;
-}
-
 .awardsFieldHeader {
     font-size: 24px;
-    width: 100%;
+    width: auto;
     margin-left: 0;
     padding-left: 0;
+}
+
+#id_CCMS_AW02_include_page_aw02 .btnCalculate {
+    position: relative;
+    top: -100px;
+}
+
+#id_CCMS_AW02_include_page_aw02_include_aw02_inputpanel {
+    margin-bottom: 40px;
 }
 
 /* client address details */
@@ -3667,8 +3479,6 @@ input.linkShowingDirectionRight {
     font-weight: bold;
 }
 
-
-
 /* provide electronic docs */
 
 .fileSelect {
@@ -3693,20 +3503,27 @@ td.data {
 
 #id_CCMS_PD01_include_page_pd01_include_page_pd01_documents_header > a:nth-child(3), #id_CCMS_PD01_include_page_pd01_include_page_pd01_documents_header > a:nth-child(2) {display: none;}
 
-.notificationNoteTable p {
+.notificationNoteTable > tr > td > p {
     width: 600px;
 }
 
-.notificationHeader th {
-    white-space: nowrap;
+#id_CCMS_PD01_include_page_pd01 .panelHeaderWithLink a:nth-child(2) {
+    top: -150px;
 }
 
+
+/* create POA */
+
+#id_CCMS_POA01_include_page_poa01_include_page_poa01_header > a {
+        top: -130px;
+}
 
 /* increase H2 large font */
 
 #id_CCMS_POA01_include_page_poa01 > h2,
 #id_CCMS_PD01_include_page_pd01_include_page_pd01_header > h2 {
     font-size: 32px;
+    margin-top: 50px;
 }
 
 /* outcome and awards liable parties */
@@ -3720,8 +3537,8 @@ td.data {
     padding: 0;
 }
 
-#id_CCMS_SU02_include_page_su02_summary > h2 {
-    width: 100%;
+#id_CCMS_SU02_include_page_su02_btnSummaryPrintTop > input {
+    display: none;
 }
 
 .summaryBottomNav .firstbutton  {
@@ -3740,12 +3557,7 @@ td.data {
     font-size: 32px;
 }
 
-.summaryTable td { 
-    border-bottom: 1px solid black;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-}
+.summaryTable td { border: none;}
 
 .summaryTable .columnDescription {
     font-size: 18px;
@@ -3763,7 +3575,7 @@ td.data {
 /* IE fixes */
 
 .pageTitleRef {
-    margin-top: 65px;
+    margin-top: 50px;
     padding-left: 15px;
 }
 
@@ -3782,25 +3594,24 @@ select::-ms-expand {
 
 /* create a bill */
 
-#id_CCMS_CB03_include_page_cb03_include_page_cb03_header_section2 {
-    position: inherit;
+#id_CCMS_CB03_include_page_cb03_include_page_cb03_header_section2 > a {
+    background:url("../images/arrow-left.png") no-repeat center left;
+    background-size: 13px;
+    position: absolute;
+    top: -120px;
+    left: 0px; 
 }
 
-#id_CCMS_CB03_include_page_cb03 > table > tbody > tr > td {
-    white-space: nowrap;
+#id_CCMS_CB03_include_page_cb03_include_page_cb03_header_section2 > a:hover {
+    background:url("../images/arrow-left-hover.png") no-repeat center left;
+    background-size: 13px; 
 }
 
+/* view outcome */
 
-#id_CCMS_CB03_include_page_cb03 > h2 {
-    font-size: 32px;
+#id_CCMS_SU02_pageTitleRef > a {
+    left: 20px;
 }
-
-#id_CCMS_CB03_include_page_cb03_include_page_cb03_header_section2 > h2 {
-    display: none;
-}
-
-
-
 
 /* Case Costs */
 
@@ -3813,7 +3624,7 @@ select::-ms-expand {
 }
 
 .costSummary .readonlyData {
-  /*  width: auto;*/
+    width: auto;
 }
 
 .costSummary .totalRemaining .textOnlyCurrency {
@@ -3828,9 +3639,8 @@ select::-ms-expand {
 }
 
 #id_CCMS_GN04_include_page_gn04 {
-    position: relative;
+        position: relative;
     top: -40px;
-    *top: 0px;
     
 }
 
@@ -3858,8 +3668,8 @@ select::-ms-expand {
     font-size: 18px;
     line-height: 38px;
     text-align: center;
-    position: relative;
-    top: 170px;
+    position: relative ;
+    top: 170px
 }
 
 /* OPA Means */
@@ -3937,13 +3747,20 @@ fieldset {
 
 /* loading iframe page */
 
-#iframe-wrapper {
-    /*position: relative;*/
-    /*margin-top: 85px;*/
+#cancel_link  a {
+ float: left;
+ background:url("../images/arrow-left.png") no-repeat center left;
+ background-size: 13px;  
 }
 
-#owdFrame {
-    padding-top: 15px;
+#cancel_link  a:hover {
+    background:url("../images/arrow-left-hover.png") no-repeat center left;
+    background-size: 13px; 
+}
+
+#iframe-wrapper {
+    position: relative;
+    margin-top: 85px;
 }
 
 #loadImg {
@@ -3952,7 +3769,7 @@ fieldset {
     text-align: center;
     float: left;
     padding-top: 25px;
-    /*position: absolute;*/
+    position: absolute;
     background-color: white;
 }
 
@@ -3971,21 +3788,18 @@ fieldset {
     position: inherit;
     top: 25px;
     position: relative;
-    left: auto;
 }
 
 #id_CCMS_MNA05_pageTitleRef > a {
     float: left;
     position: relative;
     top: 0;
-    left: 0;
 }
 
 #id_CCMS_MNA05_include_page_mna05 > div.panelHeaderWithLink.clearfix {
     margin-top: 10px;
 }
     
-
 /* case summary */
 
 #id_CCMS_SU04_pageTitleRef > h1, #id_CCMS_PT07_pageTitleRef > h1 {
@@ -4007,59 +3821,23 @@ fieldset {
     color: black;
 }
 
-/**** new bits for print buttons ***/
-
-#lnkPrintThisPageBottom {
-    height: 60px;
-}
-
-#CCMS_PT01_form .btnBackPrintTop > input,
-#CCMS_PT02_form .btnBackPrintTop > input,
-#CCMS_PT05_form .btnBackPrintTop > input,
-#CCMS_PT07_form .btnBackPrintTop > input
-{
-    padding: 0;
-    padding-left: 20px;
-    height: 20px;
-    text-align: left;
-    width: auto;
-    line-height: 20px;
-    background-color: #fff;
-    color: #005EA5;
-    box-shadow: none;
-    position: absolute;
-    left: 0;
-    top: 120px;
-    background: url("../images/arrow-left.png") no-repeat center left;
-    background-size: 13px;
-    margin-left: 15px;
-    text-decoration: underline;
-    font-size: 14px;
-}
-
-#CCMS_PT01_form .btnBackPrintTop > input:hover,
-#CCMS_PT02_form .btnBackPrintTop > input:hover,
-#CCMS_PT05_form .btnBackPrintTop > input:hover,
-#CCMS_PT07_form .btnBackPrintTop > input:hover {
-    background: url("../images/arrow-left-hover.png") no-repeat center left;
-    background-size: 13px;
-    color: #2E8ACA;
-}
-
-#id_CCMS_PT07_pageTitleRef > h1 {
-    padding-top: 40px;
-}
-
-#id_CCMS_PT05_pageTitleRef > h1, 
-#id_CCMS_PT01_pageTitleRef > h1 {
-    display: block;
-}
-
 /* Amend provider details and Amend Correspondence Address */
 
+#id_CCMS_CA05_pageTitleRef > h1, #id_CCMS_CA02B_pageTitleRef > h1 {
+    display: block;
+    margin-top: 60px;
+}
+
+#id_CCMS_CA05_include_page_ca05_include_page_ca05_header > h2, #id_CCMS_CA02B_include_page_ca02b_include_page_ca02b_header > h2 {
+    display: none;
+}
 
 #id_CCMS_CA05_include_page_ca05_include_page_ca05_header, #id_CCMS_CA02B_include_page_ca02b_include_page_ca02b_header {
     margin-top: 0;
+}
+
+#id_CCMS_CA05_include_page_ca05_include_page_ca05_header > a, #id_CCMS_CA02B_include_page_ca02b_include_page_ca02b_header > a {
+    top: -70px;
 }
 
 /* Summary */
@@ -4076,313 +3854,4 @@ fieldset {
 #id_CCMS_SU01_page_su01_mainContent_summary_summary_provider_providerData_officeId
 {
     border-bottom: 1px solid black!important;
-}
-
-/* Advocate list */
-
-#id_CCMS_SF01_page_sf01 > br {
-    display: block;
-    content: close-quote;
-    margin-bottom: 5px;
-}
-
-
-
-/* PD03 Record proceeding outcome*/
-
-#id_CCMS_PO03_include_page_po03_include_po03_displaypanel_include_po03_inputpanel_selectCourt {
-    position: relative;
-    padding-top: 30px;
-}
-
-#id_CCMS_PO03_include_page_po03 .selectCourt input {
-    position: absolute;
-    left: 0;
-    top: -10px;
-    margin-left: 0;
-
-}
-
-/* CA03 */
-
-.include_page_ca03 th {
-    white-space: nowrap;
-}
-
-/* CA03J */
-
-.costSummary .readonlyData {
-    text-align: left;
-}
-
-.costSummary input {
-    width: 84px;
-}
-
-.prefix {
-    padding-right: 4px;
-}
-
-.costSummary input {
-    text-align: left;
-}
-
-/* SF01 Pick chamber*/
-#id_CCMS_SF01_pageTitleRef > h1 {
-    display: block;
-}
-
-#id_CCMS_PT07_pageTitleRef {
-    margin-top: 0;
-}
-
-/* Billing */
-
-#messages .warning {
-    color: black;
-    background-position: 0 15%;
-    width: 600px;
-}
-
-.errorInd > img {
-    height: 19px;
-    width: 19px;
-}
-
-#id_CCMS_AH01_pageHeaderRef > div.ccmsUserInfo > span:nth-child(5) { 
-    display: none;
-}
-
-/* AW06 Awards and recovery other asset */
-
-#id_CCMS_AW06_include_page_aw06_include_aw06_inputpanel_awardAndRecoveryText > div {
-    width: 100%;
-    display: block;
-}
-
-#id_CCMS_AW06_include_page_aw06_include_aw06_inputpanel_awardAndRecoveryText_awardAndRecoveryColumnHeaders {
-    width: 480px;
-    padding-left: 150px;
-}
-
-#id_CCMS_AW06_include_page_aw06_include_aw06_inputpanel_awardAndRecoveryFields .input {
-    width: auto;
-}
-
-#id_CCMS_AW06_include_page_aw06_include_aw06_inputpanel_awardAndRecoveryFields label {
-    width: 120px;
-}
-
-.orText {
-    padding-right: 18px;
-}
-
-#id_CCMS_AW06_include_page_aw06_include_aw06_inputpanel_noRecoveryDetails > label {
-    max-width: 700px;
-}
-
-.awardAndRecoveryFields .groupInput {
-    width: 400px;
-}
-
-/* CB03B PFLRS Bill Line OPA 10.1 Tweaks */ 
-
-.buttonRightColumnPanel.removeInstance {
-    margin-left: 120px;
-    margin-top: 60px;
-}
-
-.buttonRightColumnPanel.newInstance {
-    margin-left: 0;
-}
-
-.newInstance input[value=Add] {
-    margin-left: 0!important;
-    position: relative;
-    top: -50px;
-}
-
-.removeInstance input[value=Remove] {
-    background-color: white;
-    color: #005EA5;
-    text-decoration: underline;
-    width: auto;
-    box-shadow: none;
-    width: auto;
-    height: auto;
-    padding: 0px 2px;
-    min-width: inherit;
-    margin-left: 20px;
-    margin-top: 10px;
-    margin-left: 0px!important;
-}
-
-.removeInstance input[value=Remove]:hover {
-    color: #2E8ACA;
-}
-
-/* CA03JB Case Costs */
-
-#id_CCMS_CA03JB_include_page_ca03jb_include_page_ca03jb_bottomAddCounselLink {
-        height: 55px;
-}
-
-#id_CCMS_CA03JB_include_page_ca03jb_include_page_ca03jb_bottomAddCounselLink > input,
-#id_CCMS_CA03JB_include_page_ca03jb_include_page_ca03jb_calculateButton_btnCalculate > input {
-    border: 1px solid #7D7D7D;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    background-color: #f2f2f2;
-    color: black;
-    padding: 0px 10px;
-    text-decoration: none;
-    box-shadow: none;
-    background: #f2f2f2;
-    margin-right: 15px;
-    float: left;
-    height: 38px;
-    line-height: 38px;
-}
-
-
-#id_CCMS_CA03JB_include_page_ca03jb_include_page_ca03jb_calculateButton_btnCalculate > input {
-    position: relative;
-    top: -58px;
-    left: 120PX;
-    clear: both;
-    margin-top: 0;
-}
-
-#id_CCMS_CA03JB_include_page_ca03jb_include_page_ca03jb_nextBackPerpective_btnNext > input[value="Next"] {
-    position: absolute;
-    left: 15px;
-}
-
-
-/* comment */
-
-.comment br {
-    display: block;
-}
-
-/* GS11 Submission error */
-
-#id_CCMS_GS11_include_page_gs11 {
-    padding: 0;
-}
-
-
-#id_CCMS_GS09_include_page_gs09 > h2:nth-child(1) {
-    font-size: 32px;
-}
-
-/* GN05 Document download*/
-
-#id_CCMS_GN05_include_page_gn05 > div.ccmsPageHeaderLogo > a > img {
-    display: none;
-}
-
-#id_CCMS_GN05_include_page_gn05 > h2 {
-    font-size: 32px;
-}
-
-/* CA03K */
-#id_CCMS_CA03K_include_page_ca03k {
-    max-width: 600px;
-}
-
-#id_CCMS_CA03K_include_page_ca03k_btnConfirm > a:nth-child(2) {
-    background-color: white;
-    color: #005EA5;
-    text-decoration: underline;
-    width: auto;
-    box-shadow: none;
-    width: auto;
-    height: auto;
-    padding: 0px 2px;
-    min-width: inherit;
-    margin-left: 30px!important;
-    margin-top: 10px;
-}
-
-#id_CCMS_CA03K_include_page_ca03k_btnConfirm > a:nth-child(2):hover {
-    color: #2E8ACA;
-}
-
-#id_CCMS_CA03K_include_page_ca03k_btnConfirm {
-    margin-top: 20px;
-}
-/* GS11 & GS09 Error page*/ 
-
-/* hide contact details */
-#id_CCMS_GS09_include_page_gs09 > h2:nth-child(4),
-#id_CCMS_GS09_include_page_gs09 > div:nth-child(5),
-#id_CCMS_GS09_include_page_gs09 > div:nth-child(6),
-#id_CCMS_GS09_include_page_gs09 > div:nth-child(7),
-#id_CCMS_GS09_include_page_gs09 > div:nth-child(8),
-#id_CCMS_GS11_include_page_gs11 > h2,
-#id_CCMS_GS11_include_page_gs11 > div:nth-child(6),
-#id_CCMS_GS11_include_page_gs11 > div:nth-child(7),
-#id_CCMS_GS11_include_page_gs11 > div:nth-child(8),
-#id_CCMS_GS11_include_page_gs11 > div:nth-child(9),
-#id_CCMS_GS11_include_page_gs11 > div:nth-child(10)
-{
-    display: none;
-}
-
-/* CB03B 'Payment On Account (POA) Recoupment'*/
-.checkSelect label {
-    top: 0;
-}
-
-/* CD04A */
-#CCMS_CD04A_form td, #CCMS_CD04A_form tr, #CCMS_CR05A_form td, #CCMS_CR05A_form tr {
-    border-bottom: none;
-}
-
-/* CR01 */
-#id_CCMS_CR01_include_page_cr01_include_page_cr01_inputpanel_include_page_cr01_fpatext, #id_CCMS_PT05_include_page_pt05_printFairProcessingAgreement {
-    width: 600px;
-}
-
-#id_CCMS_CR01_include_page_cr01_include_page_cr01_inputpanel_page_cr01_fpaconfirmation > span > label {
-    max-width: 100%;
-}
-
-#id_CCMS_CR01_include_page_cr01 > a {
-    float: right;
-    margin-right: 0;
-}
-
-/* CR05 */
-
-#id_CCMS_CR05_include_page_cr05_include_page_cr05_inputpanel_page_cr05_nofixedabode > span > span.req {
-    width: 0;
-}
-
-#id_CCMS_CR05_include_page_cr05_include_page_cr05_inputpanel_page_cr05_nofixedabode > span > span.input {
-    margin-left: 0;
-}
-
-/* CS01A */
-
-#id_CCMS_CS01A_include_page_cs01a > div.comment {
-max-width: 620px;
-}
-
-#id_CCMS_DE01_include_page_de01 > div.comment {
-    max-width: 670px;
-}
-
-/* beta logo */
-
-.beta-logo {
-	display : inline;
-	background : #F47738;
-	padding : 2px 4px 0px 4px;
-	color : white;
-	font-size : 12px;
-	font-weight : normal;
-	letter-spacing : 1px; 
 }
