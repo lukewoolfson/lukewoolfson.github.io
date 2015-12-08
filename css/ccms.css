@@ -131,6 +131,10 @@ Removed referances to #cancel_link a
 --v15--
 added padding to top of iframe (.owdFrame)
 
+Fri 04/12/15
+--v16--
+added new-flag style
+
 
 
 Begin basic elements
@@ -4385,4 +4389,15 @@ max-width: 620px;
 	font-size : 12px;
 	font-weight : normal;
 	letter-spacing : 1px; 
+}
+
+/* new flag */
+
+.new-flag {
+     display:inline;
+    background:#ffe399; 
+    padding:2px 4px 0px 4px; 
+    color:#c98c30;
+    font-size:12px; 
+    font-weight:600;
 }
