@@ -135,6 +135,10 @@ Fri 04/12/15
 --v16--
 added new-flag style
 
+Thurs 10/12/15
+--v17--
+Added hint class and other document upload tweaks
+
 
 
 Begin basic elements
@@ -3035,7 +3039,8 @@ th.order2 a:hover {
 .newInstance input[value=Add],
 #id_CCMS_CR01_include_page_cr01 > a,
 #lnkPrintThisPageTop >a,
-#lnkPrintThisPageBottom > a
+#lnkPrintThisPageBottom > a,
+.secondary-button
 {
     border: 1px solid #7D7D7D;
     -webkit-border-radius: 3px;
@@ -3078,7 +3083,8 @@ th.order2 a:hover {
 #id_CCMS_CR01_include_page_cr01 > a:hover,
 #id_CCMS_CA03JB_include_page_ca03jb_include_page_ca03jb_calculateButton_btnCalculate > input:hover,
 #lnkPrintThisPageTop >a:hover,
-#lnkPrintThisPageBottom > a:hover
+#lnkPrintThisPageBottom > a:hover,
+secondary-button:hover
 {
     background-color: #ebebeb;
     color: black;
@@ -4400,4 +4406,23 @@ max-width: 620px;
     color:#c98c30;
     font-size:12px; 
     font-weight:600;
+}
+
+/*hint-text and doucment upload*/
+
+#id_CCMS_DOC01 br {
+    display: block;
+}
+
+.hint-text {
+color: #6F777B;
+}
+
+.side-line {
+    border-left: solid 4px #BFC1C3;
+    padding-left: 15px;
+}
+
+#id_CCMS_DOC01 .button:hover {
+    color: white;
 }
