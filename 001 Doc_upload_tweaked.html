@@ -96,16 +96,33 @@
         <label for="evi-doc-upload_no">No</label>      
   	</div>
     <div id="doc-upload" class="inputPanel">
-        		<div class="comment">Please upload all of the requested documents.
-            <br>We can only accept PDF, RTF or TIFF files that are less than 8 MB.</div>
+
 		<form id="evidenceUploadForm" action="file:///ccms/evidenceUpload.do?ezgov_private_hiddenData_uniqueId=NY48S76724JC3WP3XZ8B93VR9823PP8W&caseID=300000007895&provideID=20304" method="post" enctype="multipart/form-data">
-     <div class="inputField">
-		<h3>Files uploaded</h3>
-		<ol>
-				<li>svn-book.pdf</li>
-         </ol>
+           <div class="inputField">
+		<h3>Files uploaded</h3>      
+     <table summary="Documents uploaded">
+	<tr class="theader">
+		<th>File</th>
+		<th>Type</th>
+		<th>Date</th>
+        <th></th>
+	</tr> 
+    <tr>
+         <td>Scan 001.pdf</td>
+         <td>Bank Statement</td>
+         <td>11/12/2015</td>
+         <td><a>Remove</a></td>
+    </tr>
+    <tr>
+         <td>Scan 002.pdf</td>
+         <td>P45</td>
+         <td>11/12/2015</td>
+         <td><a>Remove</a></td>
+    </tr>
+               </table>
     </div>
 <h3>Add new file</h3>
+                    		<div class="comment">We can only accept PDF, RTF or TIFF files that are less than 8 MB.</div>
 		<div class="inputField">
             <input id="file" name="file" type="file" value="" class="fileSelect">
         </div>

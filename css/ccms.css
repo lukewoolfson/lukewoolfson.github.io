@@ -3056,6 +3056,7 @@ th.order2 a:hover {
     float: left;
     height: 38px;
     line-height: 38px;
+    cursor: pointer;
 }
 
 #id_CCMS_CA03_include_page_ca03 > a:nth-child(10):hover, 
@@ -3084,7 +3085,7 @@ th.order2 a:hover {
 #id_CCMS_CA03JB_include_page_ca03jb_include_page_ca03jb_calculateButton_btnCalculate > input:hover,
 #lnkPrintThisPageTop >a:hover,
 #lnkPrintThisPageBottom > a:hover,
-secondary-button:hover
+.secondary-button:hover
 {
     background-color: #ebebeb;
     color: black;
