@@ -31,63 +31,120 @@
 <div id="id_CCMS_DOC01" class="formInputArea">
     <div class="panelHeaderWithLink">
 	<h2>Document Upload</h2>
-     <a class="link floatright" href="<c:url value="CCMS_CA05.form?RoofAction_action%3Dreturn%23save%3Dfalse%23validate%3Dfalse%23ezgov_private_hiddenData_uniqueId%3D${uniqueId}" />">Cancel and return to Create Application</a>
-        <div class="comment">
+     <a class="link floatright" href="<c:url value="CCMS_CA05.form?RoofAction_action%3Dreturn%23save%3Dfalse%23validate%3Dfalse%23ezgov_private_hiddenData_uniqueId%3D${uniqueId}" />">Return to Create Application</a>
+    <div class="comment">
         If you have all the documents available at application you can upload them here. Caseworkers will be only be able to view your documents once the application has been submitted.
-        </div>	
+    </div>
 	<div class="inputpanel">
-	   <label>Do you have all the requried documents to upload?</label>
-       <label clss="hint-text" style="color: #6F777B;">These were listed within the means and merits interview.</label>
-    </div>	    		
-    <span class="input radio">
+        </br>
+	   <label><strong>Do you have all the requried documents to upload?</strong>
+            <div class="hint-text">These were listed within the means and merits interview.</div>
+        </label>
+     </div>	    		
+    <div class="input radio">
         <input type="radio" name="evi-doc" id="evi-doc-upload" >
         <label for="evi-doc-upload">Yes</label>
         <input type="radio" name="evi-doc" id="evi-doc-upload_no"  >
         <label for="evi-doc-upload_no">No</label>      
-  	</span>
-  
-  
-      <br>   		
+  	</div>
+      <div id="doc-upload" class="inputPanel">
+        		<div class="comment">Please upload all of the requested documents.
+            <br>We can only accept PDF, RTF or TIFF files that are less than 8 MB.</div>
+ 		
 		<form:form method="post" modelAttribute="evidenceUploadForm" enctype="multipart/form-data">
-
-		
-		</br>
 		
 		<c:import url="/evidenceRequired.do?caseID=${caseId}" />
 		
 		<c:out value="${evidenceRequired}"/>
 	 	
-		<p>Files already uploaded:</p>
+		<p>Files uploaded:</p>
 		<ol>
 			<c:forEach items="${prevUploadedFiles}" var="uploadedFile">
 				<li>${uploadedFile.fileName}</li>
 			</c:forEach>
 		</ol>
-	<div id="doc-upload">	
-		</br>
-	 	
-		<p>Select files to upload. 
-			<%--inputs.</p>--%>
-		<br />
-
-		<form:input type="file"  path="file" id="file" />
-		
-		<form:select path="description">
-		   <form:option value="" label="Please select ..."/>
-		   <form:option value="${evidenceRequired}"></form:option>
-		</form:select>
-		<br />
-		<label for="description">Description</label>
-		<form:textarea  cssStyle="width:406px;" path="description" /><br />
 	
-		<input type="submit" value="Upload" />
+ <h3>Add new file</h3>
+		<div class="inputField">
+            <form:input type="file"  path="file" id="file" class="fileSelect" />
+        </div>
+            
+            <div class="inputField">
+            <div class="input"><label>Document Type</label></div>
+            <div class="input">
+		  <form:select path="description">
+                <form:option value="">Please Select</form:option>
+                <form:option value="ADMIN1|Admin1 Form">Admin1 Form</form:option>
+                <form:option value="ADV_FRM|Advocates Form">Advocates Form</form:option>
+                <form:option value="CRT_BILL|Annotated Court Bill">Annotated Court Bill</form:option>
+                <form:option value="APP7|App7">App7</form:option>
+                <form:option value="APL_EV|Appeal Evidence">Appeal Evidence</form:option>
+                <form:option value="ATT_NT|Attendance Note">Attendance Note</form:option>
+                <form:option value="BSTMT|Bank Statement">Bank Statement</form:option>
+                <form:option value="BEN_LTR|Benefit Award Letter">Benefit Award Letter</form:option>
+                <form:option value="BILL_NAR|Bill Narrative">Bill Narrative</form:option>
+                <form:option value="BS_BOOK|Building Society Passbook">Building Society Passbook</form:option>
+                <form:option value="BUS_ACC|Business Accounts">Business Accounts</form:option>
+                <form:option value="C_CORR|Client Correspondence">Client Correspondence</form:option>
+                <form:option value="CNL_BRF|Counsel Brief">Counsel Brief</form:option>
+                <form:option value="CNL_FEE|Counsel Fee Note">Counsel Fee Note</form:option>
+                <form:option value="COUNSEL|Counsel Opinion">Counsel Opinion</form:option>
+                <form:option value="ASS_CERT|Court Assessment Cert’">Court Assessment Cert’</form:option>
+                <form:option value="COURT_ORD|Court Order">Court Order</form:option>
+                <form:option value="SIP_FRM|Court SIP Form">Court SIP Form</form:option>
+                <form:option value="DEBT_EV|Debt Write Off Evidence">Debt Write Off Evidence</form:option>
+                <form:option value="D_VCHR|Disbursement Voucher">Disbursement Voucher</form:option>
+                <form:option value="EN_JUST|Enhancement Justification">Enhancement Justification</form:option>
+                <form:option value="EX_RPT|Expert's Report">Expert's Report</form:option>
+                <form:option value="FULL|Full file of papers">Full file of papers</form:option>
+                <form:option value="GEN_CORR|General Correspondence">General Correspondence</form:option>
+                <form:option value="HMRC|HMRC Forms">HMRC Forms</form:option>
+                <form:option value="INS_DOC|Insurance Documents">Insurance Documents</form:option>
+                <form:option value="L17|L17">L17</form:option>
+                <form:option value="L31|L31">L31</form:option>
+                <form:option value="LC|Land Charge Document">Land Charge Document</form:option>
+                <form:option value="LATE_SUB|Late Submission Evidence">Late Submission Evidence</form:option>
+                <form:option value="MNS_1|Means 1">Means 1</form:option>
+                <form:option value="MNS_1C|Means 1C">Means 1C</form:option>
+                <form:option value="OUT_EV|Outcomes Evidence">Outcomes Evidence</form:option>
+                <form:option value="OUT-CORR|Outgoing Correspondence">Outgoing Correspondence</form:option>
+                <form:option value="P45|P45">P45</form:option>
+                <form:option value="P60|P60">P60</form:option>
+                <form:option value="PNL_MEM|Panel Membership Evidence">Panel Membership Evidence</form:option>
+                <form:option value="PPT|Passport">Passport</form:option>
+                <form:option value="PAYSLIP|Pay Slip">Pay Slip</form:option>
+                <form:option value="PL|Pleadings">Pleadings</form:option>
+                <form:option value="PA_DISC|Pre-Action Disclosure">Pre-Action Disclosure</form:option>
+                <form:option value="PRF_CST|Record of Profit Costs">Record of Profit Costs</form:option>
+                <form:option value="SHRS|Shares Document">Shares Document</form:option>
+                <form:option value="STATE|Statement">Statement</form:option>
+                <form:option value="TEN_AGR|Tenancy Agreement">Tenancy Agreement</form:option>
+                <form:option value="TRV_JUST|Travel Justification">Travel Justification</form:option>
+                <form:option value="TRUST|Trust Documents">Trust Documents</form:option>
+                <form:option value="UNCAT|Unsolicited Document">Unsolicited Document</form:option>
+                <form:option value="UNCAT_RS|Unsolicited Document for RS">Unsolicited Document for RS</form:option>
+                <form:option value="OTH_JUS|‘Other’ Justification">‘Other’ Justification</form:option>
+                <form:option value="ECF|ECF Evidence">ECF Evidence</form:option>
+              </form:select>
+            </div>
+                
+</div>
+        <!-- <div class="inputField">
+		  <div class="input"><label for="description">Description</label></div>
+		  <div class="input"><input id="description" name="description" class="textInput" maxlength="35" type="text" size="60"></input></div>
+        </div> -->
+	
+				  <div class="input">
+          <input type="submit" value="Upload" class="secondary-button">
+        </div>
 	   </div>
-    <a class="button" href="<c:url value="CCMS_CA05.form?RoofAction_action%3Dreturn%23save%3Dfalse%23validate%3Dfalse%23ezgov_private_hiddenData_uniqueId%3D${uniqueId}" />">Confirm</a>
+    <a class="button" style="margin-top: 40px;" href="<c:url value="CCMS_CA05.form?RoofAction_action%3Dreturn%23save%3Dfalse%23validate%3Dfalse%23ezgov_private_hiddenData_uniqueId%3D${uniqueId}" />">Return to Case</a>
         <div id="id_CCMS_CA01_pageFooterRef" class="perspective pageFooterRef">
               <div class="ccmsPageFooter">
                 <div>©Crown Copyright</div>
               </div>
       </div>
 	</form:form>
+    </div>
  </body>
 </html>
