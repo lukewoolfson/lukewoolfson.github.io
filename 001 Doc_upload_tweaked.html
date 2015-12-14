@@ -76,7 +76,7 @@
         <h1></h1>
 </div>
 <div id="id_CCMS_DOC01" class="formInputArea">
-    		<form id="evidenceUploadForm" action="file:///ccms/evidenceUpload.do?ezgov_private_hiddenData_uniqueId=NY48S76724JC3WP3XZ8B93VR9823PP8W&caseID=300000007895&provideID=20304" method="post" enctype="multipart/form-data">
+<form id="evidenceUploadForm" action="file:///ccms/evidenceUpload.do?ezgov_private_hiddenData_uniqueId=NY48S76724JC3WP3XZ8B93VR9823PP8W&caseID=300000007895&provideID=20304" method="post" enctype="multipart/form-data">
     <div class="panelHeaderWithLink">
 	<h2>Document Upload</h2>
     <a class="link floatright" href="">Cancel and return to Create Application</a>
@@ -193,7 +193,14 @@
           <input type="submit" value="Upload" class="secondary-button">
         </div>
     </div>
-    <a class="button firstbutton"  href="" style="margin-top: 40px;">Confirm</a>
+    <div style="margin-top: 40px;">
+            <div id="id_CCMS_CA01_include_page_ca01_btnSubmitApplication" class="buttonArea btnSubmitApplication">
+          <input type="submit" name="RoofAction_action=subapp#save=false#validate=true" value="Confirm" class="button floatright firstbutton" />
+        </div>
+           <div id="id_CCMS_CA01_include_page_ca01_btnAbandonApplication" class="buttonArea btnAbandonApplication">
+          <input type="submit" name="RoofAction_action=abandon#save=false#validate=false" value="Cancel" class="button floatright" />
+        </div>
+    </div>
     <div id="id_CCMS_CA01_pageFooterRef" class="perspective pageFooterRef">
               <div class="ccmsPageFooter">
                 <div>©Crown Copyright</div>
