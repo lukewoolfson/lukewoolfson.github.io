@@ -48,23 +48,33 @@
         <label for="evi-doc-upload_no">No</label>      
   	</div>
       <div id="doc-upload" class="inputPanel">
-        		<div class="comment">Please upload all of the requested documents.
-            <br>We can only accept PDF, RTF or TIFF files that are less than 8 MB.</div>
- 		
+        		
 		<form:form method="post" modelAttribute="evidenceUploadForm" enctype="multipart/form-data">
 		
 		<c:import url="/evidenceRequired.do?caseID=${caseId}" />
 		
 		<c:out value="${evidenceRequired}"/>
 	 	
-		<p>Files uploaded:</p>
-		<ol>
+		<h3>Files uploaded</h3> 
+     <table summary="Documents uploaded">
+	<tr class="theader">
+		<th>File</th>
+		<th>Type</th>
+		<th>Date</th>
+        <th></th>
+	</tr> 
 			<c:forEach items="${prevUploadedFiles}" var="uploadedFile">
-				<li>${uploadedFile.fileName}</li>
+            <tr>
+                <td>${uploadedFile.fileName}</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
 			</c:forEach>
-		</ol>
+      </table>
 	
  <h3>Add new file</h3>
+            <div class="comment">We can only accept PDF, RTF or TIFF files that are less than 8 MB.</div>
 		<div class="inputField">
             <form:input type="file"  path="file" id="file" class="fileSelect" />
         </div>
