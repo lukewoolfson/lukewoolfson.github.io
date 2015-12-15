@@ -84,8 +84,16 @@
     <div class="comment">
         If you have all the documents available at application you can upload them here. Caseworkers will be only be able to view your documents once the application has been submitted.
     </div>
+    <div class="requiredFieldsMessageRef">
+          <div class="reqfield">
+            indicates required field
+          </div>
+    </div>
 	<div class="inputpanel">
         </br>
+    <span class="req">
+              <img alt="Required"  src="images/icon_required.gif">
+            </span>
 	   <label><strong>Do you have all the requried documents to upload?</strong>
             <div class="hint-text">These were listed within the means and merits interview.</div>
         </label>
@@ -126,7 +134,9 @@
             <input id="file" name="file" type="file" value="" class="fileSelect">
         </div>
 		<div class="inputField">
-            <div class="input"><label>Document Type</label></div>
+            <div class="input">    <span class="req">
+              <img alt="Required"  src="images/icon_required.gif">
+            </span><label>Document Type</label></div>
             <div class="input">
 		  <select id="description" name="description">
                 <option value="">Please Select</option>
