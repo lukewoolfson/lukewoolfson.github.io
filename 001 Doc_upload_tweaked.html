@@ -14,6 +14,12 @@
         $('#doc-upload').toggle($('#evi-doc-upload').prop('checked'));
     }).trigger('init-evi-doc');
 }));
+    
+ $(document).ready($(function() {
+    $('input[name=evi-doc]').on('click init-evi-doc', function() {
+        $('#doc-upload-no').toggle($('#evi-doc-upload-no').prop('checked'));
+    }).trigger('init-evi-doc');
+}));
   </script>  
 </head>
 <body>
@@ -91,9 +97,9 @@
     </div>
 	<div class="inputpanel">
         </br>
-    <span class="req">
+    <!-- <span class="req">
               <img alt="Required"  src="images/icon_required.gif">
-            </span>
+            </span>-->
 	   <label><strong>Do you have all the requried documents to upload?</strong>
             <div class="hint-text">These were listed within the means and merits interview.</div>
         </label>
@@ -101,10 +107,16 @@
     <div class="input radio">
         <input type="radio" name="evi-doc" id="evi-doc-upload" >
         <label for="evi-doc-upload">Yes</label>
-        <input type="radio" name="evi-doc" id="evi-doc-upload_no"  >
-        <label for="evi-doc-upload_no">No</label>      
+        <input type="radio" name="evi-doc" id="evi-doc-upload-no"  >
+        <label for="evi-doc-upload-no">No</label>      
   	</div>
-    <div id="doc-upload" class="inputPanel">
+    <div id="doc-upload-no" clrass="inputPanel">
+           <div class="comment">
+        You will be sent a notification to upload the required documents once the application has been submitted. Please return to the Application Summary page to continue.
+    </div> 
+    </div>
+    
+    <div id="doc-upload" clrass="inputPanel">
 
 
 		<h3>Files uploaded</h3>      
@@ -203,13 +215,13 @@
           <input type="submit" value="Upload" class="secondary-button">
         </div>
     </div>
-    <div style="margin-top: 40px;">
-            <div id="id_CCMS_CA01_include_page_ca01_btnSubmitApplication" class="buttonArea btnSubmitApplication">
-          <input type="submit" name="RoofAction_action=subapp#save=false#validate=true" value="Confirm" class="button floatright firstbutton" />
+     <a class="button" style="margin-top: 40px;" href="<c:url value="CCMS_CA05.form?RoofAction_action%3Dreturn%23save%3Dfalse%23validate%3Dfalse%23ezgov_private_hiddenData_uniqueId%3D${uniqueId}>Return to Application</a>
+            <!--<div id="id_CCMS_CA01_include_page_ca01_btnSubmitApplication" class="buttonArea btnSubmitApplication">
+          <input type="submit" name="RoofAction_action=subapp#save=false#validate=true" value="Return to Case" class="button floatright firstbutton" />
         </div>
-           <div id="id_CCMS_CA01_include_page_ca01_btnAbandonApplication" class="buttonArea btnAbandonApplication">
+            <div id="id_CCMS_CA01_include_page_ca01_btnAbandonApplication" class="buttonArea btnAbandonApplication">
           <input type="submit" name="RoofAction_action=abandon#save=false#validate=false" value="Cancel" class="button floatright" />
-        </div>
+        </div> -->
     </div>
     <div id="id_CCMS_CA01_pageFooterRef" class="perspective pageFooterRef">
               <div class="ccmsPageFooter">
