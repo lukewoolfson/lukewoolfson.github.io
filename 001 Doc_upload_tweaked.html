@@ -13,13 +13,12 @@
     $('input[name=evi-doc]').on('click init-evi-doc', function() {
         $('#doc-upload').toggle($('#evi-doc-upload').prop('checked'));
     }).trigger('init-evi-doc');
-}));
     
- $(document).ready($(function() {
-    $('input[name=evi-doc]').on('click init-evi-doc', function() {
+      $('input[name=evi-doc]').on('click init-evi-doc', function() {
         $('#doc-upload-no').toggle($('#evi-doc-upload-no').prop('checked'));
     }).trigger('init-evi-doc');
 }));
+    
   </script>  
 </head>
 <body>
@@ -110,13 +109,13 @@
         <input type="radio" name="evi-doc" id="evi-doc-upload-no"  >
         <label for="evi-doc-upload-no">No</label>      
   	</div>
-    <div id="doc-upload-no" clrass="inputPanel">
-           <div class="comment">
+    <div id="doc-upload-no">
+        <div class="comment">
         You will be sent a notification to upload the required documents once the application has been submitted. Please return to the Application Summary page to continue.
-    </div> 
+        </div> 
     </div>
     
-    <div id="doc-upload" clrass="inputPanel">
+    <div id="doc-upload" class="inputPanel">
 
 
 		<h3>Files uploaded</h3>      
