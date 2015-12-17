@@ -4456,3 +4456,10 @@ color: #6F777B;
     font-weight: bold;
     margin: 5px 0px;
 }
+#opentip-1 {  
+    left: 175px!important;
+}
+
+.ot-content p {
+    margin-bottom: 0;
+}
