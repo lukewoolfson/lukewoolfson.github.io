@@ -29,7 +29,29 @@
 <script src="/js/beta_banner.js" type="text/javascript"></script>
 <script src="/ccms_cap_svn/js/gds_radio.js" type="text/javascript"></script>
 <script src="/ccms_cap_svn/js/loading.js" type="text/javascript"></script>
-		
+<script src="/js/opentip-jquery-excanvas.min.js"></script> 
+<link href="/css/opentip.css" rel="stylesheet" type="text/css" />
+	
+<script>
+
+$(function() {$("#means-tip").opentip("New functions", { 
+        delay: 0.2, 
+        borderRadius: 3, 
+        borderColor: "#FFBF47", 
+        background: "#fff6e5", 
+        fixed: true, 
+        stem: true, 
+        tipJoint: "top left",
+        targetJoint: "bottom",
+        target: true,
+        stemLength: 10,
+        stemBase: 10,
+        showEffectDuration: 0.1
+    });
+
+});        
+          
+</script>  	
 		
 	 	             
 		
@@ -236,7 +258,12 @@ irrelevant in earlier sections.
 	
 	<tr>
 	    
-		<td style="width: 540px;">Means Assessment: <a>Non Passported</a> | <a>Passported</a> <div style="display:inline; background:#f47738; padding:2px 3px 0px 3px; color:white; font-size:12px; font-weight:normal; letter-spacing: 1px;">BETA</div>
+		<td style="width: 540px;">Means Assessment: <a>Original</a> | <a>Upgraded</a> <span>
+                <img id="means-tip" src="images/icon_csh.gif" class="cshIcon" alt="Help" style="
+    position: relative;
+    top: 5px;
+    cursor: pointer;
+"></span><div style="display:inline; background:#f47738; padding:2px 3px 0px 3px; color:white; font-size:12px; font-weight:normal; letter-spacing: 1px;">BETA</div>
 
         </td>
 		

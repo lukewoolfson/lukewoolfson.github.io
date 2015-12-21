@@ -148,9 +148,10 @@ Tues 16/12/15
 Hid contact details on GN06
 Error-container styling
 
-Thurs 17/12/15
+Fri 18/12/15
 --v20--
 Added Tool tip styling
+Tweaked cshIcon 
 
 
 Begin basic elements
@@ -267,7 +268,6 @@ a {
 .cshIcon{
 	border: 0px;
 	display: inline-block;
-
 	margin-bottom: -1px;
 }
 
@@ -4460,10 +4460,14 @@ color: #6F777B;
     font-weight: bold;
     margin: 5px 0px;
 }
-#opentip-1 {  
-    left: 175px!important;
-}
 
+/* Tool tip */
 .ot-content p {
     margin-bottom: 0;
 }
+
+.cshIcon {
+    margin-bottom: -5px;
+    cursor: pointer;
+}
+
