@@ -26,7 +26,7 @@
 	font-size: 20px;
 	cursor: pointer;
 	opacity: 0;
-	filter: alpha(opacity=0);
+	filter: alpha(opacity=0); /* For IE8 and earlier */
 }
 </style>
 <style type="text/css"></style></head>
@@ -37,38 +37,18 @@
 	<form id="myForm" method="post" enctype="multipart/form-data">
 <div class="fileUpload btn btn-primary">
     <span>Choose File</span>
-    <input type="file" id="files"  class="upload" name="files" multiple=""><br>
+    <input type="file" id="files"  class="upload" name="uploadfile" multiple=""><br>
 </div>
-        <div id="selectedFiles"></div>
+        <div id="file-label"></div>
 
 	</form>
 
 	<script>
-	var selDiv = "";
-		
-	document.addEventListener("DOMContentLoaded", init, false);
-	
-	function init() {
-		document.querySelector('#files').addEventListener('change', handleFileSelect, false);
-		selDiv = document.querySelector("#selectedFiles");
-	}
-		
-	function handleFileSelect(e) {
-		console.dir(e);
-		
-		if(!e.target.files) return;
-		
-		selDiv.innerHTML = "";
-		
-		var files = e.target.files;
-		for(var i=0; i<files.length; i++) {
-			var f = files[i];
-			
-			selDiv.innerHTML += f.name + "<br/>";
-
-		}
-		
-	}
+jQuery(document).ready(function ($) { 
+    $('input[name="uploadfile"]').change(function(){ 
+        var fileName = $(this).val().replace("C:\\fakepath\\", "");
+        $('#file-label').text(fileName); }); 
+}); 
 	</script>
 
 
