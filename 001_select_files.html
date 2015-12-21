@@ -1,21 +1,17 @@
 <html>
 <script src="/ccms_cap_svn/js/jquery-1.11.1.js" type="text/javascript"></script>
-<link rel="stylesheet" type="text/css" href="css/bootstrap-combined.min.css">
+<link href="/css/ccms.css" rel="stylesheet">
 <head>
 <title>Proper Title</title>
 <style>
-	#selectedFiles img {
-		max-width: 125px;
-		max-height: 125px;
-		float: left;
-		margin-bottom:10px;
-	}
-    
-    .fileUpload {
+.fileUpload {
 	position: relative;
 	overflow: hidden;
-	margin: 10px;
-    width: 100px;
+	/* margin: 10px; */
+    /* width: 100px; */
+    margin-bottom: 15px;
+    margin-right: 0;
+    z-index: 1;
 }
 .fileUpload input.upload {
 	position: absolute;
@@ -28,6 +24,19 @@
 	opacity: 0;
 	filter: alpha(opacity=0); /* For IE8 and earlier */
 }
+        
+#file-label {
+    min-width: 100px;
+    padding: 0px 20px 0px 25px;
+    height: 38px;
+    line-height: 38px;
+    float: left;
+    border: solid 1px #7D7D7D;
+    border-radius: 3px;
+    position: relative;
+    left: -5px;
+    z-index: 0;
+}
 </style>
 <style type="text/css"></style></head>
     
@@ -39,7 +48,7 @@
     <span>Choose File</span>
     <input type="file" id="files"  class="upload" name="uploadfile" multiple=""><br>
 </div>
-        <div id="file-label"></div>
+        <span id="file-label"></span>
 
 	</form>
 
