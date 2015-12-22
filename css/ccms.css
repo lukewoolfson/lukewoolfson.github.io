@@ -153,6 +153,10 @@ Fri 18/12/15
 Added Tool tip styling
 Tweaked cshIcon 
 
+Tues 22/12/15
+--v21--
+show .formInputArea br to fix CB03B
+
 
 Begin basic elements
 *******************************************************************************/
@@ -2894,10 +2898,6 @@ input {
     /* margin-top: 50px; no longer needed*/
 }
 
-
-.formInputArea br {
-    display: none; 
-}
 
 th.sortable a {
     color: #005EA5;
