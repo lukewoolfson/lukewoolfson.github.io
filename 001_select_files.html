@@ -5,18 +5,26 @@
 <title>Proper Title</title>
 <style>
 .fileUpload {
-	position: relative;
-	overflow: hidden;
-	/* margin: 10px; */
-    /* width: 100px; */
-    margin-bottom: 15px;
-    margin-right: 0;
+    height: 18px;
+    background: #f2f2f2;
+    line-height: 18px;
+    padding: 10px;
+    display: inline-block;
     z-index: 1;
-    vertical-align: top;
-    height: 30px;
-    line-height: 30px;
-    background:green;
+    position: relative;
+    zoom: 1;
+    cursor: pointer;
+    border-radius: 3px;
+    border: 1px solid #7D7D7D;
+    text-align: center;
 }
+
+.fileUpload:hover {
+    background-color: #ebebeb;
+    color: black;
+    border-color: black;
+}
+    
 .fileUpload input.upload {
 	position: absolute;
 	top: 0;
@@ -42,6 +50,7 @@
     position: relative;
     left: -10px;
     z-index: 0;
+    vertical-align: bottom;
 }
 </style>
 <style type="text/css"></style></head>
@@ -50,7 +59,7 @@
 	
     
 	<form id="myForm" method="post" enctype="multipart/form-data">
-<div class="fileUpload btn btn-primary" >
+<div class="fileUpload" >
     <span>Choose File</span>
     <input type="file" id="files"  class="upload" name="uploadfile" multiple=""><br>
 </div>
@@ -58,17 +67,19 @@
 
 	</form>
     <div style="
-                height:20px; 
-                background:orange; 
-                width:100px; 
-                line-height:20px; 
-                padding:10px; 
-                display: inline-block;
-                z-index: 1;
-                position: relative;
-                *display: inline;
-                zoom: 1;
-                ">Cake</div>
+    height: 18px;
+    background: #f2f2f2;
+    line-height: 18px;
+    padding: 10px;
+    display: inline-block;
+    z-index: 1;
+    position: relative;
+    zoom: 1;
+    cursor: pointer;
+    border-radius: 3px;
+    border: 1px solid #7D7D7D;
+    text-align: center;
+                ">Choose File</div>
     <span id="file-label"     style="vertical-align: bottom;"></span>
 
 	<script>
