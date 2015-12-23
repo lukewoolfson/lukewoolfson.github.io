@@ -14,18 +14,15 @@
         $('#doc-upload').toggle($('#evi-doc-upload').prop('checked'));
     }).trigger('init-evi-doc');
     
-      $('input[name=evi-doc]').on('click init-evi-doc', function() {
+    $('input[name=evi-doc]').on('click init-evi-doc', function() {
         $('#doc-upload-no').toggle($('#evi-doc-upload-no').prop('checked'));
     }).trigger('init-evi-doc');
-}));
-    
-jQuery(document).ready(function ($) { 
+      
     $('input[name="uploadfile"]').change(function(){ 
         var fileName = $(this).val().replace("C:\\fakepath\\", "");
         $('#file-label').text(fileName); }); 
-}); 
-    
-  </script>
+}));
+</script>
 
 </head>
 <body>
@@ -177,11 +174,11 @@ jQuery(document).ready(function ($) {
     </tr>
    </table>
 <h3>Add new file</h3>
-                    		<div class="comment">We can only accept PDF, RTF or TIFF files that are less than 8 MB.</div>
+<div class="comment">We can only accept PDF, RTF or TIFF files that are less than 8 MB.</div>
 <div class="inputField">
     <div class="fileUpload" >
         <span>Choose File</span>
-        <input type="file" id="files" class="upload" name="uploadfile">
+        <input type="file" id="file" class="upload" name="uploadfile">
     </div>
     <span id="file-label"></span>      
 </div>
