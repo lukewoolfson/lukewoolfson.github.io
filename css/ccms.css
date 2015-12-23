@@ -4496,7 +4496,6 @@ color: #6F777B;
 	cursor: pointer;
 	opacity: 0;
 	filter: alpha(opacity=0); /* For IE8 and earlier */
-    background: white;
     height: 38px;
     line-height: 38px;
 }
@@ -4507,8 +4506,8 @@ color: #6F777B;
     height: 38px;
     line-height: 38px;
     display: inline-block;
-    *display: inline;
-    zoom: 1;
+    *display: inline; /* For IE8 and earlier */
+    zoom: 1; /* For IE8 and earlier */
     border: solid 1px #7D7D7D;
     border-radius: 3px;
     position: relative;
