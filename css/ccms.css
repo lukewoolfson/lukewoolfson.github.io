@@ -4500,7 +4500,16 @@ color: #6F777B;
     height: 36px;
     line-height: 36px;
 }
-        
+   
+#file-label:empty:before {
+        content:attr(data-ph)
+}
+
+#file-label.file-selected {
+    color: black;
+    font-style: normal;
+}
+
 #file-label {
     min-width: 100px;
     padding: 0px 20px 0px 25px;
@@ -4515,6 +4524,15 @@ color: #6F777B;
     left: -10px;
     z-index: 0;
     vertical-align: top;
+    color: grey;
+}
+
+.panel-border-wide {
+    border-left-width: 10px;
+    clear: both;
+    border-left-style: solid;
+    border-color: #bfc1c3;
+    padding: 15px;
 }
 
 /* Tool tip */

@@ -20,7 +20,9 @@
       
     $('input[name="uploadfile"]').change(function(){ 
         var fileName = $(this).val().replace("C:\\fakepath\\", "");
-        $('#file-label').text(fileName); }); 
+        $('#file-label').text(fileName); 
+        $('#file-label').addClass( "file-selected" );
+    }); 
 }));
 </script>
 
@@ -123,6 +125,10 @@
     <div class="comment">
         If you have all the documents available at application you can upload them here. Caseworkers will be only be able to view your documents once the application has been submitted.
     </div>
+    <div class="comment panel-border-wide">
+        Please do not provide evidence if your application is a two-stage delegated functions application. You will be asked to provide this evidence when you submit your substantive amendment.
+    </div>
+    
     <div class="requiredFieldsMessageRef">
           <div class="reqfield">
             indicates required field
@@ -180,7 +186,7 @@
         <span>Choose File</span>
         <input type="file" id="file" class="upload" name="uploadfile">
     </div>
-    <span id="file-label"></span>      
+    <span id="file-label" data-ph="No file chosen" class=""></span>      
 </div>
 <div class="inputField">
             <div class="input">    <span class="req">
