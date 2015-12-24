@@ -161,6 +161,10 @@ Wends 23/12/15
 --v22--
 Custom styling to choose file on Document upload
 
+Thurs 24/12/15
+--v23--
+Change beta logo
+
 
 Begin basic elements
 *******************************************************************************/
@@ -4416,8 +4420,7 @@ max-width: 620px;
 	padding : 2px 4px 0px 4px;
 	color : white;
 	font-size : 12px;
-	font-weight : normal;
-	letter-spacing : 1px; 
+	font-weight : bold; 
 }
 
 /* new flag */
@@ -4524,7 +4527,7 @@ color: #6F777B;
     left: -10px;
     z-index: 0;
     vertical-align: top;
-    color: grey;
+    color: #6F777B;
 }
 
 .panel-border-wide {
