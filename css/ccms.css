@@ -165,6 +165,10 @@ Thurs 24/12/15
 --v23--
 Change beta logo
 
+Wends
+--v24--
+Secondary bug fix text align centre added due to .linkShowingDirection
+
 
 Begin basic elements
 *******************************************************************************/
@@ -3076,9 +3080,10 @@ th.order2 a:hover {
     margin-right: 15px;
     float: left;
     height: 38px;
-    line-height: 36px;
+    line-height: 37px;
     cursor: pointer;
     min-width: 100px;
+    text-align: center;
 }
 
 #id_CCMS_CA03_include_page_ca03 > a:nth-child(10):hover, 
