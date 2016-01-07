@@ -169,6 +169,10 @@ Wends
 --v24--
 Secondary bug fix text align centre added due to .linkShowingDirection
 
+Thurs 07/01/16
+--v25--
+Changed table width for inside side-line as was overflowing
+
 
 Begin basic elements
 *******************************************************************************/
@@ -4452,6 +4456,10 @@ color: #6F777B;
 .side-line {
     border-left: solid 4px #BFC1C3;
     padding-left: 15px;
+}
+
+.side-line table {
+    width: 971px;
 }
 
 #id_CCMS_DOC01 .button:hover {
