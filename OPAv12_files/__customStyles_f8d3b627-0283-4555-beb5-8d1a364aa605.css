@@ -1,0 +1,199 @@
+body {
+  background-color: #AABED9;
+  font-family: Helvetica,Arial,Verdana,sans-serif;
+  max-width: 900px;
+}
+.application-name {
+  font-size: x-large;
+  font-weight: normal;
+  color: #000;
+  background-color: #fff;
+  font-style: normal;
+}
+#footer {
+  font-size: small;
+  font-weight: normal;
+  color: #000;
+  background-color: #fff;
+  font-style: normal;
+}
+.active-stage {
+  font-size: large;
+  font-weight: bold;
+  color: White;
+  background-color: #345A92;
+  font-style: normal;
+}
+.other-stage {
+  font-size: large;
+  font-weight: normal;
+  color: White;
+  background-color: #4F78B0;
+  font-style: normal;
+}
+.future-stage {
+  font-size: large;
+  font-weight: normal;
+  color: White;
+  background-color: #4F78B0;
+  font-style: normal;
+}
+.active-screen {
+  font-weight: bold;
+  color: White;
+  background-color: #345A92;
+  font-style: normal;
+}
+.other-screen {
+  font-weight: normal;
+  color: White;
+  background-color: #4F78B0;
+  font-style: normal;
+}
+.screen-title {
+  font-size: x-large;
+}
+.error {
+  color: #e50000;
+  font-style: italic;
+}
+.warning {
+  color: #333;
+  font-style: italic;
+}
+.owd-submit {
+  color: Black;
+  background-color: LightGray;
+  font-style: normal;
+box-shadow: inset 0px 1px 0px 0px #FFFFFF;
+background-color:LightGrey;
+background: linear-gradient(#E8E8E8, #BEBEBE);
+border:1px solid #7F7F7F;
+color:Black;
+}
+.owd-submit:hover {
+background:none;
+background-color:#E8E8E8;
+}
+.owd-submit:active {
+background-color:#A9A9A9;
+}
+.owd-back {
+  color: Black;
+  background-color: LightGray;
+  font-style: normal;
+box-shadow: inset 0px 1px 0px 0px #FFFFFF;
+background-color:LightGrey;
+background: linear-gradient(#E8E8E8, #BEBEBE);
+border:1px solid #7F7F7F;
+color:Black;
+}
+.owd-back:hover {
+background:none;
+background-color:#E8E8E8;
+}
+.owd-back:active {
+background-color:#A9A9A9;
+}
+.owd-add {
+  color: Black;
+  background-color: LightGray;
+  font-style: normal;
+box-shadow: inset 0px 1px 0px 0px #FFFFFF;
+background-color:LightGrey;
+background: linear-gradient(#E8E8E8, #BEBEBE);
+border:1px solid #7F7F7F;
+color:Black;
+}
+.owd-add:hover {
+background:none;
+background-color:#E8E8E8;
+}
+.owd-add:active {
+background-color:#A9A9A9;
+}
+.owd-remove {
+  color: Black;
+  background-color: LightGray;
+  font-style: normal;
+box-shadow: inset 0px 1px 0px 0px #FFFFFF;
+background-color:LightGrey;
+background: linear-gradient(#E8E8E8, #BEBEBE);
+border:1px solid #7F7F7F;
+color:Black;
+}
+.owd-remove:hover {
+background:none;
+background-color:#E8E8E8;
+}
+.owd-remove:active {
+background-color:#A9A9A9;
+}
+.Normal {
+}
+.Heading1 {
+  font-size: x-large;
+}
+.Heading2 {
+  font-size: large;
+}
+.Heading3 {
+  font-size: large;
+}
+.Heading4 {
+}
+.Heading5 {
+  color: #000;
+}
+.Heading6 {
+  font-weight: normal;
+  font-style: italic;
+}
+.Alert {
+}
+.Comment {
+  font-size: x-small;
+}
+.eig-odd {
+  font-weight: normal;
+  color: black;
+  background-color: #D3DFEF;
+  font-style: normal;
+}
+.eig-even {
+  font-weight: normal;
+  color: black;
+  background-color: #E9EFF7;
+  font-style: normal;
+}
+.question {
+}
+.control input[type="text"] {
+}
+.table-question-header {
+  font-size: normal;
+  font-weight: bold;
+  color: white;
+  background-color: #345A92;
+}
+#header {
+  background-color: #fff;
+}
+#content {
+  background-color: white;
+}
+.nested-eic {
+  background-color: white;
+}
+#progress-stages {
+  border-top-color: #25383C;
+  border-bottom-color: #4F78B0;
+}
+.opm-progress-stages {
+  background-color: #4F78B0;
+}
+.opm-progress-screens {
+  background-color: #4F78B0;
+}
+body.opm-frame #header { display: none; }
+@media screen and (max-width: 900px) { body { background-color: white; } }

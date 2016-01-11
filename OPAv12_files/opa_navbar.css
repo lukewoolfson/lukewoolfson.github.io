@@ -1,0 +1,127 @@
+/********   Navbar   ********/
+
+.opm-progress-screens { /*removes visibility of this stuff*/
+    display: none; /*the one time I can see this style being applied, the style is overridden by HTML!*/
+}
+.owd-has-js #progress-stages {
+    float: left;
+    margin-right: 10px;
+    width: 230px;
+    border: none;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+/* removed CCMS-524
+.owd-has-js #progress-stages a {
+	display: block;
+}
+*/
+.owd-has-js #progress-stages li {
+    padding: 0;
+    display: list-item;
+    list-style-type: none;
+    white-space: normal;
+}
+.owd-has-js #progress-stages li.order-stage {
+	text-indent:0; /*This needed to override text-indent at the higher level which would otherwise cascade down*/
+    padding-left: 10px;
+}
+.owd-has-js #progress-stages li.other-screen {
+    background: #fff;
+    color: #000;
+}
+.owd-has-js #progress-stages li.other-screen:hover {
+    font-weight: 400;
+    background-color: #eee;
+}
+.owd-has-js #progress-stages li.active-stage {
+    color: #000;
+    background: #fff;
+    border-right: 0;
+    font-weight: 400;
+    padding-left: 0;
+    text-indent: 10px;
+}
+.owd-has-js #progress-stages li.active-stage a {
+    text-indent: 0;
+    padding-left: 20px;
+	display:block; /*added, CCMS-524*/
+}
+.owd-has-js #progress-stages li.active-stage .active-screen a {
+    padding-left: 16px;
+}
+.owd-has-js .opa-responsive-stages {
+    margin-top: 0;
+}
+.owd-has-js .opm-progress-stages {
+    background-color: #fff;
+    border: 1px solid #bcbcbc;
+    border-bottom: 0;
+}
+.owd-has-js .opm-progress-stages li {
+    display: list-item;
+    font-size: 9pt;
+    border-bottom: 1px solid #bcbcbc;
+}
+.owd-has-js .other-stage {
+    color: #000;
+    cursor: pointer;
+    background-color: #fff;
+}
+.owd-has-js .other-stage:hover {
+    border-right: 0;
+    font-weight: 400;
+    background-color: #eee;
+}
+.owd-has-js .future-stage {
+    color: #3a3a3a;
+    background-color: #dcdcdc;
+    padding-left: 10px;
+    padding-right: 10px
+}
+.owd-has-js .opm-progress-screens {
+    background-color: #fff;
+}
+.owd-has-js .opm-progress-screens li {
+    font-size: 10px;
+    border-bottom: 0;
+    padding-left: 10px
+}
+.owd-has-js .opm-progress-screens a {
+    font-weight: 400;
+    padding-left: 10px;
+}
+.owd-has-js .opm-reveal>div { /*This doesn't seem to be used at all*/
+    border-left: 5px solid #dee0e2;
+    margin-left: 30px;
+}
+.owd-has-js .active-screen {
+    background: #fff;
+    color: #000;
+    border-left: 4px solid #ffc037;
+}
+
+.owd-has-js .opm-progress-stages li {
+    font-size: 16px; /*backwards compatibility*/
+	font-size: 1rem;
+}
+.owd-has-js .opm-progress-screens li {
+    font-size: 12.8rem;
+    font-size: 0.8rem;
+}
+
+
+/******** THESE TWO WERE IN SECTIONS.CSS */
+.owd-has-js .future-section {
+    background-color: #dcdcdc;
+    color: #3a3a3a;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.owd-has-js .opm-progress-stages li.order-section {
+    font-size: 19.2rem;
+	font-size: 1.2rem;
+    font-weight: bold; /* Needed to suitably distinguish level 1 from level 2*/
+	text-indent:10px; /*Added to provide a gap betwixt the edge of the menu and the title - padding would not work as it also affects the child elements*/
+}
