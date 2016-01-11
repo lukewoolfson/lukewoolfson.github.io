@@ -64,6 +64,7 @@ $(function() {
         borderRadius: 3, 
         borderColor: "#FFBF47", 
         background: "#fff6e5", 
+        background: "#fff6e5", 
         fixed: true, 
         stem: true, 
         tipJoint: "top left",
