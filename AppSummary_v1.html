@@ -28,8 +28,8 @@
 <script src="/js/opentip-jquery-excanvas.min.js"></script> 
 <link href="/css/opentip.css" rel="stylesheet" type="text/css"/>
 <script>
-$(function() {
-    $("#doc-tip").opentip("If you have <strong>all</strong> your documents ready to upload.<p>Otherwise complete the application and you will receive a notification to upload your files at a later date.</p>", { 
+$(window).load(function() {
+    $(".doc-tip").opentip("If you have <strong>all</strong> your documents ready to upload.<p>Otherwise complete the application and you will receive a notification to upload your files at a later date.</p>", { 
         delay: 0.2, 
         borderRadius: 3, 
         borderColor: "#FFBF47", 
@@ -43,12 +43,11 @@ $(function() {
         stemBase: 10,
         showEffectDuration: 0.1
     });
-});        
-          
+});                
 </script>
           
 <style>
-          #opentip-1 {  
+#opentip-1 {  
     left: 175px!important;
 }
 </style>
@@ -262,20 +261,10 @@ irrelevant in earlier sections.
 		<td>JRUSSELL</td>
 	</tr>
     
-
-	
-	<tr>
+<tr>
 	    
-		<td><a href="https://ccmspuisit1.lab.gov/ccms/CCMS_CA01.form?RoofAction_action%3DapplicationSummary%23save%3Dfalse%23validate%3Dfalse%23ezgov_private_hiddenData_uniqueId%3D8DR87MK3UY63CG2VX4FU3AW3V7BG7UF8">View Application Summary</a></td>
-		
-		<td>N/A</td>
-		<td></td>
-		<td></td>
-	</tr>
-        	<tr>
-	    
-        <td><a href="DocUpload_v1.html">Document Upload</a> 
-         <img id="doc-tip" src="images/icon_csh.gif" class="cshIcon" alt="Document Upload Help">
+        <td><a class="doc-tip" href="DocUpload_v1.html">Document Upload</a> 
+         <img src="images/icon_csh.gif" class="cshIcon" alt="Document Upload Help">
             <span class="new-flag">NEW</span> 
             
             
@@ -286,6 +275,16 @@ irrelevant in earlier sections.
 		<td></td>
 		<td></td>
 	</tr>
+	
+	<tr>
+	    
+		<td><a href="https://ccmspuisit1.lab.gov/ccms/CCMS_CA01.form?RoofAction_action%3DapplicationSummary%23save%3Dfalse%23validate%3Dfalse%23ezgov_private_hiddenData_uniqueId%3D8DR87MK3UY63CG2VX4FU3AW3V7BG7UF8">View Application Summary</a></td>
+		
+		<td>N/A</td>
+		<td></td>
+		<td></td>
+	</tr>
+        	
 	
 </table>
 

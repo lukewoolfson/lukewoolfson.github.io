@@ -821,9 +821,8 @@ button.ui-button::-moz-focus-inner {
 	max-width: 300px;
 	-webkit-box-shadow: 0 0 5px #aaa;
 	box-shadow: 0 0 5px #aaa;
-	border: solid 0px black;
-	background-color : white;
+	border: solid 1px #FFBF47;
+	background-color : #fff6e5;
+    borderRadius: 3;
 }
-body .ui-tooltip {
-	border-width: 1px;
-}
+
