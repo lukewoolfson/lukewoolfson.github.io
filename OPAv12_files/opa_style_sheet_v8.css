@@ -482,10 +482,23 @@ body.owd-has-js { /*this centres the page and makes the overflow white*/
     padding-top: 0;
 }
 
-.help-title-container, .help-title-container .Heading3  {
+.Heading3 {
     padding-top: 0px;
 }
 
+.help-title-container {
+    padding-top: 0px;
+    margin-top: -10px;
+}
+
+.owd-has-js .help-content-container {
+    padding-top: 0px;
+}
+
+.warning-text {
+    border-left: solid #bfc1c3 10px;
+    padding: 15px;
+}
 
 
 
