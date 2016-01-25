@@ -1,0 +1,288 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!-- saved from url=(0063)file:///Users/lukewoolfson/Downloads/upload-document%20(1).html -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Document Upload </title>
+<link href="/css/ccms.css" rel="stylesheet">
+<script src="/ccms/js/ccms.js" type="text/javascript"></script>
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<script src="/ccms/js/jquery-1.11.1.js" type="text/javascript"></script>
+
+<script>
+  $(document).ready($(function() {
+    $('input[name=evi-doc]').on('click init-evi-doc', function() {
+        $('#doc-upload').toggle($('#evi-doc-upload').prop('checked'));
+    }).trigger('init-evi-doc');
+    
+    $('input[name=evi-doc]').on('click init-evi-doc', function() {
+        $('#doc-upload-no').toggle($('#evi-doc-upload-no').prop('checked'));
+    }).trigger('init-evi-doc');
+      
+    $('input[name="uploadfile"]').change(function(){ 
+        var fileName = $(this).val().replace("C:\\fakepath\\", "");
+        $('#file-label').text(fileName); 
+        $('#file-label').addClass( "file-selected" );
+    }); 
+}));
+</script>
+
+</head>
+<body>
+
+
+<script src="/ccms/js/jquery-1.11.1.js" type="text/javascript"></script>
+<script src="/ccms/js/banner.js" type="text/javascript"></script>
+<script src="/ccms/js/gds_radio.js" type="text/javascript"></script>
+<script src="/ccms/js/loading.js" type="text/javascript"></script>
+
+	<link rel="shortcut icon" href="file:///Users/lukewoolfson/Downloads/images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="file:///Users/lukewoolfson/Downloads/images/favicon.ico" type="image/x-icon">
+<form id="evidenceUploadForm" action="file:///ccms/evidenceUpload.do?ezgov_private_hiddenData_uniqueId=NY48S76724JC3WP3XZ8B93VR9823PP8W&caseID=300000007895&provideID=20304" method="post" enctype="multipart/form-data">
+<div class="pageHeaderRef">
+
+<script src="/ccms_docupload/js/jquery-1.11.1.js" type="text/javascript"></script>
+<script src="/ccms_docupload/js/banner.js" type="text/javascript"></script>
+<script src="/ccms_docupload/js/gds_radio.js" type="text/javascript"></script>
+<script src="/ccms_docupload/js/loading.js" type="text/javascript"></script>
+<head>
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"></link>
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon"></link>
+</head>
+<div class="ccmsPageHeader">
+	<div class="ccmsPageHeaderLogo">
+		<a href=".form?RoofAction_action%3Dgoto%23save%3Dfalse%23validate%3Dfalse%23RB8AR7994Y28RG6KY2HP7VA3UU9K6E77destination%3Dhome">
+			<img width="421" height="100" title="Link to LAA home page" alt="Link to LAA home page" src="images/logo.gif" />
+		</a> 
+	</div>
+	<div class="ccmsPageHeaderLinks">
+		<a href="" target="_blank">Help</a>
+	</div>
+</div>
+<div class="ccmsPageNavigation">
+	<ul class="menuItems">	
+		<li id="menuItem1">
+			<a href=".form?RoofAction_action%3Dgoto%23save%3Dfalse%23validate%3Dfalse%23RB8AR7994Y28RG6KY2HP7VA3UU9K6E77destination%3Dhome" accesskey="1">Home</a>
+			<div id="menuItemTop1" class="menuItemTop1">&nbsp;</div>
+		</li>
+		<li id="menuItem2" class="active">
+	 
+	 
+
+		    <a href=".form?RoofAction_action%3Dgoto%23save%3Dfalse%23validate%3Dfalse%23RB8AR7994Y28RG6KY2HP7VA3UU9K6E77destination%3Dyca" accesskey="2">Cases and Applications</a>
+			<div id="menuItemTop2" class="menuItemTop2">&nbsp;</div>
+		</li>
+
+	 
+	
+		<li id="menuItem3">
+	 
+
+			<a href=".form?RoofAction_action%3Dgoto%23save%3Dfalse%23validate%3Dfalse%23RB8AR7994Y28RG6KY2HP7VA3UU9K6E77destination%3Dnot%23typeOfSearch%3DyourSearch" accesskey="3">Actions and Notifications</a>
+			<div id="menuItemTop3" class="menuItemTop3">&nbsp;</div>
+		</li>
+
+	 
+	
+		<li id="menuItem4">
+	 
+ 
+			<!-- a href=".form?RoofAction_action%3Dgoto%23save%3Dfalse%23validate%3Dfalse%23ezgov_private_hiddenData_uniqueId%3DRB8AR7994Y28RG6KY2HP7VA3UU9K6E77%23destination%3Dlogout" accesskey="5" title="">Logout</a -->
+			<a href=".form?RoofAction_action%3Dgoto%23save%3Dfalse%23validate%3Dfalse%23RB8AR7994Y28RG6KY2HP7VA3UU9K6E77destination%3Dlogout">Logout</a>
+			<div id="menuItemTop5" class="menuItemTop4">&nbsp;</div>
+		</li>
+	</ul>
+</div>  
+<div class="ccmsUserInfo">
+     	
+	    	Logged in as:<span class="strong">JRUSSELL</span>
+	    
+     </div>
+</div>
+      <div id="id_CCMS_CA01_pageSubHeaderRef" class="perspective pageSubHeaderRef">
+
+
+
+
+
+
+
+	
+ 
+ 
+
+<div class="clientCaseInfo">
+	<div id="clientName">
+		<span>Neil Finn</span>
+	</div>
+	<div id="lscReference">
+		<span>300000046273</span>
+	</div>
+	<div id="providerReference">
+		<span>SE</span>
+	</div>
+</div>
+ 
+
+      </div>
+<div class="pageTitleRef">
+        <h1></h1>
+</div>
+<div id="id_CCMS_DOC01" class="formInputArea">
+
+    <div class="panelHeaderWithLink">
+	<h2>Document Upload</h2>
+    <a class="link floatright" href="DocUpload_v1.html">Return to Create Application</a>
+    </div>
+    <div class="comment">
+        If you have all the documents available at application you can upload them here. Caseworkers will be only be able to view your documents once the application has been submitted.
+    </div>
+    <div class="comment">
+        Please do not provide evidence if your application is a two-stage delegated functions application. You will be asked to provide this evidence when you submit your substantive amendment.
+    </div>
+    
+    <div class="requiredFieldsMessageRef">
+          <div class="reqfield">
+            indicates required field
+          </div>
+    </div>
+	<div class="inputpanel">
+        </br>
+    <!-- <span class="req">
+              <img alt="Required"  src="images/icon_required.gif">
+            </span>-->
+	   <label><strong>Do you have all the requried documents to upload?</strong>
+            <div class="hint-text">These were listed within the means and merits interview.</div>
+        </label>
+     </div>	
+    <div class="input radio">
+        <input type="radio" name="evi-doc" id="evi-doc-upload" >
+        <label for="evi-doc-upload">Yes</label>
+        <input type="radio" name="evi-doc" id="evi-doc-upload-no"  >
+        <label for="evi-doc-upload-no">No</label>      
+  	</div>
+    <div id="doc-upload-no">
+        <div class="comment side-line">
+        You will be sent a notification to upload the required documents once the application has been submitted. Please return to the Application Summary page to continue.
+        </div> 
+    </div>
+    
+<div id="doc-upload" class="inputPanel side-line">
+
+
+<h3>Files uploaded</h3>      
+     <table summary="Documents uploaded">
+	<tr class="theader">
+		<th>File</th>
+		<th>Type</th>
+		<th>Date</th>
+        <th></th>
+	</tr> 
+    <tr>
+         <td>Scan 001.pdf</td>
+         <td>Bank Statement</td>
+         <td>11/12/2015</td>
+         <td><a>Remove</a></td>
+    </tr>
+    <tr>
+         <td>Scan 002.pdf</td>
+         <td>P45</td>
+         <td>11/12/2015</td>
+         <td><a>Remove</a></td>
+    </tr>
+   </table>
+<h3>Add file</h3>
+<div class="comment">We can only accept PDF, RTF or TIFF files that are less than 8 MB.</div>
+<div class="inputField error-container">
+    <div class="fileUpload" >
+        <span>Choose File</span>
+        <input type="file" id="file" class="upload" name="uploadfile">
+    </div>
+    <span id="file-label" data-ph="No file chosen" class=""></span>      
+</div>
+<div class="inputField">
+            <div class="input">    <span class="req">
+              <img alt="Required"  src="images/icon_required.gif">
+            </span><label>Document Type</label></div>
+            <div class="input">
+		  <select id="description" name="description" required>
+                <option value="">Please Select</option>
+                <option value="ADMIN1|Admin1 Form">Admin1 Form</option>
+                <option value="ADV_FRM|Advocates Form">Advocates Form</option>
+                <option value="CRT_BILL|Annotated Court Bill">Annotated Court Bill</option>
+                <option value="APP7|App7">App7</option>
+                <option value="APL_EV|Appeal Evidence">Appeal Evidence</option>
+                <option value="ATT_NT|Attendance Note">Attendance Note</option>
+                <option value="BSTMT|Bank Statement">Bank Statement</option>
+                <option value="BEN_LTR|Benefit Award Letter">Benefit Award Letter</option>
+                <option value="BILL_NAR|Bill Narrative">Bill Narrative</option>
+                <option value="BS_BOOK|Building Society Passbook">Building Society Passbook</option>
+                <option value="BUS_ACC|Business Accounts">Business Accounts</option>
+                <option value="C_CORR|Client Correspondence">Client Correspondence</option>
+                <option value="CNL_BRF|Counsel Brief">Counsel Brief</option>
+                <option value="CNL_FEE|Counsel Fee Note">Counsel Fee Note</option>
+                <option value="COUNSEL|Counsel Opinion">Counsel Opinion</option>
+                <option value="ASS_CERT|Court Assessment Cert’">Court Assessment Cert’</option>
+                <option value="COURT_ORD|Court Order">Court Order</option>
+                <option value="SIP_FRM|Court SIP Form">Court SIP Form</option>
+                <option value="DEBT_EV|Debt Write Off Evidence">Debt Write Off Evidence</option>
+                <option value="D_VCHR|Disbursement Voucher">Disbursement Voucher</option>
+                <option value="EN_JUST|Enhancement Justification">Enhancement Justification</option>
+                <option value="EX_RPT|Expert's Report">Expert's Report</option>
+                <option value="FULL|Full file of papers">Full file of papers</option>
+                <option value="GEN_CORR|General Correspondence">General Correspondence</option>
+                <option value="HMRC|HMRC Forms">HMRC Forms</option>
+                <option value="INS_DOC|Insurance Documents">Insurance Documents</option>
+                <option value="L17|L17">L17</option>
+                <option value="L31|L31">L31</option>
+                <option value="LC|Land Charge Document">Land Charge Document</option>
+                <option value="LATE_SUB|Late Submission Evidence">Late Submission Evidence</option>
+                <option value="MNS_1|Means 1">Means 1</option>
+                <option value="MNS_1C|Means 1C">Means 1C</option>
+                <option value="OUT_EV|Outcomes Evidence">Outcomes Evidence</option>
+                <option value="OUT-CORR|Outgoing Correspondence">Outgoing Correspondence</option>
+                <option value="P45|P45">P45</option>
+                <option value="P60|P60">P60</option>
+                <option value="PNL_MEM|Panel Membership Evidence">Panel Membership Evidence</option>
+                <option value="PPT|Passport">Passport</option>
+                <option value="PAYSLIP|Pay Slip">Pay Slip</option>
+                <option value="PL|Pleadings">Pleadings</option>
+                <option value="PA_DISC|Pre-Action Disclosure">Pre-Action Disclosure</option>
+                <option value="PRF_CST|Record of Profit Costs">Record of Profit Costs</option>
+                <option value="SHRS|Shares Document">Shares Document</option>
+                <option value="STATE|Statement">Statement</option>
+                <option value="TEN_AGR|Tenancy Agreement">Tenancy Agreement</option>
+                <option value="TRV_JUST|Travel Justification">Travel Justification</option>
+                <option value="TRUST|Trust Documents">Trust Documents</option>
+                <option value="UNCAT|Unsolicited Document">Unsolicited Document</option>
+                <option value="UNCAT_RS|Unsolicited Document for RS">Unsolicited Document for RS</option>
+                <option value="OTH_JUS|‘Other’ Justification">‘Other’ Justification</option>
+                <option value="ECF|ECF Evidence">ECF Evidence</option>
+              </select>
+            </div>
+            <input type="hidden" name="_description" value="1">
+</div>
+<!--<div class="inputField">
+		  <div class="input"><label for="description">Description</label></div>
+		  <div class="input"><input id="description" name="description" class="textInput" maxlength="35" type="text" size="60"></input></div>
+        </div>-->
+<div class="input">
+          <input type="submit" value="Upload" class="secondary-button">
+</div>
+</div>
+     <a class="button" style="margin-top: 40px;" href="<c:url value="CCMS_CA05.form?RoofAction_action%3Dreturn%23save%3Dfalse%23validate%3Dfalse%23ezgov_private_hiddenData_uniqueId%3D${uniqueId}>Return to Application</a>
+            <!--<div id="id_CCMS_CA01_include_page_ca01_btnSubmitApplication" class="buttonArea btnSubmitApplication">
+          <input type="submit" name="RoofAction_action=subapp#save=false#validate=true" value="Return to Case" class="button floatright firstbutton" />
+        </div>
+            <div id="id_CCMS_CA01_include_page_ca01_btnAbandonApplication" class="buttonArea btnAbandonApplication">
+          <input type="submit" name="RoofAction_action=abandon#save=false#validate=false" value="Cancel" class="button floatright" />
+        </div> -->
+    </div>
+    <div id="id_CCMS_CA01_pageFooterRef" class="perspective pageFooterRef">
+              <div class="ccmsPageFooter">
+                <div>©Crown Copyright</div>
+              </div>
+    </div>
+</form>
+</div>
+</body>
+</html>
