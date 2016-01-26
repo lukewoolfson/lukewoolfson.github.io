@@ -59,11 +59,18 @@
 	</div>
 </div>
 <div class="ccmsPageNavigation">
-	<ul class="menuItems">	
+	<ul class="menuItems">
+
+	 
+	
 		<li id="menuItem1">
+	 
+
 			<a href=".form?RoofAction_action%3Dgoto%23save%3Dfalse%23validate%3Dfalse%23RB8AR7994Y28RG6KY2HP7VA3UU9K6E77destination%3Dhome" accesskey="1">Home</a>
 			<div id="menuItemTop1" class="menuItemTop1">&nbsp;</div>
 		</li>
+
+	
 		<li id="menuItem2" class="active">
 	 
 	 
@@ -91,14 +98,33 @@
 			<div id="menuItemTop5" class="menuItemTop4">&nbsp;</div>
 		</li>
 	</ul>
-</div>  
+</div>
+
+
+  
+  
 <div class="ccmsUserInfo">
      	
 	    	Logged in as:<span class="strong">JRUSSELL</span>
 	    
      </div>
+  
+
+
+ 
+
 </div>
       <div id="id_CCMS_CA01_pageSubHeaderRef" class="perspective pageSubHeaderRef">
+
+
+
+
+
+
+
+	
+ 
+ 
 
 <div class="clientCaseInfo">
 	<div id="clientName">
@@ -111,10 +137,18 @@
 		<span>SE</span>
 	</div>
 </div>
+ 
+
       </div>
 <div class="pageTitleRef">
         <h1></h1>
 </div>
+          <div id="id_CCMS_YCA01_errorMessagesRef" class="perspective errorMessagesRef">
+        <div id="messageInfo">This page contains one or more errors or warnings</div>
+        <ul id="messages">
+          <li class="error">Invalid file extension. We can only only accept PDF, RTF or TIFF files. </li>
+        </ul>
+      </div>
 <div id="id_CCMS_DOC01" class="formInputArea">
 
     <div class="panelHeaderWithLink">
@@ -143,7 +177,7 @@
         </label>
      </div>	
     <div class="input radio">
-        <input type="radio" name="evi-doc" id="evi-doc-upload" >
+        <input type="radio" name="evi-doc" id="evi-doc-upload" checked="checked">
         <label for="evi-doc-upload">Yes</label>
         <input type="radio" name="evi-doc" id="evi-doc-upload-no"  >
         <label for="evi-doc-upload-no">No</label>      
@@ -155,10 +189,8 @@
     </div>
     
 <div id="doc-upload" class="inputPanel side-line">
-
-
-<h3>Files uploaded</h3>      
-     <table summary="Documents uploaded">
+<!--<h3>Files uploaded</h3>      
+    <table summary="Documents uploaded">
 	<tr class="theader">
 		<th>File</th>
 		<th>Type</th>
@@ -177,15 +209,16 @@
          <td>11/12/2015</td>
          <td><a>Remove</a></td>
     </tr>
-   </table>
+    </table>-->
 <h3>Add file</h3>
 <div class="comment">We can only accept PDF, RTF or TIFF files that are less than 8 MB.</div>
 <div class="inputField error-container">
+    <div class="error-text">Please select a valid file extension</div>
     <div class="fileUpload" >
         <span>Choose File</span>
         <input type="file" id="file" class="upload" name="uploadfile">
     </div>
-    <span id="file-label" data-ph="No file chosen" class=""></span>      
+    <span id="file-label" data-ph="No file chosen" class="file-selected">Counsel brief.doc</span>      
 </div>
 <div class="inputField">
             <div class="input">    <span class="req">
@@ -206,7 +239,7 @@
                 <option value="BS_BOOK|Building Society Passbook">Building Society Passbook</option>
                 <option value="BUS_ACC|Business Accounts">Business Accounts</option>
                 <option value="C_CORR|Client Correspondence">Client Correspondence</option>
-                <option value="CNL_BRF|Counsel Brief">Counsel Brief</option>
+                <option value="CNL_BRF|Counsel Brief" selected="selected">Counsel Brief</option>
                 <option value="CNL_FEE|Counsel Fee Note">Counsel Fee Note</option>
                 <option value="COUNSEL|Counsel Opinion">Counsel Opinion</option>
                 <option value="ASS_CERT|Court Assessment Cert’">Court Assessment Cert’</option>

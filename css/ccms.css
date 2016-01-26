@@ -178,6 +178,11 @@ Thurs 21/01/16
 Remove left border from error container
 added error border to 'choose-file' button
 
+Mon 25/01/16
+--v27--
+Fixed error-text bug
+Added red styling to choose file
+
 
 Begin basic elements
 *******************************************************************************/
@@ -4476,11 +4481,11 @@ color: #6F777B;
         border: 4px solid #b10e1e;
 }
 
+
+
 .error-container #file-label {
     margin-top: 2.5px;
 }
-
-#doc-upload > div.inputField.error-container > div
 
 .error-text {
     color: #b10e1e;
@@ -4530,6 +4535,10 @@ color: #6F777B;
 #file-label.file-selected {
     color: black;
     font-style: normal;
+}
+
+.error-container #file-label.file-selected {
+    color: #b10e1e;
 }
 
 #file-label {
